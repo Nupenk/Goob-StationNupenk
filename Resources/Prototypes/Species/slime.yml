@@ -28,6 +28,7 @@
 - type: speciesBaseSprites
   id: MobSlimeSprites
   sprites:
+    Special: MobSlimeMarkingFollowSkin #Pirate Changes
     Head: MobSlimeHead
     Face: MobHumanoidAnyMarking #Pirate Changes
     Hair: MobSlimeMarkingFollowSkin
@@ -43,6 +44,8 @@
     RLeg: MobSlimeRLeg
     LFoot: MobSlimeLFoot
     RFoot: MobSlimeRFoot
+    Tail: MobSlimeMarkingFollowSkin #Pirate Changes start
+    HeadSide: MobSlimeMarkingFollowSkin #Pirate Changes end
 
 - type: markingPoints
   id: MobSlimeMarkingLimits
