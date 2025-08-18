@@ -1,106 +1,31 @@
-- type: Tag
-  id: PirateCollar
-
 - type: entity
-  id: PirateCollar
+  id: BasicCollar
+  parent: BaseItem
   name: нашийник
   description: Міцний нашийник, з якого не можна вирватися самому. В комплект не входить поводок.
   components:
     - type: Collar
-      collarRSI: _Pirate/Objects/Misc/collar.rsi
-      bodyIconState: collar-overlay
+      collarRSI: _NF/Objects/Misc/webcocoon.rsi
+      bodyIconState: body-overlay
       color: white
       collarTime: 2.5
       removeTime: 3.0
       selfRemoveTime: 12.0
       stunBonus: 1.5
-      startCollarSound: /Audio/Items/collar_start.ogg
-      endCollarSound: /Audio/Items/collar_end.ogg
-      startRemoveSound: /Audio/Items/collar_remove_start.ogg
-      endRemoveSound: /Audio/Items/collar_remove_end.ogg
+      startCollarSound: /Audio/Items/Handcuffs/rope_start.ogg
+      endCollarSound: /Audio/Items/Handcuffs/rope_end.ogg
+      startRemoveSound: /Audio/Items/Handcuffs/rope_start.ogg
+      endRemoveSound: /Audio/Items/Handcuffs/rope_breakout.ogg
+      #startBreakoutSound: /Audio/Items/Handcuffs/rope_takeoff.ogg
     - type: Sprite
-      sprite: _Pirate/Objects/Misc/collar.rsi
-      state: collar
-    - type: Item
-      size: Small
-    - type: Tag
-      tags:
-        - PirateCollar
-
-- type: entity
-  id: LeatherCollar
-  name: шкіряний нашийник
-  description: Класичний шкіряний нашийник з металевою пряжкою. Виглядає досить міцно.
-  components:
-    - type: Collar
-      collarRSI: Objects/Misc/collar.rsi
-      bodyIconState: leather-collar-overlay
-      color: "#8B4513"
-      collarTime: 2.0
-      removeTime: 2.5
-      selfRemoveTime: 10.0
-      stunBonus: 1.0
-      startCollarSound: /Audio/Items/collar_start.ogg
-      endCollarSound: /Audio/Items/collar_end.ogg
-      startRemoveSound: /Audio/Items/collar_remove_start.ogg
-      endRemoveSound: /Audio/Items/collar_remove_end.ogg
-    - type: Sprite
-      sprite: Objects/Misc/collar.rsi
-      state: leather-collar
-    - type: Item
-      size: Small
-    - type: Tag
-      tags:
-        - LeatherCollar
-
-- type: entity
-  id: MetalCollar
-  name: металевий нашийник
-  description: Важкий металевий нашийник з замком. Виглядає надзвичайно міцно і його майже неможливо зняти самостійно.
-  components:
-    - type: Collar
-      collarRSI: Objects/Misc/collar.rsi
-      bodyIconState: metal-collar-overlay
-      color: "#C0C0C0"
-      collarTime: 3.5
-      removeTime: 4.0
-      selfRemoveTime: 20.0
-      stunBonus: 2.0
-      startCollarSound: /Audio/Items/metal_collar_start.ogg
-      endCollarSound: /Audio/Items/metal_collar_end.ogg
-      startRemoveSound: /Audio/Items/metal_collar_remove_start.ogg
-      endRemoveSound: /Audio/Items/metal_collar_remove_end.ogg
-    - type: Sprite
-      sprite: Objects/Misc/collar.rsi
-      state: metal-collar
-    - type: Item
-      size: Small
-
-- type: entity
-  id: ShockCollar
-  name: електронашійник
-  description: Нашійник з вбудованою системою електрошоку. Небезпечний пристрій для контролю.
-  components:
-    - type: Collar
-      collarRSI: Objects/Misc/collar.rsi
-      bodyIconState: shock-collar-overlay
-      color: "#FF0000"
-      collarTime: 4.0
-      removeTime: 5.0
-      selfRemoveTime: 30.0
-      stunBonus: 3.0
-      startCollarSound: /Audio/Items/shock_collar_start.ogg
-      endCollarSound: /Audio/Items/shock_collar_end.ogg
-      startRemoveSound: /Audio/Items/shock_collar_remove_start.ogg
-      endRemoveSound: /Audio/Items/shock_collar_remove_end.ogg
-    - type: Sprite
-      sprite: Objects/Misc/collar.rsi
-      state: shock-collar
+      sprite: _NF/Objects/Misc/webcocoon.rsi
+      state: icon
     - type: Item
       size: Small
 
 - type: entity
   id: BasicLeash
+  parent: BaseItem
   name: поводок
   description: Простий поводок для контролю над тими, хто носить нашийник. Можна тягнути та керувати довжиною.
   components:
@@ -109,131 +34,13 @@
       minLength: 0.5
       reelRate: 2.0
       ropeSprite:
-        sprite: Objects/Misc/leash.rsi
+        sprite: Objects/Weapons/Guns/Launchers/grappling_gun.rsi
         state: rope
-      reelSound: /Audio/Items/leash_pull.ogg
-      attachSound: /Audio/Items/leash_attach.ogg
-      detachSound: /Audio/Items/leash_detach.ogg
+      reelSound: /Audio/_Goobstation/Items/Fishing/fishing_rod_reel.ogg
+      attachSound: /Audio/_Goobstation/Items/Fishing/fishing_rod_cast.ogg
+      detachSound: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
     - type: Sprite
-      sprite: Objects/Misc/leash.rsi
-      state: leash
+      sprite: Objects/Weapons/Guns/Launchers/grappling_gun.rsi
+      state: base
     - type: Item
       size: Small
-
-- type: entity
-  id: ChainLeash
-  name: ланцюговий поводок
-  description: Міцний ланцюговий поводок. Важче порвати, але й важче керувати.
-  components:
-    - type: Leash
-      maxLength: 4.0
-      minLength: 0.8
-      reelRate: 1.5
-      ropeSprite:
-        sprite: Objects/Misc/leash.rsi
-        state: chain
-      reelSound: /Audio/Items/chain_pull.ogg
-      attachSound: /Audio/Items/chain_attach.ogg
-      detachSound: /Audio/Items/chain_detach.ogg
-    - type: Sprite
-      sprite: Objects/Misc/leash.rsi
-      state: chain-leash
-    - type: Item
-      size: Normal
-
-- type: entity
-  id: LongLeash
-  name: довгий поводок
-  description: Довгий поводок, що дозволяє більше свободи руху, але менший контроль.
-  components:
-    - type: Leash
-      maxLength: 8.0
-      minLength: 1.0
-      reelRate: 3.0
-      ropeSprite:
-        sprite: Objects/Misc/leash.rsi
-        state: long-rope
-      reelSound: /Audio/Items/leash_pull.ogg
-      attachSound: /Audio/Items/leash_attach.ogg
-      detachSound: /Audio/Items/leash_detach.ogg
-    - type: Sprite
-      sprite: Objects/Misc/leash.rsi
-      state: long-leash
-    - type: Item
-      size: Small
-
-- type: entity
-  id: ShortLeash
-  name: короткий поводок
-  description: Короткий поводок для максимального контролю. Дозволяє швидко притягувати до себе.
-  components:
-    - type: Leash
-      maxLength: 2.5
-      minLength: 0.3
-      reelRate: 4.0
-      ropeSprite:
-        sprite: Objects/Misc/leash.rsi
-        state: short-rope
-      reelSound: /Audio/Items/leash_pull_fast.ogg
-      attachSound: /Audio/Items/leash_attach.ogg
-      detachSound: /Audio/Items/leash_detach.ogg
-    - type: Sprite
-      sprite: Objects/Misc/leash.rsi
-      state: short-leash
-    - type: Item
-      size: Tiny
-    - type: Tag
-      tags:
-        - ShortLeash
-        - QuickControl
-- type: entity
-  id: CollarLeashSet
-  name: комплект нашийник + поводок
-  description: Готовий комплект з нашийника та поводка для повного контролю.
-  components:
-    - type: Sprite
-      sprite: Objects/Misc/collar_set.rsi
-      state: set
-    - type: Item
-      size: Normal
-    - type: SpawnItemsOnUse
-      items:
-        - id: LeatherCollar
-          amount: 1
-        - id: BasicLeash
-          amount: 1
-      sound: /Audio/Items/unwrap.ogg
-
-- type: entity
-  id: HeavyDutySet
-  name: посилений комплект
-  description: Комплект з металевого нашийника та ланцюгового поводка для максимального контролю.
-  components:
-    - type: Sprite
-      sprite: Objects/Misc/collar_set.rsi
-      state: heavy-set
-    - type: Item
-      size: Normal
-    - type: SpawnItemsOnUse
-      items:
-        - id: MetalCollar
-          amount: 1
-        - id: ChainLeash
-          amount: 1
-      sound: /Audio/Items/unwrap.ogg
-
-- type: entity
-  id: CollarVirtual
-  name: нашийник (одягнений)
-  description: Нашийник, що зараз одягнений на когось.
-  noSpawn: true
-  components:
-    - type: Collar
-      used: true
-    - type: Item
-      size: Tiny
-    - type: VirtualItem
-    - type: Tag
-      tags:
-        - CollarVirtual
-        - VirtualItem
