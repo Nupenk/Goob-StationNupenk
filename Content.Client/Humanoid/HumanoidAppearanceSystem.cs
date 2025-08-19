@@ -28,7 +28,6 @@ using Robust.Client.GameObjects;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using System.Numerics; //Pirate width and height
 
 namespace Content.Client.Humanoid;
 
@@ -68,14 +67,6 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
 
         var humanoidAppearance = entity.Comp1;
         var sprite = entity.Comp2;
-        //Pirate changes
-        var speciesPrototype = _prototypeManager.Index(humanoidAppearance.Species);
-        var height = Math.Clamp(humanoidAppearance.Height, speciesPrototype.MinHeight, speciesPrototype.MaxHeight);
-        var width = Math.Clamp(humanoidAppearance.Width, speciesPrototype.MinWidth, speciesPrototype.MaxWidth);
-        humanoidAppearance.Height = height;
-        humanoidAppearance.Width = width;
-        sprite.Scale = new Vector2(width, height);
-        //Pirate changes
 
         sprite[_sprite.LayerMapReserve((entity.Owner, sprite), HumanoidVisualLayers.Eyes)].Color = humanoidAppearance.EyeColor;
     }
@@ -196,11 +187,6 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         // legacy: remove in the future?
         //markings.RemoveCategory(MarkingCategories.Hair);
         //markings.RemoveCategory(MarkingCategories.FacialHair);
-
-        //Pirate changes
-        humanoid.Height = profile.Height;
-        humanoid.Width = profile.Width;
-        //Pirate changes
 
         // We need to ensure hair before applying it or coloring can try depend on markings that can be invalid
         var hairColor = _markingManager.MustMatchSkin(profile.Species, HumanoidVisualLayers.Hair, out var hairAlpha, _prototypeManager)

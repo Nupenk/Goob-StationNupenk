@@ -105,21 +105,6 @@ namespace Content.Shared.Preferences
         [DataField]
         private HashSet<ProtoId<TraitPrototype>> _traitPreferences = new();
 
-    //Pirate changes start
-
-    /// <summary>
-    /// Width of the character (1.0 = стандартний розмір).
-    /// </summary>
-    [DataField("width")]
-    public float Width { get; set; } = 1.0f;
-
-    /// <summary>
-    /// Height of the character (1.0 = стандартний розмір).
-    /// </summary>
-    [DataField("height")]
-    public float Height { get; set; } = 1.0f;
-    //Pirate changes end
-
         /// <summary>
         /// <see cref="_loadouts"/>
         /// </summary>
@@ -199,8 +184,6 @@ namespace Content.Shared.Preferences
             string name,
             string flavortext,
             string species,
-            float height, //Pirate
-            float width, //Pirate
             int age,
             Sex sex,
             Gender gender,
@@ -217,8 +200,6 @@ namespace Content.Shared.Preferences
             Name = name;
             FlavorText = flavortext;
             Species = species;
-            Height = height; //Pirate
-            Width = width; //Pirate
             Age = age;
             Sex = sex;
             Gender = gender;
@@ -251,8 +232,6 @@ namespace Content.Shared.Preferences
             : this(other.Name,
                 other.FlavorText,
                 other.Species,
-                other.Height, //Pirate
-                other.Width, //Pirate
                 other.Age,
                 other.Sex,
                 other.Gender,
@@ -373,8 +352,6 @@ namespace Content.Shared.Preferences
             return new(this) { Species = species };
         }
 
-        public HumanoidCharacterProfile WithHeight(float height) => new(this) { Height = height };  //Pirate
-        public HumanoidCharacterProfile WithWidth(float width) => new(this) { Width = width };  //Pirate
 
         public HumanoidCharacterProfile WithCharacterAppearance(HumanoidCharacterAppearance appearance)
         {

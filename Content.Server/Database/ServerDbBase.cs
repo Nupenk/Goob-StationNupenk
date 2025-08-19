@@ -396,8 +396,6 @@ namespace Content.Server.Database
                 profile.CharacterName,
                 profile.FlavorText,
                 profile.Species,
-                profile.Height, //Pirate
-                profile.Width,  //Pirate
                 profile.Age,
                 sex,
                 gender,
@@ -438,8 +436,6 @@ namespace Content.Server.Database
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();
             profile.Gender = humanoid.Gender.ToString();
-            profile.Height = humanoid.Height; //Pirate
-            profile.Width = humanoid.Width;  //Pirate
             profile.HairName = appearance.HairStyleId;
             profile.HairColor = appearance.HairColor.ToHex();
             profile.FacialHairName = appearance.FacialHairStyleId;
