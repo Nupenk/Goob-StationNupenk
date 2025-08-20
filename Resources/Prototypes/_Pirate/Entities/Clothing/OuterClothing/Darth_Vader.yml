@@ -1,0 +1,37 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitDarthVader
+  name: Скафандр Дарта Вейдера
+  description: Скафандр Датра Вейдера, що працює, як життє забезпечувач, ймовірно силует, який носить цей скафандр ви бачите востаннє.
+  components:
+  - type: Sprite
+    sprite: _Pirate/Darth_Vader/iconArmor.rsi # _Pirate\Darth_Vader\Darth_VaderArmor.rsi\meta.json
+  - type: Clothing
+    sprite: _Pirate/Darth_Vader/Darth_VaderArmor.rsi
+  - type: Item
+    sprite: _Pirate/Darth_Vader/Darth_VaderArmor.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: FireProtection
+    reduction: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.8
+        Radiation: 0.15
+  - type: ClothingSpeedModifier
+    walkModifier: 0.7
+    sprintModifier: 0.7
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing # Goobstation - Modsuits change
+    clothingPrototypes:
+      head: ClothingHeadHelmetHardsuitDarthVader

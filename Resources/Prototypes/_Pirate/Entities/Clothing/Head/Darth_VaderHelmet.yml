@@ -1,0 +1,25 @@
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitDarthVader
+  name: Шолом скафандра Дарта Вейдера 
+  description: Шолом скафандра Датра Вейдера, що працює, як життє забезпечувач, ймовірно силует, який носить цей скафандр ви бачите востаннє.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/basic.rsi #_Pirate/Darth_Vader/iconHelmet.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/basic.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.7
+        Heat: 0.9
+        Radiation: 0.4
+        Caustic: 0.4
+  - type: PressureProtection
+    highPressureMultiplier: 0.6
+    lowPressureMultiplier: 1000
+  - type: FlashImmunity
+  - type: FlashSoundSuppression 
