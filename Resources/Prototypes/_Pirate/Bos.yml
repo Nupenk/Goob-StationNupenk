@@ -24,7 +24,7 @@
     layers:
       - state: icon
       - state: icon-overlay
-        shared: unshaded
+        shader: unshaded
   - type: MeleeWeapon
     attackRate: 2
     range: 1.3
