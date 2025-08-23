@@ -124,6 +124,8 @@
           Structural: -600
     - type: DoAfter
     - type: UseDelay
+    - type: TimedDespawn
+      lifetime: 15
     - type: StaticPrice
       price: 0
     - type: GuideHelp
