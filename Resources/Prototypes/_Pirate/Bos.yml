@@ -32,9 +32,6 @@
       types:
        Slash: 15
     wideAnimationRotation: 135
-    heavyRateModifier: 2
-    heavyRangeModifier: 1.35
-    heavyDamageBaseModifier: 1.25
     heavyStaminaCost: 2
     angle: 120
   - type: Tool
@@ -220,8 +217,6 @@
     - type: MovementIgnoreGravity
     - type: AutoImplant
       implants: [ ShiftImplant, BlinkImplant, FreedomImplant, ScramImplant, StopTimeImplant, NutrimentPumpImplant, SpaceProofImplant, StypticStimulatorImplant ]
-    - type: SkeletonAccent
-      askChance: 0
 
 - type: entity
   id: ClothingOuterPlagueSuitDeath
@@ -231,7 +226,6 @@
     highPressureMultiplier: 0.6
     lowPressureMultiplier: 1000
   - type: TemperatureProtection
-    coefficient: 0.01
   - type: Armor
     modifiers:
       coefficients:
