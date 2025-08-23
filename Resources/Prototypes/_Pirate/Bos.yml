@@ -101,8 +101,8 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        2450: Critical
-        2500: Dead
+        125: Critical
+        200: Dead
     - type: Destructible
       thresholds:
       - trigger:
@@ -173,10 +173,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.8
-        Heat: 0.8
+        Blunt: 0.1
+        Slash: 0.1
+        Piercing: 0.1
+        Heat: 0.1
   - type: Unremoveable
   - type: Storage
     grid:
