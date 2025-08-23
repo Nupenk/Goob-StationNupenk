@@ -95,7 +95,7 @@
   id: CursedDefib
   name: Проклятий дефібрилятор
   parent: BaseDefibrillator
-  description: Дефібрилятор, що зцілює навіть мертвих, але зникає через 15 секунд.
+  description: Дефібрилятор, що зцілює навіть мертвих.
   components:
     - type: Item
       size: Large
