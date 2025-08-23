@@ -13,7 +13,7 @@
 
 - type: entity
   id: WeaponScytheDeath
-  suffix: DoomGuy
+  suffix: Death
   name: Коса Смерті
   parent: BaseItem
   description: Коса, що випромінює загрозу. Лезо вкрите засохлою кров'ю.
@@ -93,6 +93,7 @@
   name: Кістлява смерть
   description: Величезний скелет у рясі, що несе косу смерті.
   parent: BaseMobSkeletonPerson
+  suffix: Death
   components:
     - type: Damageable
       damageContainer: Biological
@@ -100,7 +101,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
+        2450: Critical
         2500: Dead
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 2550
+        behaviors:
+        - !type:GibBehavior # Shitmed Change
+          gibContents: Skip # Shitmed Change
     - type: PointLight
       enabled: true
       color: "#b01403"
@@ -153,6 +163,7 @@
 
 - type: entity
   id: ClothingOuterPlagueSuitDeath
+  suffix: Death
   parent: [ClothingOuterPlagueSuit]
   components:
   - type: PressureProtection
@@ -186,6 +197,7 @@
 - type: entity
   id: BoxFolderCentComClipboardDeath
   parent: BoxFolderCentComClipboard
+  suffix: Death
   components:
   - type: StorageFill
     contents:
@@ -194,6 +206,7 @@
 
 - type: entity
   id: DeathTicket
+  suffix: Death
   parent: Paper
   components:
   - type: Paper
