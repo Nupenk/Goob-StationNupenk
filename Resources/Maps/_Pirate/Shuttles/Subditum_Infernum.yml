@@ -4,8 +4,8 @@ meta:
   engineVersion: 262.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/22/2025 18:37:57
-  entityCount: 1806
+  time: 08/23/2025 10:06:34
+  entityCount: 1805
 maps:
 - 1
 grids:
@@ -1578,17 +1578,6 @@ entities:
       parent: 1535
     - type: Physics
       canCollide: False
-- proto: ActionToggleBlock
-  entities:
-  - uid: 1720
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 1719
-    - type: Action
-      container: 1719
-      originalIconColor: '#FFFFFFFF'
 - proto: AdvancedCombatMedipen
   entities:
   - uid: 1062
@@ -2499,53 +2488,13 @@ entities:
     - type: Transform
       pos: -11.5,-9.5
       parent: 2
-- proto: BlueShieldShieldEvil
+- proto: BlueshieldUndeterminedWeapon
   entities:
-  - uid: 1719
-    mapInit: true
-    paused: true
+  - uid: 1614
     components:
     - type: Transform
-      pos: 3.6767077,-9.491389
+      pos: 1.523587,-9.562315
       parent: 2
-    - type: ContainerContainer
-      containers:
-        item: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 1720
-    - type: ItemToggleSize
-      deactivatedSize: Normal
-    - type: ComponentToggler
-      target: 1719
-    - type: UseDelay
-      delays:
-        default:
-          endTime: 168477.6
-          startTime: 168477.1
-          length: 0.5
-    - type: Blocking
-      blockingToggleActionEntity: 1720
-    - type: EmitSoundOnCollide
-      nextSound: -168535.6
-    - type: ActionsContainer
-    - type: Forensics
-      residues: []
-      dNAs: []
-      fibers: []
-      fingerprints: []
-    - type: Reflect
-      soundOnReflect: !type:SoundPathSpecifier
-        params:
-          variation: 0.05
-        path: /Audio/Weapons/Guns/Hits/laser_sear_wall.ogg
-      reflectProb: 0.75
-      inRightPlace: False
 - proto: BoozeDispenser
   entities:
   - uid: 1007
@@ -4711,6 +4660,13 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,1.5
       parent: 2
+- proto: ClothingBackpackERTMedical
+  entities:
+  - uid: 1719
+    components:
+    - type: Transform
+      pos: 3.6062963,-10.744002
+      parent: 2
 - proto: ClothingBackpackHolding
   entities:
   - uid: 1182
@@ -4742,13 +4698,6 @@ entities:
     components:
     - type: Transform
       pos: -1.5920038,-7.525805
-      parent: 2
-- proto: ClothingBackpackSatchelHolding
-  entities:
-  - uid: 1614
-    components:
-    - type: Transform
-      pos: 3.4824352,-10.283057
       parent: 2
 - proto: ClothingBeltChef
   entities:
@@ -5243,7 +5192,7 @@ entities:
       pos: 7.5,-7.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -36484.34
+      secondsUntilStateChange: -36636.508
       state: Opening
   - uid: 970
     components:
@@ -5752,7 +5701,7 @@ entities:
       containers:
       - drink
     - type: PressurizedSolution
-      sprayFizzinessThresholdRoll: 0.48648474
+      sprayFizzinessThresholdRoll: 0.5151596
     - type: MeleeWeapon
       nextAttack: -534.393695
     - type: EmitSoundOnCollide
@@ -5782,7 +5731,7 @@ entities:
       containers:
       - drink
     - type: PressurizedSolution
-      sprayFizzinessThresholdRoll: 0.0108943
+      sprayFizzinessThresholdRoll: 0.97473365
     - type: MeleeWeapon
       nextAttack: -535.593695
     - type: EmitSoundOnCollide
@@ -11295,7 +11244,7 @@ entities:
       pos: -0.7426085,-11.180746
       parent: 2
     - type: Paper
-      content: >+
+      content: >
         [color=#6c736c]███░███░░░░██░░░░[/color]
 
         [color=#6c736c]░██░████░░░██░░░░[/color] [head=3]Бланк документа[/head]
