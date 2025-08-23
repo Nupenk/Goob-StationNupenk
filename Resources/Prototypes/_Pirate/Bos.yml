@@ -144,6 +144,12 @@
     - type: AutoImplant
       implants: [ ShiftImplant, BlinkImplant, FreedomImplant, ScramImplant, StopTimeImplant, NutrimentPumpImplant, SpaceProofImplant, StypticStimulatorImplant ]
     - type: Respirator
+      damage:
+        types:
+          Asphyxiation: 0.1
+      damageRecovery:
+        types:
+          Asphyxiation: -10.0
 
 - type: entity
   id: ClothingOuterPlagueSuitDeath
