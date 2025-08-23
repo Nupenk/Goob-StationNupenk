@@ -213,3 +213,5 @@ guide-entry-rules-r19 = П19
 guide-entry-rules-r20 = П20
 guide-entry-rules-mrp-m0 = Правила MRP
 guide-entry-rules-m1 = M1
+
+guide-entry-plastic = Виробництво пластикових листів
