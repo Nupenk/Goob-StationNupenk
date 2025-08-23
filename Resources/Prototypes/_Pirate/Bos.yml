@@ -143,6 +143,7 @@
     - type: MovementIgnoreGravity
     - type: AutoImplant
       implants: [ ShiftImplant, BlinkImplant, FreedomImplant, ScramImplant, StopTimeImplant, NutrimentPumpImplant, SpaceProofImplant, StypticStimulatorImplant ]
+    - type: Respirator
 
 - type: entity
   id: ClothingOuterPlagueSuitDeath
@@ -159,9 +160,6 @@
         Slash: 0.8
         Piercing: 0.8
         Heat: 0.8
-  - type: PowerCellDraw
-    drawRate: 1
-  - type: ToggleCellDraw
   - type: Unremoveable
   - type: Storage
     grid:
