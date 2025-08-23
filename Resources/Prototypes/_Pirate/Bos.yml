@@ -24,7 +24,7 @@
     layers:
       - state: icon
       - state: icon-overlay
-        shared: unshaded
+        shader: unshaded
   - type: MeleeWeapon
     attackRate: 2
     range: 1.3
@@ -121,6 +121,8 @@
           Structural: -600
     - type: DoAfter
     - type: UseDelay
+    - type: TimedDespawn
+      lifetime: 15
     - type: StaticPrice
       price: 0
     - type: GuideHelp
