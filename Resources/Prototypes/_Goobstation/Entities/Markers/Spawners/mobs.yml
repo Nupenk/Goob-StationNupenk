@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: Brullbar Spawner
+  name: "Спавнер Брулбарів"
   id: SpawnMobBrullbar
   parent: MarkerBase
   components:
@@ -18,7 +18,7 @@
     - MobBrullbar
 
 - type: entity
-  name: Brullbar King Spawner
+  name: "Спавнер Короля Брулбарів"
   id: SpawnMobBrullbarKing
   parent: MarkerBase
   components:
@@ -32,7 +32,7 @@
     - MobBrullbarKing
 
 - type: entity
-  name: Bear Spawner
+  name: "Спавнер Ведмедів"
   id: SpawnMobBearGoon
   parent: MarkerBase
   components:
@@ -46,7 +46,7 @@
     - MobBearGoon
 
 - type: entity
-  name: White Wolf Spawner
+  name: "Спавнер Білих Вовків"
   id: SpawnMobWhiteWolf
   parent: MarkerBase
   components:
@@ -60,7 +60,7 @@
     - MobWhiteWolf
 
 - type: entity
-  name: Living Curse Spawner
+  name: "Спавнер Живих Проклять"
   id: SpawnMobLivingCurse
   parent: MarkerBase
   components:
@@ -72,3 +72,399 @@
   - type: ConditionalSpawner
     prototypes:
     - MobLivingCurse
+
+- type: entity
+  name: "Спавнер малих фермідів"
+  id: SpawnMobFermidSmall
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: fermid_small
+      sprite: /Textures/_Goobstation/Mobs/Animals/Fermids/fermid.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobFermidSmall
+
+- type: entity
+  name: "Спавнер великих фермідів"
+  id: SpawnMobFermidLarge
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: fermid_large
+      sprite: /Textures/_Goobstation/Mobs/Animals/Fermids/fermid.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobFermidLarge
+
+- type: entity
+  name: "Спавнер фермідів-воїнів"
+  id: SpawnMobFermidWarrior
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: fermid_hulk
+      sprite: /Textures/_Goobstation/Mobs/Animals/Fermids/fermid64x64.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobFermidWarrior
+
+- type: entity
+  name: "Спавнер королеви фермідів"
+  id: SpawnMobFermidQueen
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: fermid_queen
+      sprite: /Textures/_Goobstation/Mobs/Animals/Fermids/fermid64x64.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobFermidQueen
+
+- type: entity
+  name: "Спавнер моторошних привидів"
+  id: SpawnMobSpookyGhost1
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: spookyghost
+      sprite: _Goobstation/Mobs/Demons/spookyghost/ghost1.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobSpookyGhost1
+
+- type: entity
+  name: "Спавнер ненажер"
+  id: SpawnBaseMobGlutton
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: glutton
+      sprite: _Goobstation/Mobs/Demons/glutton.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - BaseMobGlutton
+
+- type: entity
+  name: "Спавнер рою нанітів"
+  id: SpawnMobNanites
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: nanites_attack
+      sprite: /Textures/_Goobstation/Mobs/Silicon/nanites.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobNanites
+
+- type: entity
+  name: "Спавнер ганботів"
+  id: SpawnGunBot
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: gunbot
+      sprite: /Textures/_Goobstation/Mobs/Silicon/Bots/gunbot.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - GunBot
+
+- type: entity
+  name: "Спавнер нюкботів"
+  id: SpawnNukeBot
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: nukebot
+      sprite: /Textures/_Goobstation/Mobs/Silicon/Bots/gunbot.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - NukeBot
+
+- type: entity
+  name: "Спавнер дронів зграї"
+  id: SpawnMobFlockDrone
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: flock_drone
+      sprite: /Textures/_Goobstation/Flock/Mobs/drone.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobFlockDrone
+
+- type: entity
+  name: "Спавнер бітів зграї"
+  id: SpawnMobFlockBit
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: flock_bit
+      sprite: /Textures/_Goobstation/Flock/Mobs/bit.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobFlockBit
+
+- type: entity
+  name: "Спавнер повзунів з безодні"
+  id: SpawnMobAbyssCrawler
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: abyss_crawler
+      sprite: /Textures/_Goobstation/Mobs/Animals/abysscrawler.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobAbyssCrawler
+
+#Xenos
+- type: entity
+  name: "утиль-спавнер древніх дронів"
+  id: SpawnCMMobXenoDrone
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: drone
+      sprite: _Goobstation/Mobs/Xenos/drone.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoDrone
+
+- type: entity
+  name: "утиль-спавнер древніх землерийок"
+  id: SpawnCMMobXenoBurrower
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: burrower
+      sprite: _Goobstation/Mobs/Xenos/burrower.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoBurrower
+
+- type: entity
+  name: "утиль-спавнер древніх воїнів"
+  id: SpawnCMMobXenoWarrior
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: warrior
+      sprite: _Goobstation/Mobs/Xenos/warrior.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoWarrior
+
+- type: entity
+  name: "утиль-спавнер древніх руйнівників"
+  id: SpawnCMMobXenoCrusher
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: crusher
+      sprite: _Goobstation/Mobs/Xenos/crusher.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoCrusher
+
+- type: entity
+  name: "утиль-спавнер древніх спустошувачів"
+  id: SpawnCMMobXenoRavager
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: ravager
+      sprite: _Goobstation/Mobs/Xenos/ravager.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoRavager
+
+- type: entity
+  name: "утиль-спавнер древнього короля"
+  id: SpawnCMMobXenoKing
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: king
+      sprite: _Goobstation/Mobs/Xenos/king.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoKing
+
+- type: entity
+  name: "утиль-спавнер древньої королеви"
+  id: SpawnCMMobXenoQueen
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: queen
+      sprite: _Goobstation/Mobs/Xenos/queen.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoQueen
+
+- type: entity
+  name: "утиль-спавнер древнього короля-розбійника"
+  id: SpawnCMMobXenoRogueKing
+  parent: MarkerBase
+  suffix: DO NOT MAP #Too srong to be mapped
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: rogue
+      sprite: _Goobstation/Mobs/Xenos/king.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoRogueKing
+
+#Sentient xenos
+- type: entity
+  name: "Спавнер древніх дронів"
+  id: SpawnCMMobXenoDroneSentient
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: drone
+      sprite: _Goobstation/Mobs/Xenos/drone.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoDroneSentient
+
+- type: entity
+  name: "Спавнер древніх землерийок"
+  id: SpawnCMMobXenoBurrowerSentient
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: burrower
+      sprite: _Goobstation/Mobs/Xenos/burrower.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoBurrowerSentient
+
+- type: entity
+  name: "Спавнер древніх воїнів"
+  id: SpawnCMMobXenoWarriorSentient
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: warrior
+      sprite: _Goobstation/Mobs/Xenos/warrior.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoWarriorSentient
+
+- type: entity
+  name: "Спавнер древніх руйнівників"
+  id: SpawnCMMobXenoCrusherSentient
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: crusher
+      sprite: _Goobstation/Mobs/Xenos/crusher.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoCrusherSentient
+
+- type: entity
+  name: "Спавнер древніх спустошувачів"
+  id: SpawnCMMobXenoRavagerSentient
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: ravager
+      sprite: _Goobstation/Mobs/Xenos/ravager.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoRavagerSentient
+
+- type: entity
+  name: "Спавнер древнього короля"
+  id: SpawnCMMobXenoKingSentient
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: king
+      sprite: _Goobstation/Mobs/Xenos/king.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoKingSentient
+
+- type: entity
+  name: "Спавнер древньої королеви"
+  id: SpawnCMMobXenoQueenSentient
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: queen
+      sprite: _Goobstation/Mobs/Xenos/queen.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoQueenSentient
+
+- type: entity
+  name: "Спавнер древнього короля-розбійника"
+  id: SpawnCMMobXenoRogueKingSentient
+  parent: MarkerBase
+  suffix: DO NOT MAP #Too srong to be mapped
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: rogue
+      sprite: _Goobstation/Mobs/Xenos/king.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - CMMobXenoRogueKingSentient

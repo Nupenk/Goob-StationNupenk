@@ -20,10 +20,15 @@
 // SPDX-FileCopyrightText: 2024 Mr. 27 <koolthunder019@gmail.com>
 // SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
 // SPDX-FileCopyrightText: 2024 ScyronX <166930367+ScyronX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2024 portfiend <109661617+portfiend@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 2025 MarkerWicker <markerWicker@proton.me>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -150,7 +155,8 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField]
     public int MaxAge = 120;
-    //Pirate changes start
+
+    // begin Goobstation: port EE height/width sliders
 
     /// <summary>
     ///     The minimum height and width ratio for this species
@@ -159,40 +165,40 @@ public sealed partial class SpeciesPrototype : IPrototype
     public float SizeRatio = 1.2f;
 
     /// <summary>
-    /// Default width for this species (1.0 = стандартний розмір).
+    ///     The minimum height for this species
     /// </summary>
-    [DataField("defaultWidth")]
-    public float DefaultWidth { get; } = 1.0f;
+    [DataField]
+    public float MinHeight = 0.80f;
 
     /// <summary>
-    /// Default height for this species (1.0 = стандартний розмір).
+    ///     The default height for this species
     /// </summary>
-    [DataField("defaultHeight")]
-    public float DefaultHeight { get; } = 1.0f;
+    [DataField]
+    public float DefaultHeight = 1f;
 
     /// <summary>
-    /// Minimum width allowed for this species.
+    ///     The maximum height for this species
     /// </summary>
-    [DataField("minWidth")]
-    public float MinWidth { get; } = 0.8f;
+    [DataField]
+    public float MaxHeight = 1.20f;
 
     /// <summary>
-    /// Maximum width allowed for this species.
+    ///     The minimum width for this species
     /// </summary>
-    [DataField("maxWidth")]
-    public float MaxWidth { get; } = 1.2f;
+    [DataField]
+    public float MinWidth = 0.85f;
 
     /// <summary>
-    /// Minimum height allowed for this species.
+    ///     The default width for this species
     /// </summary>
-    [DataField("minHeight")]
-    public float MinHeight { get; } = 0.8f;
+    [DataField]
+    public float DefaultWidth = 1f;
 
     /// <summary>
-    /// Maximum height allowed for this species.
+    ///     The maximum width for this species
     /// </summary>
-    [DataField("maxHeight")]
-    public float MaxHeight { get; } = 1.2f;
+    [DataField]
+    public float MaxWidth = 1.15f;
 
     /// <summary>
     ///     The average height in centimeters for this species, used to calculate player facing height values in UI elements
@@ -205,7 +211,8 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField]
     public float AverageWidth = 40f;
-    //Pirate changes end
+
+    // end Goobstation: port EE height/width sliders
 }
 
 public enum SpeciesNaming : byte

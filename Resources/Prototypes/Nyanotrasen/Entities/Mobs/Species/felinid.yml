@@ -9,6 +9,9 @@
 # SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 MarkerWicker <markerWicker@proton.me>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
@@ -16,15 +19,15 @@
 
 - type: entity
   save: false
-  name: Urist McFelinid
+  name: "Уріст МакФелінід"
   parent: BaseMobHuman
   id: MobFelinidBase
   abstract: true
   components:
   - type: Sprite
-    scale: 0.8, 0.8
+    # scale: 0.8, 0.8 # Goobstation: port EE height/width sliders
   - type: ScaleData # Goobstation
-    scale: 0.8, 0.8
+    # scale: 0.8, 0.8 # Goobstation: port EE height/width sliders
   - type: HumanoidAppearance
     species: Felinid
   - type: Fixtures
@@ -105,11 +108,11 @@
 
 - type: entity
   save: false
-  name: Urist McHands
+  name: "Уріст МакХендс"
   parent: MobHumanDummy
   id: MobFelinidDummy
   categories: [ HideSpawnMenu ]
-  description: A dummy felinid meant to be used in character setup.
+  description: "Фіктивний фелінід, призначений для використання в налаштуваннях персонажів."
   components:
   - type: HumanoidAppearance
     species: Felinid

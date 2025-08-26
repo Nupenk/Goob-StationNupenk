@@ -1,0 +1,20 @@
+- type: entity
+  name: "хвіст короля-розбійника"
+  parent: BaseSword
+  id: RogueTailWeapon
+  description: "Відрізаний хвіст древнього короля ксеноморфів-розбійників, жорстокий трофей, який цінують лише найсміливіші мисливці. Надає своєму власнику здатність робити ривок уперед невпинними поривами."
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Weapons/Melee/rogue_tail.rsi
+  - type: MeleeWeapon
+    wideAnimationRotation: -60
+    damage:
+      types:
+        Slash: 20
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: MeleeDash
+  - type: UseDelay
+    delay: 1.5
+  - type: StaticPrice
+    price: 50000

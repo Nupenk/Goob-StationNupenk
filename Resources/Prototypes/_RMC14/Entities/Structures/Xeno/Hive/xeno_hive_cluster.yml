@@ -1,0 +1,18 @@
+- type: entity
+  id: HiveClusterXeno
+  parent: BaseHiveStructure
+  name: "Вуликовий Кластер"
+  description: "Великий згусток липкої маси. Він ритмічно пульсує, ніби щось закачує в бур'яни внизу..."
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Xenos/hive_cluster.rsi
+    layers:
+     - state: hive_cluster_idle
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]

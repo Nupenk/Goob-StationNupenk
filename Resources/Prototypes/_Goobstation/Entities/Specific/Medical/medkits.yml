@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 CometVoid <cometsstrile@gmail.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 # SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
 # SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
@@ -10,10 +11,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: advanced combat medipen
+  name: "покращений бойовий медипен"
   parent: ChemicalMedipen
   id: AdvancedCombatMedipen
-  description: A single-use advanced medipen containing chemicals extracted from eldritch beasts. # ethically sourced space dragon blood
+  description: "Одноразовий покращений медипен, що містить хімікати, видобуті з потойбічних звірів." # ethically sourced space dragon blood
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
@@ -41,11 +42,12 @@
   - type: StaticPrice
     price: 500
   - type: Tag
-    tags: []
+    tags:
+    - Medipen
 
 - type: entity
-  name: tactical medical kit
-  description: Contains everything you need to get a person back up quickly.
+  name: "тактичний медичний набір"
+  description: "Містить усе необхідне, щоб швидко поставити людину на ноги."
   parent: Medkit
   id: MedkitBSO
   components:
@@ -60,8 +62,8 @@
     defaultStorageOrientation: Vertical
 
 - type: entity
-  name: tactical repairing kit
-  description: Contains everything you need to get a silicon back up quickly.
+  name: "тактичний ремонтний набір"
+  description: "Містить усе необхідне, щоб швидко поставити силікона на ноги."
   parent: MedkitBSO
   id: MedkitBSOIPC
   components:
@@ -71,8 +73,8 @@
     heldPrefix: bsokit-ipc
 
 - type: entity
-  name: combat medical kit
-  description: Contains most medicines you need to recover from injuries and illnesses, all in a convenient pill form.
+  name: "бойовий медичний набір"
+  description: "Містить більшість ліків, необхідних для одужання від травм та хвороб, все у зручній формі таблеток."
   parent: Medkit
   id: MedkitCombatBlue
   components:
@@ -85,8 +87,8 @@
     size: Normal
 
 - type: entity
-  name: combat medical kit
-  description: For the IPCs among us.
+  name: "бойовий медичний набір"
+  description: "Для силіконів серед нас."
   parent: Medkit
   id: MedkitCombatPurple
   components:

@@ -38,18 +38,21 @@
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
 # SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 Coolsurf6 <coolsurf24@yahoo.com.au>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 # SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 RedBookcase <crazykid1590@gmail.com>
+# SPDX-FileCopyrightText: 2025 ShieldAcrados <222141571+ShieldAcrados@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: fireaxe
+  name: "пожежна сокира"
   parent: [BaseItem, BaseEngineeringContraband]
   id: FireAxe
-  description: Truly, the weapon of a madman. Who would think to fight fire with an axe?
+  description: "Воістину, зброя божевільного. Хто б міг подумати боротися з вогнем сокирою?"
   components:
   - type: Tag
     tags:
@@ -86,6 +89,7 @@
     quickEquip: false
     slots:
     - back
+    - suitStorage  # Goobstation
   - type: Tool
     qualities:
       - Prying
@@ -109,9 +113,9 @@
 
 - type: entity
   id: FireAxeFlaming
-  name: fire axe
+  name: "пожежна сокира"
   parent: [ BaseSyndicateContraband, FireAxe ]
-  description: Why fight fire with an axe when you can fight with fire and axe? Now featuring rugged rubberized handle!
+  description: "Навіщо боротися з вогнем сокирою, коли можна боротися і з вогнем, і з сокирою? Тепер з міцною прогумованою ручкою!"
   components:
   - type: MeleeWeapon
     # Goobstation - fire axe buff
@@ -137,3 +141,4 @@
     quickEquip: false
     slots:
     - back
+    - suitStorage # Goobstation

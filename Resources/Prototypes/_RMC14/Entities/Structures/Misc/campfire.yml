@@ -1,0 +1,12 @@
+- type: entity
+  id: RMCCampfire
+  parent: Bonfire
+  name: "багаття"
+  description: "Корисний інструмент, щоб перетворити товаришів-морпіхів на друзів на все життя. Підсуньте стілець!"
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _RMC14/Structures/campfire.rsi
+    layers:
+      - state: campfire
+      - state: burning

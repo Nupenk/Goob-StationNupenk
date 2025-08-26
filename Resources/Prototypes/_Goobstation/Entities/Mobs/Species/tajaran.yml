@@ -10,7 +10,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: Urist McTajaran
+  name: "Уріст МакТаяран"
   parent: BaseMobSpeciesOrganic
   id: BaseMobTajaran
   abstract: true
@@ -18,7 +18,7 @@
   - type: Hunger
   - type: Thirst
   - type: Sprite # smaller size
-    scale: 0.8, 0.8
+    # scale: 0.8, 0.8 # Goobstation: port EE height/width sliders
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
@@ -131,11 +131,11 @@
 
 - type: entity
   save: false
-  name: Urist McHands
+  name: "Уріст МакХендс"
   parent: MobHumanDummy
   id: MobTajaranDummy
   categories: [ HideSpawnMenu ]
-  description: A dummy tajaran meant to be used in character setup.
+  description: "Фіктивний таджаран, призначений для використання в налаштуванні символів."
   components:
   - type: HumanoidAppearance
     species: Tajaran

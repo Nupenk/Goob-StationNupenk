@@ -17,8 +17,8 @@
 - type: entity
   id: HelpimovCircuitBoard
   parent: BaseElectronics
-  name: law board (Helpimov)
-  description: An electronics board containing the Helpimov lawset.
+  name: "плата законів (Хелпімов)"
+  description: "Електронна плата, що містить набір законів Хелпімова."
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
@@ -50,6 +50,10 @@
         startingItem: PowerCellMedium
   - type: RandomMetadata
     nameSegments: [ NamesBorg ]
+  - type: StartIonStormed
+    ionStormAmount: 2
+  - type: SiliconLawProvider
+    laws: OverlordLawset
 
 - type: entity
   id: PlayerBorgDerelictSyndicateAssaultGhostRole

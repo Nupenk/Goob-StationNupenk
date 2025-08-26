@@ -1,0 +1,131 @@
+- type: entity
+  parent: BaseStructure
+  abstract: true
+  id: RMCBaseLandingSign
+  name: "знак"
+  description: "Знак."
+  components:
+  - type: Transform
+    anchored: false
+  - type: Physics
+    bodyType: Static
+  - type: InteractionOutline
+  - type: Sprite
+    drawdepth: OverMobs
+    sprite: _RMC14/Structures/landing_signs.rsi
+  - type: AnimationPlayer
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCLazarusLandingSign
+  name: "посадковий знак Лазарус"
+  description: "Великий знак з написом \"посадка Лазару-\" решта заляпана кров'ю."
+  components:
+  - type: Sprite
+    state: laz_sign
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCSolarisRidgeSign
+  name: "знак Соляріс Рідж"
+  description: "Великий знак з написом 'Соляріс Рідж -', решта напису стерта."
+  components:
+  - type: Sprite
+    state: red_sign
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCPrisonSign
+  name: "знак Док В'язниці ООН"
+  description: "Великий знак з написом 'Док В'язниці ООН -', решта напису прихована слідами від кігтів."
+  components:
+  - type: Sprite
+    state: prison_sign
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCShivaIceSign
+  name: "посадковий знак Лід Шиви"
+  description: "Великий знак з написом 'Л-садка Лід Шиви -', кульові отвори та розірваний метал приховують решту вивіски."
+  components:
+  - type: Sprite
+    state: ice_sign
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCTrijentSign
+  name: "посадковий знак Трайджент"
+  description: "Великий знак з написом 'видобувна колонія Трайджент', решта якого прихована чимось схожим на засохлу кров та пошкодження."
+  components:
+  - type: Sprite
+    state: dam_sign
+
+- type: entity
+  parent: RMCTrijentSign
+  id: RMCTrijentSignAlt
+  description: "Великий знак з написом 'видобувна колонія Трайджент', половина якого написана японською."
+  components:
+  - type: Sprite
+    state: dam_sign_2
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCSorokyneSign
+  name: "посадковий знак Сорокине"
+  description: "Великий знак з написом 'Сорокине - СОРОКІНО - НАС. 110'. У кутку гордо красується логотип Компанії. Не їжте вкритий смолою сніг."
+  components:
+  - type: Sprite
+    state: sorokyne_1
+
+- type: entity
+  parent: RMCSorokyneSign
+  id: RMCSorokyneSignAlt
+  description: "Великий знак з написом 'Сорокине - СОРОКІНО - НАС. 110'. У кутку гордо красується логотип Компанії. Хтось грубо написав 'FUCK OFF' бірюзовою фарбою на більшій частині знака."
+  components:
+  - type: Sprite
+    state: sorokyne
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCNewVaraderoSign
+  name: "посадковий знак Нове Варадеро"
+  description: "Великий знак з написом 'Нове Варадеро'. Тут завжди сонячно!"
+  components:
+  - type: Sprite
+    state: new_varadero
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCFortBicepSign
+  name: "знак Форт Біцепс"
+  description: "Великий знак з написом 'Форт Біцепс, Т-КОММС'."
+  components:
+  - type: Sprite
+    state: fort_biceps
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCHybrisaProsperaSign
+  name: "вітальний знак Гібриса Проспера"
+  description: "Великий знак з написом 'Ласкаво просимо до Гібриса Проспера', логотип та 'Крила' Вестон-Ямада прикрашають знак, а також деяка інформація про колонію."
+  components:
+  - type: Sprite
+    state: hybrisa_sign
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCHybrisaProsperaMedicalSign
+  name: "знак Гібриса Проспера - Невідкладна медична посадкова зона один"
+  description: "Великий знак з написом 'Невідкладна медична - ГБП - ПЗ - 01'."
+  components:
+  - type: Sprite
+    state: hybrisamedical_sign
+
+- type: entity
+  parent: RMCBaseLandingSign
+  id: RMCHybrisaProsperaMiningSign
+  name: "знак Гібриса Проспера - Вестон-Ямада Тартарус Майнінг - Посадкова зона два"
+  description: "Великий знак з написом 'ВЕЯ - ТМКК Майнінг - ГБП - ПЗ - 01'. Логотип Тартарус Майнінг прикрашає знак."
+  components:
+  - type: Sprite
+    state: hybrisamining_sign

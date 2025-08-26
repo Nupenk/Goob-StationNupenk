@@ -1,0 +1,144 @@
+# Parents
+- type: entity
+  parent: BaseArrow
+  id: BaseCrossbowBolt
+  abstract: true
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Pirate/Objects/Weapons/Guns/Projectiles/crossbow_bolts.rsi
+  #- type: Tag
+  #  tags:
+  #  - CannonRestrict
+
+# Spawnable variations
+- type: entity
+  parent: BaseCrossbowBolt
+  id: CrossbowBolt
+  name: "болт"
+  description: "Одного з них вистачило, щоб вбити короля Річарда Левине Серце. Має спрацювати і для Королеви Ксеносів."
+  components:
+  - type: Sprite
+    layers:
+    - state: tail
+      color: red
+    - state: rod
+      color: brown
+    - state: tip
+    - state: solution1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 35
+
+- type: entity
+  parent: CrossbowBoltPlasmaGlassShard
+  id: MagicCrossbowBoltFire
+  name: "вогняний магічний болт"
+  description: "Наносить шкоду та підпалює"
+  components:
+  - type: IgniteOnCollide
+    fireStacks: 4
+
+- type: entity
+  parent: CrossbowBoltGlassShard
+  id: MagicCrossbowBoltStun
+  name: "магічний болт"
+  description: "Наносити шкоду та ставати"
+  components:
+  - type: StunOnCollide
+    stunAmount: 5
+    knockdownAmount: 5
+
+- type: entity
+  parent: CrossbowBoltUraniumGlassShard
+  id: MagicCrossbowBoltPoison
+  name: "магічний болт"
+  description: "Завдає шкоди та отруює"
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+        Poison: 10
+        Radiation: 5
+
+# Craftable variations
+- type: entity
+  parent: CrossbowBolt
+  id: CrossbowBoltGlassShard
+  name: "болт з осколків скла"
+  description: "Болт з уламком скла в якості наконечника."
+  components:
+  - type: Sprite
+    layers:
+    - state: tail
+      color: blue
+    - state: rod
+      color: darkgray
+    - state: tip
+      color: white
+    - state: solution1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+  # - type: Construction
+  #   graph: CraftCrossbowBoltGlassShard
+  #   node: CraftCrossbowBoltGlassShard
+
+- type: entity
+  parent: CrossbowBolt
+  id: CrossbowBoltPlasmaGlassShard
+  name: "болт з осколків плазмового скла"
+  description: "Болт з уламком плазмового скла в якості наконечника."
+  components:
+  - type: Sprite
+    layers:
+    - state: tail
+      color: cyan
+    - state: rod
+      color: darkgray
+    - state: tip
+      color: magenta
+    - state: solution1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30
+  # - type: Construction
+  #   graph: CraftCrossbowBoltPlasmaGlassShard
+  #   node: CraftCrossbowBoltPlasmaGlassShard
+
+- type: entity
+  parent: CrossbowBolt
+  id: CrossbowBoltUraniumGlassShard
+  name: "болт з осколків уранового скла"
+  description: "Болт з уламком уранового скла на кінчику. Нехай Бог помилує твоїх жертв, бо ти цього не зробиш."
+  components:
+  - type: Sprite
+    layers:
+    - state: tail
+      color: yellow
+    - state: rod
+      color: darkgray
+    - state: tip
+      color: lightgreen
+    - state: solution1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+        Radiation: 5
+  # - type: Construction
+  #   graph: CraftCrossbowBoltUraniumGlassShard
+  #   node: CraftCrossbowBoltUraniumGlassShard

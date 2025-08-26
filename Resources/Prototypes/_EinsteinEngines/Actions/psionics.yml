@@ -1,5 +1,7 @@
 - type: entity
   id: ActionDispel
+  name: "Розсіювання"
+  description: "Розсіює викликаних істот, таких як фамільяри або силові стіни."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -7,7 +9,7 @@
       useDelay: 45
       itemIconStyle: BigAction
     - type: TargetAction
-      checkCanAccess: false
+      #checkCanAccess: false
       range: 6
     - type: EntityTargetAction
       canTargetSelf: false
@@ -19,6 +21,8 @@
 
 - type: entity
   id: ActionMassSleep
+  name: "Масове присипляння"
+  description: "Присипляє цілі в невеликій області."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -26,13 +30,15 @@
       useDelay: 60
       itemIconStyle: BigAction
     - type: TargetAction
-      checkCanAccess: false
+      #checkCanAccess: false
       range: 8
     - type: WorldTargetAction
       event: !type:MassSleepPowerActionEvent
 
 - type: entity
   id: ActionMindSwapPsionic
+  name: "Обмін розумом"
+  description: "Обмінятися розумом з ціллю. Будь-хто може повернутися назад через 20 секунд."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -40,7 +46,7 @@
       useDelay: 240
       itemIconStyle: BigAction
     - type: TargetAction
-      checkCanAccess: false
+      #checkCanAccess: false
       range: 8
     - type: EntityTargetAction
       blacklist:
@@ -51,6 +57,8 @@
 
 - type: entity
   id: ActionMindSwapReturn
+  name: "Повернути обмін розумом"
+  description: "Повернутися до свого початкового тіла."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -62,6 +70,8 @@
 
 - type: entity
   id: ActionNoosphericZap
+  name: "Ноосферний розряд"
+  description: "Вражає свідомість цілі, залишаючи її приголомшеною та змушуючи заїкатися."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -79,6 +89,8 @@
 
 - type: entity
   id: ActionPyrokinesis
+  name: "Пірокінез"
+  description: "Підпалити легкозаймисту ціль."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -87,12 +99,14 @@
       itemIconStyle: BigAction
     - type: TargetAction
       range: 6
-      checkCanAccess: false
+      #checkCanAccess: false
     - type: EntityTargetAction
       event: !type:PyrokinesisPowerActionEvent
 
 - type: entity
   id: ActionMetapsionic
+  name: "Метапсіонічний імпульс"
+  description: "Надіслати ментальний імпульс по області, щоб перевірити, чи є поблизу псіоніки."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -103,6 +117,8 @@
 
 - type: entity
   id: ActionPsionicRegeneration
+  name: "Псіонічна регенерація"
+  description: "Довести свій природний метаболізм до межі, щоб активувати регенеративну здатність тіла."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -113,6 +129,8 @@
 
 - type: entity
   id: ActionTelegnosis
+  name: "Телегнозис"
+  description: "Створити телегностичну проєкцію для дистанційного спостереження за речами."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -144,6 +162,8 @@
 
 - type: entity
   id: ActionHealingWord
+  name: "Цілюще слово"
+  description: "Спрямувати псіонічну енергію для зцілення цілі."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -151,7 +171,7 @@
       useDelay: 10
       itemIconStyle: BigAction
     - type: TargetAction
-      checkCanAccess: false
+      #checkCanAccess: false
       range: 6
     - type: EntityTargetAction
       canTargetSelf: true
@@ -159,6 +179,9 @@
         components:
           - PsionicInsulation
           - Mindbroken
+      whitelist:
+        components:
+        - Body
       event: !type:PsionicHealOtherPowerActionEvent
         healingAmount:
           groups: # These all get divided by the number of damage types in the group. So they're all -2.5.
@@ -181,6 +204,8 @@
 
 - type: entity
   id: ActionRevivify
+  name: "Оживлення"
+  description: "Повернути ціль до життя."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -188,7 +213,7 @@
       useDelay: 120
       itemIconStyle: BigAction
     - type: TargetAction
-      checkCanAccess: false
+      #checkCanAccess: false
       range: 2
     - type: EntityTargetAction
       canTargetSelf: false
@@ -220,6 +245,8 @@
 
 - type: entity
   id: ActionShadeskip
+  name: "Тіньовий стрибок"
+  description: "Ковзнути в тінь, ставши на мить непомітним."
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -255,6 +282,8 @@
 
 - type: entity
   id: ActionTelekineticPulse
+  name: "Телекінетичний імпульс"
+  description: "Створити імпульс телекінетичної енергії, щоб штовхати або тягнути об'єкти."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -289,6 +318,8 @@
 
 - type: entity
   id: ActionDarkSwap
+  name: "Темний обмін"
+  description: "Помінятися місцями з найближчою тінню."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -300,6 +331,8 @@
 
 - type: entity
   id: ActionPyrokineticFlare
+  name: "Пірокінетичний спалах"
+  description: "Створити спалах вогню, щоб завдати шкоди ворогам."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -326,6 +359,8 @@
 
 - type: entity
   id: ActionSummonImp
+  name: "Виклик біса"
+  description: "Викликати маленького біса, щоб він вам допоміг."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -344,6 +379,8 @@
 
 - type: entity
   id: ActionSummonRemilia
+  name: "Виклик Ремілії"
+  description: "Викликати фамільяра, схожого на кажана, щоб він вам допоміг."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -362,6 +399,8 @@
 
 - type: entity
   id: ActionAssay
+  name: "Аналіз"
+  description: "Проаналізувати псіонічний підпис цілі."
   categories: [ HideSpawnMenu ]
   components:
     - type: Action
@@ -369,7 +408,7 @@
       useDelay: 45
       itemIconStyle: BigAction
     - type: TargetAction
-      checkCanAccess: false
+      #checkCanAccess: false
       range: 2
     - type: EntityTargetAction
       canTargetSelf: true
@@ -381,6 +420,8 @@
 
 - type: entity
   id: ActionAnoigo
+  name: "Анойго"
+  description: "Створити локалізоване викривлення простору, щоб збити з пантелику ворогів."
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -389,3 +430,5 @@
     itemIconStyle: BigAction
   - type: EntityTargetAction
     event: !type:AnoigoPowerActionEvent
+  - type: TargetAction
+    range: 2

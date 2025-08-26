@@ -7,6 +7,9 @@
 # SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ko4ergaPunk <nikitako4erga3i5@gmail.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # I couldn't figure out how randomsprite works so this mess was created!!!
@@ -73,7 +76,8 @@
 
 - type: entity
   id: ChristmasLightsWhite1
-  description: Some white Christmas lights.
+  description: "Кілька білих різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -88,7 +92,8 @@
 
 - type: entity
   id: ChristmasLightsWhite2
-  description: Some white Christmas lights.
+  description: "Кілька білих різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -103,7 +108,8 @@
 
 - type: entity
   id: ChristmasLightsWhite3
-  description: Some white Christmas lights.
+  description: "Кілька білих різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -118,7 +124,8 @@
 
 - type: entity
   id: ChristmasLightsWhite4
-  description: Some white Christmas lights.
+  description: "Кілька білих різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -133,7 +140,8 @@
 
 - type: entity
   id: ChristmasLightsWhite5
-  description: Some white Christmas lights.
+  description: "Кілька білих різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -148,7 +156,8 @@
 
 - type: entity
   id: ChristmasLightsWhite6
-  description: Some white Christmas lights.
+  description: "Кілька білих різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -163,7 +172,8 @@
 
 - type: entity
   id: ChristmasLightsRed1
-  description: Some red Christmas lights.
+  description: "Кілька червоних різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -179,7 +189,8 @@
 
 - type: entity
   id: ChristmasLightsRed2
-  description: Some red Christmas lights.
+  description: "Кілька червоних різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -195,7 +206,8 @@
 
 - type: entity
   id: ChristmasLightsRed3
-  description: Some red Christmas lights.
+  description: "Кілька червоних різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -211,7 +223,8 @@
 
 - type: entity
   id: ChristmasLightsRed4
-  description: Some red Christmas lights.
+  description: "Кілька червоних різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -227,7 +240,8 @@
 
 - type: entity
   id: ChristmasLightsRed5
-  description: Some red Christmas lights.
+  description: "Кілька червоних різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -243,7 +257,8 @@
 
 - type: entity
   id: ChristmasLightsRed6
-  description: Some red Christmas lights.
+  description: "Кілька червоних різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -259,7 +274,8 @@
 
 - type: entity
   id: ChristmasLightsBlue1
-  description: Some blue Christmas lights.
+  description: "Кілька синіх різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -275,7 +291,8 @@
 
 - type: entity
   id: ChristmasLightsBlue2
-  description: Some blue Christmas lights.
+  description: "Кілька синіх різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -291,7 +308,8 @@
 
 - type: entity
   id: ChristmasLightsBlue3
-  description: Some blue Christmas lights.
+  description: "Кілька синіх різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -307,7 +325,8 @@
 
 - type: entity
   id: ChristmasLightsBlue4
-  description: Some blue Christmas lights.
+  description: "Кілька синіх різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -323,7 +342,8 @@
 
 - type: entity
   id: ChristmasLightsBlue5
-  description: Some blue Christmas lights.
+  description: "Кілька синіх різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"
@@ -339,7 +359,8 @@
 
 - type: entity
   id: ChristmasLightsBlue6
-  description: Some blue Christmas lights.
+  description: "Кілька синіх різдвяних вогників."
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: "/Textures/_Goobstation/Objects/Specific/Christmas/lights.rsi"

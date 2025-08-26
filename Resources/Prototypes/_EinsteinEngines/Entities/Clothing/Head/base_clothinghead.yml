@@ -2,7 +2,7 @@
   abstract: true
   parent: ClothingHeadBase
   id: ClothingHeadEnvirohelmBase
-  name: base envirosuit helmet
+  name: "базовий шолом екокостюму"
   components:
   - type: Sprite
     layers:
@@ -48,7 +48,8 @@
     - Snout
     clothingSlots:
     - mask
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
+    spriteLayer: light
     clothingVisuals:
       head:
       - state: on-equipped-HELMET
@@ -102,9 +103,10 @@
   abstract: true
   parent: ClothingHeadEnvirohelmBase
   id: ClothingHeadEnvirohelmCustomBase
-  name: base custom envirosuit helmet
+  name: "базовий кастомний шолом для екокостюму"
   components:
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
+    spriteLayer: light
     inhandVisuals:
       left:
       - state: on-inhand-left

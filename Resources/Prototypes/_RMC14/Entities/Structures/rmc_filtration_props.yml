@@ -1,0 +1,107 @@
+﻿- type: entity
+  id: RMCFiltration
+  name: "система фільтрації води"
+  description: "Водяний фільтр, який відокремлює як органічні, так і неорганічні речовини, небезпечні відходи та корозійні кислоти від води, щоб її можна було далі обробляти."
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.49,-1.49,1.49,1.49"
+        density: 60
+        layer:
+        - MobMask
+  - type: Sprite
+    sprite: _RMC14/Structures/Filtration/96x96.rsi
+    state: filtration
+  - type: Clickable
+
+- type: entity
+  parent: RMCFiltration
+  id: RMCFiltrationDisinfection
+  name: "дезінфекційний фільтр"
+  description: "Водяний фільтр, спеціально розроблений для відокремлення мікроорганізмів, таких як віруси та бактерії, від води."
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.49,-1.49,1.49,0.49"
+        density: 60
+        layer:
+        - MobMask
+  - type: Sprite
+    sprite: _RMC14/Structures/Filtration/96x96.rsi
+    state: disinfection
+
+- type: entity
+  parent: RMCFiltration
+  id: RMCFiltrationDistribution
+  name: "система розподілу відходів"
+  description: "Ця машина відокремлює залишки відходів від процесів очищення для утилізації в космос, переробки на матеріали або використання для досліджень."
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Filtration/96x96.rsi
+    state: distribution
+
+- type: entity
+  parent: RMCFiltrationDistribution
+  id: RMCFiltrationDistributionDamaged
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Filtration/96x96.rsi
+    state: distribution-damaged
+
+- type: entity
+  parent: RMCFiltration
+  id: RMCFiltrationSedimentation
+  name: "седиментаційний фільтр"
+  description: "Водяний фільтр, спеціально розроблений для захоплення та видалення осадів, таких як пісок, мул, бруд та іржа, з води, не видаляючи при цьому поживних мінералів для того самого хрусткого, чистого смаку щоразу."
+  components:  
+  - type: Sprite
+    sprite: _RMC14/Structures/Filtration/96x96.rsi
+    state: sedimentation
+
+- type: entity
+  parent: RMCFiltrationSedimentation
+  id: RMCFiltrationSedimentationAlt
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.49,-1.49,1.49,0.49"
+        density: 60
+        layer:
+        - MobMask
+  - type: Sprite
+    sprite: _RMC14/Structures/Filtration/96x96.rsi
+    state: sedimentation_A_1
+
+- type: entity
+  parent: RMCFiltration
+  id: RMCCoagulationArm
+  name: "коагуляційний важіль"
+  description: "Вісь з чотирма сторонами, створена для обертання, щоб допомогти фільтрувати воду."
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 60
+        layer:
+        - MobMask
+  - type: Sprite
+    sprite: _RMC14/Structures/Filtration/96x96.rsi
+    state: coagulation_arm

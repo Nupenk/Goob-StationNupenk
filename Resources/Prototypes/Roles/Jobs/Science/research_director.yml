@@ -146,9 +146,10 @@
   - !type:DepartmentTimeRequirement
     department: Science
     time: 36000 #10 hrs
-  # - !type:SpeciesRequirement
-  #   species:
-  #   - Human
+  - !type:SpeciesRequirement # Goob - None Felinid
+    inverted: true
+    species:
+    - Felinid
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
@@ -164,6 +165,7 @@
   - Brig
   - Cryogenics
   - External # goobstation
+  - Mantis
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

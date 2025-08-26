@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: SpellCardFun
+  name: "карта заклинання"
+  parent: BaseItem
+  description: "Карта заклинання у формі предмета, яка сповіщає про вашу присутність усім живим істотам навколо."
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Wizard/Projectiles/spellcard.rsi
+    state: red
+  - type: SpecialAnimationOnUse
+    overrideText: "Special Attack: 65 STRIKE!!!!"
+  - type: UseDelay
+    delay: 5

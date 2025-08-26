@@ -27,7 +27,6 @@
 # SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Morb <14136326+Morb0@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
 # SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
 # SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
@@ -62,12 +61,16 @@
 # SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 2025 Froffy025 <scotttaco025@gmail.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
+# SPDX-FileCopyrightText: 2025 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 # SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
 # SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
@@ -85,11 +88,11 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: entity
-  name: basic slime
+  name: "основний шлам"
   id: BaseMobAdultSlimes
   parent: [ SimpleMobBase, MobCombat ]
   abstract: true
-  description: It looks so much like jelly. I wonder what it tastes like?
+  description: "Це так схоже на желе. Цікаво, який він на смак?"
   components:
   - type: VentCrawler # goobstation - Ventcrawl
   - type: Sprite
@@ -199,11 +202,11 @@
     proto: slime
 
 - type: entity
-  name: basic slime
+  name: "основний шлам"
   id: MobAdultSlimes
   parent: BaseMobAdultSlimes
   abstract: true
-  description: It looks so much like jelly. I wonder what it tastes like?
+  description: "Це так схоже на желе. Цікаво, який він на смак?"
   components:
   - type: LanguageKnowledge # Einstein Engines - Language
     speaks:
@@ -221,9 +224,14 @@
   - type: Speech
     speechVerb: Slime
     speechSounds: Slime
-    allowedEmotes: ['Squish']
+    allowedEmotes: ['Squish', 'Bubble', 'Pop'] # Imp: add Bubble, Pop
   - type: TypingIndicator
     proto: slime
+  - type: Vocal # Imp
+    sounds: # Imp
+      Male: AnimalSlime # Imp
+      Female: AnimalSlime # Imp
+      Unsexed: AnimalSlime # Imp
   - type: NpcFactionMember
     factions:
     - SimpleNeutral
@@ -232,7 +240,7 @@
       task: SimpleHostileCompound
 
 - type: entity
-  name: blue slime
+  name: "синій слиз"
   id: MobAdultSlimesBlue
   parent: MobAdultSlimes
   components:
@@ -244,7 +252,7 @@
         Base: blue_adult_slime_dead
 
 - type: entity
-  name: blue slime
+  name: "синій слиз"
   parent: MobAdultSlimesBlue
   id: MobAdultSlimesBlueAngry
   suffix: Angry
@@ -261,7 +269,7 @@
         settings: short
 
 - type: entity
-  name: green slime
+  name: "зелений слиз"
   parent: MobAdultSlimes
   id: MobAdultSlimesGreen
   components:
@@ -284,7 +292,7 @@
           Poison: 4
 
 - type: entity
-  name: green slime
+  name: "зелений слиз"
   parent: MobAdultSlimesGreen
   id: MobAdultSlimesGreenAngry
   suffix: Angry
@@ -301,7 +309,7 @@
         settings: short
 
 - type: entity
-  name: yellow slime
+  name: "жовтий слиз"
   parent: MobAdultSlimes
   id: MobAdultSlimesYellow
   components:
@@ -323,7 +331,7 @@
           Caustic: 4
 
 - type: entity
-  name: yellow slime
+  name: "жовтий слиз"
   parent: MobAdultSlimesYellow
   id: MobAdultSlimesYellowAngry
   suffix: Angry

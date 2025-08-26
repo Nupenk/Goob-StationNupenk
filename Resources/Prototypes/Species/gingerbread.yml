@@ -8,7 +8,7 @@
 
 - type: species
   id: Gingerbread
-  name: Gingerbread
+  name: "Пряник"
   roundStart: false
   prototype: MobGingerbread
   sprites: MobGingerbreadSprites
@@ -23,6 +23,8 @@
     Head: MobGingerbreadHead
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
+    Underwear: MobHumanoidAnyMarking
+    Undershirt: MobHumanoidAnyMarking
     Face: MobHumanoidAnyMarking #Pirate Changes
     Chest: MobGingerbreadChest
     Groin: MobGingerbreadGroin

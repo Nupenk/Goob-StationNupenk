@@ -6,28 +6,28 @@
 - type: entity
   id: ExperimentalCircuitBoard
   parent: BaseElectronics
-  name: experimental law board
-  description: An electronics board containing experimental lawset. When installed, will give some research points after time has passed.
+  name: "експериментальна плата законів"
+  description: "Електронна плата, що містить експериментальний набір законів. При встановленні дасть кілька очок дослідження через деякий час."
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
     state: std_mod
   - type: SiliconLawProvider
-    laws: Asimov # Placeholder because lazy.
+    laws: Crewsimov # Placeholder because lazy.
   - type: ExperimentalLawProvider
 
 - type: entity
   id: ExperimentalCircuitBoardDebug
   parent: ExperimentalCircuitBoard
-  name: experimental experimental law board # Lol
+  name: "експериментальна експериментальна плата законів" # Lol
   suffix: DEBUG
-  description: An electronics board containing experimental lawset. When installed, will give some research points after time has passed.
+  description: "Електронна плата, що містить експериментальний набір законів. При встановленні дасть кілька очок дослідження через деякий час."
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
     state: std_mod
   - type: SiliconLawProvider
-    laws: Asimov # Placeholder because lazy.
+    laws: Crewsimov # Placeholder because lazy.
   - type: ExperimentalLawProvider
     rewardTime: 10.0
     rewardPoints: 100000

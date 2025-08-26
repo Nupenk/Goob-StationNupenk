@@ -1,0 +1,46 @@
+- type: entity
+  id: XenoTunnel
+  name: "Тунель"
+  description: "Вхід у тунель. Схоже, його вирила якась пазуриста тварюка."
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: _RMC14/Structures/Xenos/xeno_tunnel.rsi
+    state: hole
+    noRot: true
+  - type: InteractionOutline
+  - type: Clickable
+
+- type: entity
+  parent: XenoTunnel
+  id: XenoTunnelMaint
+  name: "Технічний люк"
+  description: "Вхід у технічний тунель. Видно шматки слизу та смоли. Уламки не дають роздивитися ближче."
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Xenos/xeno_tunnel.rsi
+    state: maintenancehatch_alt
+
+- type: entity
+  parent: XenoTunnelMaint
+  id: XenoTunnelMaintNoXenoDesc
+  description: "Вхід у технічний тунель. Уламки не дають роздивитися ближче."
+
+- type: entity
+  parent: XenoTunnelMaint
+  id: XenoTunnelMaintHybrisa
+  name: "Каналізаційний люк"
+  components:
+  - type: Sprite
+    state: wymanhole
+
+- type: entity
+  parent: XenoTunnelMaintNoXenoDesc
+  id: XenoTunnelMaintHybrisaNoXenoDesc
+  name: "Каналізаційний люк"
+  components:
+  - type: Sprite
+    state: wymanhole

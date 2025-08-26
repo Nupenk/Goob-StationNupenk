@@ -1,6 +1,6 @@
 - type: psionicPower
   id: MantisSummonBlackBlade
-  name: Summon Black Blade
+  name: "Викликати Чорний Клинок"
   powerCategories:
     - Mentalic
     - Dangerous
@@ -13,8 +13,8 @@
 
 - type: entity
   id: ActionMantisSummonBlackBlade
-  name: Summon Black Blade
-  description: Beckon forth the testament of your sins.
+  name: "Викликати Чорний Клинок"
+  description: "Прикличте свідоцтво ваших гріхів."
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -35,12 +35,14 @@
         hand1: MantisBlackBlade
       force: false
   #- type: BaseCultSpell PIRATE
+  #- type: SpeakOnAction Return this when SpeakOnAction has emote
+  #  sentence: "thrusts their open hand to the side. A black blade forms from nothingness into their waiting hand. Whispering demonic voices echo around the sword..."
 
 - type: entity
-  name: black sword
-  parent: BaseItem
+  name: "чорний меч"
+  parent: [ BaseItem, BaseMantisContraband ]
   id: MantisBlackBlade
-  description: A huge black sword covered in strange runes. It whispers incessantly to its wielder.
+  description: "Величезний чорний меч, покритий дивними рунами. Він невпинно шепоче своєму власнику."
   components:
   - type: Sharp
   - type: Sprite
@@ -64,7 +66,7 @@
         Slash: 1.5
         Holy: 2
   - type: Item
-    size: Normal
+    size: Ginormous
   - type: Clothing
     slots:
     - back
