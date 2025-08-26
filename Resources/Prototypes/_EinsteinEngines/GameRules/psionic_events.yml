@@ -9,14 +9,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    startAnnouncement: station-event-noospheric-storm-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    weight: 6
-    earliestStart: 20
-    chaos:
-      Psionic: 30  # Increases psionic chaos
-    eventType: Psionic
+    eventType: Neutral
   - type: GameRule
     chaosScore: 200
   - type: NoosphericStormRule
@@ -35,14 +28,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    startAnnouncement: station-event-noospheric-zap-announcement
-    startAudio:
-      path: /Audio/Effects/Lightning/lightningbolt.ogg
-    weight: 8
-    earliestStart: 15
-    chaos:
-      Psionic: 20  # Moderate psionic chaos
-    eventType: Psionic
+    eventType: Neutral
   - type: GameRule
     chaosScore: 150
   - type: NoosphericZapRule
@@ -61,14 +47,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    startAnnouncement: station-event-noospheric-fry-announcement
-    startAudio:
-      path: /Audio/Effects/lightburn.ogg
-    weight: 5
-    earliestStart: 25
-    chaos:
-      Psionic: 25  # High psionic chaos
-    eventType: Psionic
+    eventType: Neutral
   - type: GameRule
     chaosScore: 180
   - type: NoosphericFryRule
@@ -86,15 +65,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    startAnnouncement: station-event-glimmer-mob-spawn-announcement
-    startAudio:
-      path: /Audio/Announcements/aliens.ogg
-    weight: 7
-    earliestStart: 30
-    chaos:
-      Psionic: 15  # Moderate psionic chaos
-      Hostile: 25  # Hostile mobs spawned
-    eventType: HostilesSpawn
+    eventType: Neutral
   - type: GameRule
     chaosScore: 250
   - type: VentCrittersRule
@@ -112,15 +83,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    startAnnouncement: station-event-psionic-cat-tongue-announcement
-    startAudio:
-      path: /Audio/Nyanotrasen/Voice/Felinid/cat_scream1.ogg
-    weight: 4
-    minimumPlayers: 8
-    earliestStart: 20
-    chaos:
-      Psionic: 10  # Minor psionic chaos
-    eventType: Psionic
+    eventType: Neutral
   - type: GameRule
     chaosScore: 80
   - type: PsionicCatGotYourTongueRule
@@ -140,16 +103,6 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    startAnnouncement: station-event-glimmer-sentience-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    weight: 3
-    earliestStart: 25
-    maxOccurrences: 2
-    chaos:
-      Psionic: 20  # Moderate psionic chaos
-      Friend: -10  # Potential new allies
-      Mess: 10     # Chaos from sentient objects
     eventType: Neutral
   - type: GameRule
     chaosScore: 120
@@ -162,3 +115,19 @@
     glimmerBurnLower: 25
     glimmerBurnUpper: 55
     report: "glimmer-event-report-sentience"
+
+- type: entity
+  id: PsionicEventsScheduler
+  parent: BaseGameRule
+  components:
+  - type: GameRule
+  - type: PsionicEventsScheduler
+    delayMin: 600  # 10 minutes
+    delayMax: 900  # 15 minutes
+    psionicEvents:
+    - NoosphericStorm
+    - NoosphericZap
+    - NoosphericFry
+    - GlimmerMobSpawn
+    - PsionicCatGotYourTongue
+    - GlimmerRandomSentience

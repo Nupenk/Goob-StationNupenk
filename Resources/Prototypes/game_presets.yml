@@ -74,6 +74,7 @@
     - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
     - LavalandStormScheduler # Lavaland Change
+    - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: KesslerSyndrome
@@ -90,6 +91,7 @@
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
     - LavalandStormScheduler # Lavaland Change
+    - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: AllAtOnce
@@ -114,6 +116,7 @@
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
     - LavalandStormScheduler # Lavaland Change
+    - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: AllerAtOnce
@@ -145,6 +148,7 @@
     - BasicRoundstartVariation
     - Changeling # Goobstation - changeling playtest
     - LavalandStormScheduler # Lavaland Change
+    - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: Extended
@@ -160,6 +164,7 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: Greenshift
@@ -173,6 +178,7 @@
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: Secret
@@ -186,6 +192,7 @@
     - Secret
     - BasicStationEventScheduler
     # - LavalandStormScheduler # Lavaland Change # All possible secret choices already contain this
+    - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: SecretExtended #For Admin Use: Runs Extended but shows "Secret" in lobby.
@@ -200,6 +207,7 @@
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
     - LavalandStormScheduler # Lavaland Change
+    - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: SecretGreenshift #For Admin Use: Runs Greenshift but shows "Secret" in lobby.
@@ -212,6 +220,7 @@
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: Sandbox
@@ -241,6 +250,7 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: Deathmatch
@@ -271,6 +281,7 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: Revolutionary
@@ -290,6 +301,7 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: Zombie
@@ -309,6 +321,7 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  - PsionicEventsScheduler # Pirate
 
 - type: gamePreset
   id: Zombieteors
@@ -326,3 +339,4 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - LavalandStormScheduler # Lavaland Change
+  - PsionicEventsScheduler # Pirate

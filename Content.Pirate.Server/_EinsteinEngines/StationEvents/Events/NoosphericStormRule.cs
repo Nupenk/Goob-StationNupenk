@@ -10,6 +10,7 @@ using Content.Shared.Psionics.Glimmer;
 using Content.Shared.Zombies;
 using Content.Pirate.Server.StationEvents.Components;
 using Content.Server.StationEvents.Events;
+using Content.Server.Administration.Logs; //remove this later
 
 namespace Content.Pirate.Server.StationEvents.Events;
 
@@ -19,12 +20,14 @@ internal sealed class NoosphericStormRule : StationEventSystem<NoosphericStormRu
     [Dependency] private readonly MobStateSystem _mobStateSystem = default!;
     [Dependency] private readonly GlimmerSystem _glimmerSystem = default!;
     [Dependency] private readonly IRobustRandom _robustRandom = default!;
+    [Dependency] private readonly ILogManager _log = default!; //remove this later
 
     protected override void Started(EntityUid uid, NoosphericStormRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
         base.Started(uid, component, gameRule, args);
 
         List<EntityUid> validList = new();
+        Log.Info("Noospheric Storm Rule Started");
 
         var query = EntityManager.EntityQueryEnumerator<PsionicComponent>();
         while (query.MoveNext(out var Psionic, out var PsionicComponent))

@@ -473,6 +473,9 @@
     - id: ClothingBeltGeminiHoloProjector # Goobstation - Who better to do science with than yourself?
     - id: MMI # Goobstation
     - id: PrinterDocFlatpack  # Pirate document printer
+    - id: ClothingEyesGlassesEpistemics
+    - id: ClothingEyesHudEpistemics
+      amount: 3
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
