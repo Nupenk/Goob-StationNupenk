@@ -83,7 +83,7 @@ namespace Content.Server.Speech
 
         private void OnEntitySpoke(EntityUid uid, SpeechComponent component, EntitySpokeEvent args)
         {
-            if (component.SpeechSounds == null || !args.Language.SpeechOverride.RequireSpeech) // No noises for non-speech languages.
+            if (component.SpeechSounds == null)
                 return;
 
             var currentTime = _gameTiming.CurTime;

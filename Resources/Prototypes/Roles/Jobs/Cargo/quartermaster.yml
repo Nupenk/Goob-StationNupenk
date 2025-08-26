@@ -139,10 +139,9 @@
     - !type:DepartmentTimeRequirement
       department: Cargo
       time: 36000 #10 hours
-    - !type:SpeciesRequirement # Goob - None Felinid
-      inverted: true
+    - !type:SpeciesRequirement
       species:
-      - Felinid
+      - Human
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"

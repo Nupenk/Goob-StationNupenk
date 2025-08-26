@@ -50,55 +50,26 @@
 
 - type: markingPoints
   id: MobResomiMarkingLimits
+  onlyWhitelisted: true
   points:
     Hair:
-      points: 1
-      required: false
-    Snout:
       points: 1
       required: false
     Tail:
       points: 2
       required: true
       defaultMarkings: [ ResomiTail, ResomiTailFeathers ]
-    HeadTop:
-      points: 8
-      required: false
-    HeadSide:
-      points: 8
+    Head:
+      points: 2
       required: false
     Chest:
-      points: 10
-      required: false
-    Underwear:
-      points: 1
-      required: false
-    Undershirt:
-      points: 1
-      required: false
-    RightLeg:
-      points: 2
-      required: false
-    RightFoot:
-      points: 2
-      required: false
-    LeftLeg:
-      points: 2
-      required: false
-    LeftFoot:
-      points: 2
-      required: false
-    RightArm:
-      points: 2
-      required: false
-    RightHand:
       points: 3
       required: false
-    LeftArm:
+    Legs:
       points: 2
       required: false
-    LeftHand:
-      points: 3
+    Arms:
+      points: 2
       required: false
     # Pirate changes start
     Face:

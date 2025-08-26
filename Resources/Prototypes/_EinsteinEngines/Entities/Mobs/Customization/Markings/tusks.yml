@@ -5,8 +5,8 @@
 
 - type: marking
   id: GoblinTusksSmall
-  bodyPart: Face
-  markingCategory: Face
+  bodyPart: Snout
+  markingCategory: Snout
   speciesRestriction: [Oni]
   coloring:
     default:
@@ -19,8 +19,8 @@
 
 - type: marking
   id: GoblinTusksBig
-  bodyPart: Face
-  markingCategory: Face
+  bodyPart: Snout
+  markingCategory: Snout
   speciesRestriction: [Oni]
   coloring:
     default:

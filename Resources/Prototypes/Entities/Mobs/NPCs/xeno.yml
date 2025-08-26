@@ -111,7 +111,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # Hacky for the stress test so don't even consider adding to this
 - type: entity
-  name: xenonid burrower #Goobstation name change
+  name: Burrower
   id: MobXeno
   parent: SimpleSpaceMobBase
   description: They mostly come at night. Mostly.
@@ -232,6 +232,11 @@
     molsPerSecondPerUnitMass: 0.0005
   - type: Speech
     speechVerb: LargeMob
+  - type: LanguageKnowledge # Einstein Engines - Languages
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
   - type: ThermalVision
     lightRadius: 15
     color: "#808080"
@@ -239,7 +244,7 @@
     deactivateSound: null
 
 - type: entity
-  name: xenonid praetorian #Goobstation name change
+  name: praetorian
   parent: MobXeno
   id: MobXenoPraetorian
   components:
@@ -272,7 +277,7 @@
         - MobLayer
 
 - type: entity
-  name: xenonid drone #Goobstation name change
+  name: drone
   parent: MobXeno
   id: MobXenoDrone
   components:
@@ -309,7 +314,7 @@
         - MobLayer
 
 - type: entity
-  name: xenonid queen #Goobstation name change
+  name: Queen
   parent: MobXeno
   id: MobXenoQueen
   components:
@@ -346,9 +351,16 @@
   - type: Tag
     tags:
     - CannotSuicide
+  - type: LanguageKnowledge # Einstein Engines - Language
+    speaks:
+    - TauCetiBasic
+    - Xeno
+    understands:
+    - TauCetiBasic
+    - Xeno
 
 - type: entity
-  name: xenonid ravager #Goobstation name change
+  name: ravager
   parent: MobXeno
   id: MobXenoRavager
   components:
@@ -385,7 +397,7 @@
         - MobLayer
 
 - type: entity
-  name: xenonid runner #Goobstation name change
+  name: runner
   parent: MobXeno
   id: MobXenoRunner
   components:
@@ -430,7 +442,7 @@
       amount: 3
 
 - type: entity
-  name: xenonid spitter #Goobstation name change
+  name: spitter
   parent: MobXeno
   id: MobXenoSpitter
   components:

@@ -1,3 +1,9 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 popup-grab-soft-target = {CAPITALIZE($puller)} обережно схопив вас.
 popup-grab-hard-target = {CAPITALIZE($puller)} міцно схопив вас.
 popup-grab-suffocate-target = {CAPITALIZE($puller)} почав душити вас!
@@ -10,7 +16,6 @@ popup-grab-soft-others = {CAPITALIZE($puller)} обережно схопив {CA
 popup-grab-hard-others = {CAPITALIZE($puller)} міцно схопив {CAPITALIZE($target)}.
 popup-grab-suffocate-others = {CAPITALIZE($puller)} почав душити {CAPITALIZE($target)}!
 popup-grab-no-others = {CAPITALIZE($puller)} перестав тримати {CAPITALIZE($target)}.
-popup-grab-release-too-soon = Ви все ще втомлені після попередньої спроби.
 popup-grab-release-fail-self = Ви намагаєтеся втекти.
 popup-grab-release-success-self = Ви втекли з захвату!
 popup-grab-release-success-puller = {CAPITALIZE($target)} втік!

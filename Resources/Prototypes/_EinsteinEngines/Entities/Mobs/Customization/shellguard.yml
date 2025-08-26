@@ -39,7 +39,7 @@
 - type: marking
   id: CyberLimbsMarkingShellguardLArm
   bodyPart: LArm
-  markingCategory: LeftArm
+  markingCategory: Arms
   speciesRestriction: [IPC]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/shellguard/shellguard_main.rsi
@@ -50,7 +50,7 @@
 - type: marking
   id: CyberLimbsMarkingShellguardLHand
   bodyPart: LHand
-  markingCategory: LeftHand
+  markingCategory: Arms
   speciesRestriction: [IPC]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/shellguard/shellguard_main.rsi
@@ -61,7 +61,7 @@
 - type: marking
   id: CyberLimbsMarkingShellguardLLeg
   bodyPart: LLeg
-  markingCategory: LeftLeg
+  markingCategory: Legs
   speciesRestriction: [IPC]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/shellguard/shellguard_main.rsi
@@ -73,7 +73,7 @@
 - type: marking
   id: CyberLimbsMarkingShellguardLFoot
   bodyPart: LFoot
-  markingCategory: LeftFoot
+  markingCategory: Legs
   speciesRestriction: [IPC]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/shellguard/shellguard_main.rsi
@@ -86,7 +86,7 @@
 - type: marking
   id: CyberLimbsMarkingShellguardRArm
   bodyPart: RArm
-  markingCategory: RightArm
+  markingCategory: Arms
   speciesRestriction: [IPC]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/shellguard/shellguard_main.rsi
@@ -98,7 +98,7 @@
 - type: marking
   id: CyberLimbsMarkingShellguardRHand
   bodyPart: RHand
-  markingCategory: RightHand
+  markingCategory: Arms
   speciesRestriction: [IPC]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/shellguard/shellguard_main.rsi
@@ -109,7 +109,7 @@
 - type: marking
   id: CyberLimbsMarkingShellguardRLeg
   bodyPart: RLeg
-  markingCategory: RightLeg
+  markingCategory: Legs
   speciesRestriction: [IPC]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/shellguard/shellguard_main.rsi
@@ -121,7 +121,7 @@
 - type: marking
   id: CyberLimbsMarkingShellguardRFoot
   bodyPart: RFoot
-  markingCategory: RightFoot
+  markingCategory: Legs
   speciesRestriction: [IPC]
   sprites:
   - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/shellguard/shellguard_main.rsi

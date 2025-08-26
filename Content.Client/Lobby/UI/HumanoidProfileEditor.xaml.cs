@@ -141,7 +141,6 @@
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 Ignaz "Ian" Kraft <ignaz.k@live.de>
 // SPDX-FileCopyrightText: 2025 J <billsmith116@gmail.com>
-// SPDX-FileCopyrightText: 2025 MarkerWicker <markerWicker@proton.me>
 // SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
 // SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 // SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
@@ -187,10 +186,10 @@ using Robust.Client.Utility;
 using Robust.Shared.Configuration;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Enums;
-using Robust.Shared.Physics;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
+using Robust.Shared.Physics; //Pirate width and height
 
 namespace Content.Client.Lobby.UI
 {
@@ -389,16 +388,15 @@ namespace Content.Client.Lobby.UI
                 SetSpecies(_species[args.Id].ID);
                 UpdateHairPickers();
                 OnSkinColorOnValueChanged();
-                UpdateHeightWidthSliders(); // Goobstation: port EE height/width sliders
+                UpdateHeightWidthSliders(); //Pirate
             };
 
-            // begin Goobstation: port EE height/width sliders
+            //Pirate changes start
             #region Height and Width
 
             var prototype = _species.Find(x => x.ID == Profile?.Species) ?? _species.First();
 
             UpdateHeightWidthSliders();
-            UpdateDimensions(SliderUpdate.Both);
 
             HeightSlider.OnValueChanged += _ => UpdateDimensions(SliderUpdate.Height);
             WidthSlider.OnValueChanged += _ => UpdateDimensions(SliderUpdate.Width);
@@ -415,8 +413,8 @@ namespace Content.Client.Lobby.UI
                 UpdateDimensions(SliderUpdate.Width);
             };
 
-            #endregion Height and Width
-            // end Goobstation: port EE height/width sliders
+            #endregion Height
+            //Pirate changes end
 
             #region Skin
 
@@ -616,17 +614,18 @@ namespace Content.Client.Lobby.UI
             RefreshFlavorText();
 
             #region Dummy
-
-            SpriteRotateLeft.OnPressed += _ =>
-            {
-                _previewRotation = _previewRotation.TurnCw();
-                SetPreviewRotation(_previewRotation);
-            };
-            SpriteRotateRight.OnPressed += _ =>
-            {
-                _previewRotation = _previewRotation.TurnCcw();
-                SetPreviewRotation(_previewRotation);
-            };
+            //Pirate changes start
+            //SpriteRotateLeft.OnPressed += _ =>
+            //{
+            //    _previewRotation = _previewRotation.TurnCw();
+            //    SetPreviewRotation(_previewRotation);
+            //};
+            //SpriteRotateRight.OnPressed += _ =>
+            //{
+            //    _previewRotation = _previewRotation.TurnCcw();
+            //    SetPreviewRotation(_previewRotation);
+            //};
+            //Pirate changes end
 
             #endregion Dummy
 
@@ -918,7 +917,17 @@ namespace Content.Client.Lobby.UI
                 return;
 
             PreviewDummy = _controller.LoadProfileEntity(Profile, JobOverride, ShowClothes.Pressed);
-            SpriteView.SetEntity(PreviewDummy);
+            //Pirate changes start
+            //SpriteView.SetEntity(PreviewDummy);
+            SpriteViewN.SetEntity(PreviewDummy);
+            SpriteViewN.OverrideDirection = Direction.North;
+            SpriteViewE.SetEntity(PreviewDummy);
+            SpriteViewE.OverrideDirection = Direction.East;
+            SpriteViewS.SetEntity(PreviewDummy);
+            SpriteViewS.OverrideDirection = Direction.South;
+            SpriteViewW.SetEntity(PreviewDummy);
+            SpriteViewW.OverrideDirection = Direction.West;
+            //Pirate changes end
             _entManager.System<MetaDataSystem>().SetEntityName(PreviewDummy, Profile.Name);
 
             // Check and set the dirty flag to enable the save/reset buttons as appropriate.
@@ -959,8 +968,8 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
             UpdateAlternativeJobs(); // Pirate - Alternative Jobs
-            UpdateHeightWidthSliders(); // Goobstation: port EE height/width sliders
-            UpdateWeight(); // Goobstation: port EE height/width sliders
+            UpdateHeightWidthSliders(); // Pirate
+            UpdateWeight(); // Pirate
 
             RefreshAntags();
             RefreshJobs();
@@ -1461,13 +1470,10 @@ namespace Content.Client.Lobby.UI
             // In case there's species restrictions for loadouts
             RefreshLoadouts();
             UpdateSexControls(); // update sex for new species
+            UpdateHeightWidthSliders();  //Pirate changes
+            UpdateWeight(); //Pirate changes
             UpdateSpeciesGuidebookIcon();
             ReloadPreview();
-            // begin Goobstation: port EE height/width sliders
-            // Changing species provides inaccurate sliders without these
-            UpdateHeightWidthSliders();
-            UpdateWeight();
-            // end Goobstation: port EE height/width sliders
         }
 
         private void SetName(string newName)
@@ -1487,21 +1493,23 @@ namespace Content.Client.Lobby.UI
             SetDirty();
         }
 
-        // begin Goobstation: port EE height/width sliders
+        //Pirate changes start
         private void SetProfileHeight(float height)
         {
+            var oldHeight = Profile?.Height;
             Profile = Profile?.WithHeight(height);
-            ReloadProfilePreview();
             IsDirty = true;
+            ReloadProfilePreview();
         }
 
         private void SetProfileWidth(float width)
         {
+            var oldWidth = Profile?.Width;
             Profile = Profile?.WithWidth(width);
-            ReloadProfilePreview();
             IsDirty = true;
+            ReloadProfilePreview();
         }
-        // end Goobstation: port EE height/width sliders
+        //Pirate changes end
 
         public bool IsDirty
         {
@@ -1717,7 +1725,7 @@ namespace Content.Client.Lobby.UI
             SpawnPriorityButton.SelectId((int) Profile.SpawnPriority);
         }
 
-        // begin Goobstation: port EE height/width sliders
+        //Pirate changes start
         private void UpdateHeightWidthSliders()
         {
             if (Profile is null)
@@ -1734,10 +1742,10 @@ namespace Content.Client.Lobby.UI
             WidthSlider.SetValueWithoutEvent(Profile?.Width ?? species.DefaultWidth);
 
             var height = MathF.Round(species.AverageHeight * HeightSlider.Value);
-            HeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int) height));
+            HeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int)height));
 
             var width = MathF.Round(species.AverageWidth * WidthSlider.Value);
-            WidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int) width));
+            WidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int)width));
 
             UpdateDimensions(SliderUpdate.Both);
         }
@@ -1779,10 +1787,10 @@ namespace Content.Client.Lobby.UI
             SetProfileWidth(widthValue);
 
             var height = MathF.Round(species.AverageHeight * HeightSlider.Value);
-            HeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int) height));
+            HeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int)height));
 
             var width = MathF.Round(species.AverageWidth * WidthSlider.Value);
-            WidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int) width));
+            WidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int)width));
 
             UpdateWeight();
         }
@@ -1793,7 +1801,6 @@ namespace Content.Client.Lobby.UI
                 return;
 
             var species = _species.Find(x => x.ID == Profile.Species) ?? _species.First();
-            //  TODO: Remove obsolete method
             _prototypeManager.Index(species.Prototype).TryGetComponent<FixturesComponent>(out var fixture);
 
             if (fixture != null)
@@ -1802,18 +1809,18 @@ namespace Content.Client.Lobby.UI
                 var density = fixture.Fixtures["fix1"].Density;
                 var avg = (Profile.Width + Profile.Height) / 2;
                 var weight = MathF.Round(MathF.PI * MathF.Pow(radius * avg, 2) * density);
-                WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) weight));
+                WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int)weight));
             }
             else // Whelp, the fixture doesn't exist, guesstimate it instead
-                WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) 71));
+                WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int)71));
 
-            // SpriteViewS.InvalidateMeasure();
-            // SpriteViewN.InvalidateMeasure();
-            // SpriteViewE.InvalidateMeasure();
-            // SpriteViewW.InvalidateMeasure();
-            SpriteView.InvalidateMeasure();
+            SpriteViewS.InvalidateMeasure();
+            SpriteViewN.InvalidateMeasure();
+            SpriteViewE.InvalidateMeasure();
+            SpriteViewW.InvalidateMeasure();
+            IsDirty = true;
         }
-        // end Goobstation: port EE height/width sliders
+        //Pirate changes end
 
         private void UpdateHairPickers()
         {
@@ -1928,12 +1935,12 @@ namespace Content.Client.Lobby.UI
             SaveButton.Disabled = Profile is null || !IsDirty;
             ResetButton.Disabled = Profile is null || !IsDirty;
         }
-
-        private void SetPreviewRotation(Direction direction)
-        {
-            SpriteView.OverrideDirection = (Direction) ((int) direction % 4 * 2);
-        }
-
+        //Pirate changes start
+        //private void SetPreviewRotation(Direction direction)
+        //{
+        //    SpriteView.OverrideDirection = (Direction) ((int) direction % 4 * 2);
+        //}
+        //Pirate changes end
         private void RandomizeEverything()
         {
             Profile = HumanoidCharacterProfile.Random();
@@ -1954,7 +1961,8 @@ namespace Content.Client.Lobby.UI
             if (_imaging)
                 return;
 
-            var dir = SpriteView.OverrideDirection ?? Direction.South;
+            //var dir = SpriteView.OverrideDirection ?? Direction.South; //Pirate
+            var dir = SpriteViewS.OverrideDirection ?? Direction.South;  //Pirate
 
             // I tried disabling the button but it looks sorta goofy as it only takes a frame or two to save
             _imaging = true;

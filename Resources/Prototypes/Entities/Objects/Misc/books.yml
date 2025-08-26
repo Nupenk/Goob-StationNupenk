@@ -143,7 +143,6 @@
   - type: Tag
     tags:
     - Book
-    - Paper # Goobstation - Moth food
   - type: PaperVisuals
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_book.svg.96dpi.png"
     backgroundPatchMargin: 23.0, 16.0, 14.0, 15.0
@@ -158,25 +157,6 @@
     damage:
       types:
         Blunt: 1
-  # Goobstation Edit Start - Moth food
-  - type: Food
-    requiresSpecialDigestion: true
-    delay: 15
-    forceFeedDelay: 15
-  - type: BadFood
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 10
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 10
-  - type: FlavorProfile
-    flavors:
-    - paper
-    ignoreReagents:
-    - Fiber
-  # Goobstation Edit End
 
 - type: entity
   parent: BaseItem
@@ -189,7 +169,6 @@
   - type: Tag
     tags:
     - Book
-    - Paper # Goobstation - Moth food
   - type: GuideHelp
     openOnActivation: true
     guides:
@@ -203,25 +182,6 @@
   - type: DamageOtherOnHit
     damage:
       types:
-  # Goobstation Edit Start - Moth food
-  - type: Food
-    requiresSpecialDigestion: true
-    delay: 15
-    forceFeedDelay: 15
-  - type: BadFood
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 10
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 10
-  - type: FlavorProfile
-    flavors:
-    - paper
-    ignoreReagents:
-    - Fiber
-  # Goobstation Edit End
 
 - type: entity
   id: BookSpaceEncyclopedia

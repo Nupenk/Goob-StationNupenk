@@ -1,3 +1,16 @@
+# SPDX-FileCopyrightText: 2024 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 ghost-role-information-nukie-reinforcement-name = Ядерний оперативник
 ghost-role-information-nukie-reinforcement-description = Ядерним оперативникам потрібне підкріплення. Ви, резервний агент, допоможете їм.
 ghost-role-information-nukie-reinforcement-rules = Ви [color=red][bold]Командний антагоніст[/bold][/color] разом з ядерними оперативниками, які вас викликали.
@@ -7,8 +20,8 @@ ghost-role-information-SyndiRoach-description = Ви — вірний трено
 ghost-role-information-SyndiRoach-rules = Ви [color=red][bold]Командний антагоніст[/bold][/color] разом з агентом, який вас викликав.
 
 ghost-role-information-skibidi-toilet-name = Скібіді Туалет
-ghost-role-information-skibidi-toilet-description = Убийте людей за допомогою вашого скібіді огайо різз.
-ghost-role-information-skibidi-toilet-rules = Ви [color=red][bold]Антагоніст[/bold][/color] із завданням вбити якомога більше огайців.
+ghost-role-information-skibidi-toilet-description = Ліквідуйте людей за допомогою вашої смертоносної атаки.
+ghost-role-information-skibidi-toilet-rules = Ви [color=red][bold]Антагоніст[/bold][/color], ваше завдання — ліквідувати якомога більше людей.
 
 ghost-role-information-Hecu-name = Оперативник HECU
 ghost-role-information-Hecu-description = Центральному Командуванню потрібно щось зробити.
@@ -19,9 +32,6 @@ ghost-role-information-lootbug-description = Намагайтеся не ста�
 
 ghost-role-information-homunculus-name = гомункул
 ghost-role-information-homunculus-description = Слухайтеся того, хто вас створив, якщо його ніде не знайти, робіть, що забажаєте.
-
-ghost-role-information-huborg-name = Уріст МакБорг
-ghost-role-information-huborg-description = Ви — огидна потвора кіборга.
 
 ghost-role-information-c4-name = Композиція C-4
 ghost-role-information-c4-description = Допоможіть своєму користувачеві підривати речі.
@@ -53,9 +63,6 @@ ghost-role-information-inspector-description = Проводьте інспекц
 
 ghost-role-information-sentient-shark-name = Розумна акула-гольян
 
-ghost-role-information-trevor-name = Тревор
-ghost-role-information-trevor-description = Надійний бойовий кінь служби безпеки.
-
 # Half Life
 
 ghost-role-information-Gman-name = G-Man
@@ -73,21 +80,6 @@ ghost-role-information-conquest-name = Завойовник
 ghost-role-information-conquest-description = Цій станції дали накази, їй дали час. Їм дали більше свободи, ніж більшості.
 ghost-role-information-conquest-rules = Підготуйте цю станцію до прибуття Імперії Вілтрум
 
-# Justice Persona Role
-justice-role-name = Персона Правосуддя
-justice-role-description = Допомагайте голові служби безпеки проводити арешти, вигукуючи фрази для них, поки вони вершать Правосуддя.
-
-# Ancient Xenos
-
-ghost-role-information-ancient-queen-name = Древня Королева Ксеноморфів
-ghost-role-information-ancient-king-name = Древній Король Ксеноморфів
-ghost-role-information-ancient-rogue-king-name = Древній Король-Вигнанець Ксеноморфів
-
-ghost-role-information-ancient-xeno-description = Істота, яку вважали вимерлою, і все ж...
-ghost-role-information-ancient-rogue-king-description = Самотній король, в очах якого лише помста. Не проявляйте до них милосердя!
-
-ghost-role-information-ancient-rogue-king-rules = Ви нікому не вклоняєтеся. Вбивайте все, що стоїть на вашому шляху
-
 # Token Roles
 
 ghost-role-information-description-token-generic = Не беріть цю роль, якщо ви не активували жетон!
@@ -101,4 +93,14 @@ ghost-role-information-bingle-name-token = Бінгл (Жетон)
 blob-carrier-role-name-token = Носій Блоба (Жетон)
 abductor-lone-ghost-role-name-token = Самотній Викрадач (Жетон)
 roles-wizard-name-token = Чарівник (Жетон)
-ghost-role-information-ancient-rogue-king-name-token = Древній Король-Вигнанець (Жетон)
+
+ghost-role-information-huborg-name = Уріст МакБорг
+ghost-role-information-huborg-description = Ви — огидна потвора кіборга.
+ghost-role-information-trevor-name = Тревор
+ghost-role-information-trevor-description = Надійний бойовий кінь служби безпеки.
+
+# Half Life
+justice-role-name = Персона Правосуддя
+justice-role-description = Допомагайте голові служби безпеки проводити арешти, вигукуючи фрази для них, поки вони вершать Правосуддя.
+
+# Ролі за жетони

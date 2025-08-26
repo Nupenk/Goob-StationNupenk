@@ -1,7 +1,5 @@
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 // SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 cohanna <conornhanna@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -19,10 +17,5 @@ public sealed partial class SpaceProofImplantComponent : Component
     /// Did the entity need air before being implanted?
     /// </summary>
     [DataField] public bool NeededAir = false;
-
-    /// <summary>
-    /// Was the entity low temp immune before being implanted?
-    /// </summary>
-    [DataField] public bool WasntLowTempProof = false;
 
 }

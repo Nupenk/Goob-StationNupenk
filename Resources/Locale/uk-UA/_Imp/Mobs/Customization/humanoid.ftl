@@ -55,6 +55,8 @@ marking-TattooDragon-dragontattoo1 = Тіло
 marking-TattooDragon-dragontattoo2 = Відблиски
 
 marking-TattooNanotrasenChest-nanotrasen = Татуювання на грудях (Nanotrasen)
+marking-TattooNanotrasenChest = Татуювання на грудях (Nanotrasen)
+
 marking-ChestStar = Шрам-зірка
 marking-ChestStar-star = Шрам у вигляді зірки
 

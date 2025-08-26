@@ -214,10 +214,9 @@
     - type: Butcherable
       spawned:
         - id: MaterialBananium1
-          amount: 5
+          amount: 2
         - id: WeaponBehonkerLaser
           amount: 1
-          prob: 0.025
     - type: MeleeWeapon
       soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg

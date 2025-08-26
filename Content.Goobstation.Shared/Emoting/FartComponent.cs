@@ -7,8 +7,6 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Shared.Atmos;
-using Content.Shared.Atmos.Prototypes;
 using Content.Shared.Chat.Prototypes;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -23,23 +21,11 @@ namespace Content.Goobstation.Shared.Emoting;
 [RegisterComponent, NetworkedComponent]
 public sealed partial class FartComponent : Component
 {
-    [DataField]
-    public ProtoId<EmotePrototype>? Emote;
-
-    [DataField]
-    public bool FartTimeout;
-
-    [DataField]
-    public bool FartInhale;
-
-    [DataField]
-    public bool SuperFarted;
-
-    [DataField]
-    public float MolesAmmoniaPerFart = 5f;
-
-    [DataField]
-    public Gas GasToFart = Gas.Ammonia;
+    [DataField] public ProtoId<EmotePrototype>? Emote;
+    [DataField] public bool FartTimeout = false;
+    [DataField] public bool FartInhale = false;
+    [DataField] public bool SuperFarted = false;
+    [DataField] public float MolesAmmoniaPerFart = 5f;
 
     /// <summary>
     ///     Path to the sound when you get bible smited

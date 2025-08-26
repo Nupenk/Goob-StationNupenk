@@ -1,6 +1,5 @@
 # SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
 # SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 # SPDX-FileCopyrightText: 2025 BloodfiendishOperator <141253729+Diggy0@users.noreply.github.com>
@@ -32,7 +31,7 @@
   id: MobVulpkaninSprites
   sprites:
     Head: MobVulpkaninHead
-    Face: MobHumanoidAnyMarking
+    Face: MobHumanoidAnyMarking #Pirate Changes
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
@@ -64,40 +63,22 @@
       points: 1
       required: true
       defaultMarkings: [ VulpTail ]
-    RightLeg:
-      points: 2
+    Head:
+      points: 5
       required: false
-    RightFoot:
-      points: 2
+    Legs:
+      points: 8
       required: false
-    LeftLeg:
-      points: 2
-      required: false
-    LeftFoot:
-      points: 2
-      required: false
-    RightArm:
-      points: 2
-      required: false
-    RightHand:
-      points: 3
-      required: false
-    LeftArm:
-      points: 2
-      required: false
-    LeftHand:
-      points: 3
+    Arms:
+      points: 8
       required: false
     Snout:
       points: 1
       required: false
     HeadTop:
-      points: 3
+      points: 1
       required: true
       defaultMarkings: [ VulpEar ]
-    HeadSide:
-      points: 2
-      required: false
     Overlay:
       points: 2
       required: false
@@ -208,4 +189,3 @@
   baseSprite:
     sprite: _DV/Mobs/Species/Vulpkanin/parts.rsi
     state: r_foot
-

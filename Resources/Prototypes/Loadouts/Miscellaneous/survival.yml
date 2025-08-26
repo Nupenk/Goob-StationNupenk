@@ -92,10 +92,8 @@
 # SPDX-FileCopyrightText: 2025 Aidenkrz <28298836+Aidenkrz@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Ark <189933909+ark1368@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 CerberusWolfie <wb.johnb.willis@gmail.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 # SPDX-FileCopyrightText: 2025 IrisTheAmped <iristheamped@gmail.com>
-# SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 # SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
@@ -194,17 +192,6 @@
     - Dwarf
     - Human
     - Reptilian
-    # Goobstation - Custom Races
-    - Vulpkanin
-    - Felinid
-    - Harpy
-    - Gingerbread
-    - Rodentia
-    - Yowie
-    - Oni
-    - Resomi
-    - Tajaran
-    - Shadowkin
 
 - type: loadoutEffectGroup
   id: OxygenBreatherMimeMoth
@@ -238,7 +225,7 @@
     proto: OxygenBreatherMimeMoth
   storage:
     back:
-    - BoxMimeMothSlots # Goobstation - Slots Bases Survival Boxes
+    - BoxMimeMoth
 
 # Engineering / Extended
 - type: loadout

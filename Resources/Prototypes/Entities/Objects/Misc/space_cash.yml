@@ -120,8 +120,7 @@
           Quantity: 1
   - type: Tag       # Goob Balloon Edit
     tags:           # Just so it can be picked up by ore bag
-    - Ore
-    - Paper         # Moth food
+    - Ore           
   # </Goobstation>
 
 - type: material

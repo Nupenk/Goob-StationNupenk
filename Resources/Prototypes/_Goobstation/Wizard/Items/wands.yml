@@ -70,7 +70,7 @@
   - type: ActivatableUI
     inHandsOnly: true
     key: enum.AmmoSelectorUiKey.Key
-  - type: ToggleableVisuals
+  - type: ToggleableLightVisuals
     spriteLayer: Firemode
     inhandVisuals:
       left:

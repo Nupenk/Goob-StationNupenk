@@ -1,9 +1,3 @@
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
 using System.Text;
 using Content.Shared._EinsteinEngines.Language.Systems;
 
@@ -164,7 +158,7 @@ public sealed partial class PhraseObfuscation : ReplacementObfuscation
             }
 
             var length = i - sentenceBeginIndex;
-            if (length >= 0)
+            if (length > 0)
             {
                 var newLength = (int) Math.Clamp(Math.Pow(length, Proportion) - 1, MinPhrases, MaxPhrases);
 

@@ -43,7 +43,7 @@
       color: white
       netsync: false
     - type: Appearance
-    - type: ToggleableVisuals
+    - type: ToggleableLightVisuals
       spriteLayer: blade
       inhandVisuals:
         left:

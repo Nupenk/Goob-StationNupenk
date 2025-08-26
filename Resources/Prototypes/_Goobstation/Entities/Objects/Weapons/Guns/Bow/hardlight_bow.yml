@@ -92,7 +92,7 @@
     color: white
     netsync: false
   - type: Appearance
-  - type: ToggleableVisuals
+  - type: ToggleableLightVisuals
     spriteLayer: bowstring
     inhandVisuals:
       left:
