@@ -99,7 +99,7 @@
       - id: BoxLatexGloves
       - id: BoxSterileMask
       # Pirate Change
-      - id: NitrousOxideCanister
+      - id: NitrousOxideTankFilled
         amount: 2
       - id: ClothingMaskBreathMedical
         amount: 2
