@@ -231,6 +231,8 @@
       collection: FemaleDeathGasp
     Gulp: # Goob
       path: /Audio/_Goobstation/Voice/gulpexotic.ogg
+    Gekker: # Pirate
+      path: /Audio/_Pirate/Voice/Vulpkanin/gekker.ogg
 
 - type: emoteSounds
   id: MaleVulpkanin
