@@ -9,7 +9,6 @@ using Content.Pirate.Server.StationEvents.Components;
 using Content.Server.StationEvents.Events;
 using Robust.Shared.Random;
 using Content.Shared.Damage.Systems;
-using Content.Server.Administration.Logs; //remove this later
 
 namespace Content.Pirate.Server.StationEvents.Events;
 
@@ -20,14 +19,12 @@ internal sealed class NoosphericZapRule : StationEventSystem<NoosphericZapRuleCo
     [Dependency] private readonly PsionicAbilitiesSystem _psionicAbilitiesSystem = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedStaminaSystem _stamina = default!;
-    [Dependency] private readonly ILogManager _log = default!; //remove this later
 
     protected override void Started(EntityUid uid, NoosphericZapRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
         base.Started(uid, component, gameRule, args);
 
         List<EntityUid> psionicList = new();
-        Log.Info("Noospheric Zap Rule Started");
 
         var query = EntityManager.EntityQueryEnumerator<PsionicComponent>();
         while (query.MoveNext(out var psion, out _))

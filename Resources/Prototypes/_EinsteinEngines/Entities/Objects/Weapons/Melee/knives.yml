@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ CombatKnife, BaseMantisContraband ]
+  parent: [ BaseKnife, BaseMantisContraband ]
   id: AntiPsychicKnife
   name: anti-psychic knife
   description: A special knife designed for killing psychics.

@@ -16,7 +16,6 @@ using Content.Shared.Popups;
 using Content.Server.StationEvents.Events;
 using Robust.Server.Player;
 using Content.Pirate.Server.StationEvents.Components;
-using Content.Server.Administration.Logs; //remove this later
 
 namespace Content.Pirate.Server.StationEvents.Events;
 
@@ -33,14 +32,12 @@ internal sealed class NoosphericFryRule : StationEventSystem<NoosphericFryRuleCo
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly GlimmerSystem _glimmerSystem = default!;
     [Dependency] private readonly FlammableSystem _flammableSystem = default!;
-    [Dependency] private readonly ILogManager _log = default!; //remove this later
 
     protected override void Started(EntityUid uid, NoosphericFryRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
         base.Started(uid, component, gameRule, args);
 
         List<(EntityUid wearer, TinfoilHatComponent worn)> psionicList = new();
-        Log.Info("Noospheric Fry Rule Started");
 
         var query = EntityManager.EntityQueryEnumerator<PsionicInsulationComponent, MobStateComponent>();
         while (query.MoveNext(out var psion, out _, out _))
@@ -78,11 +75,4 @@ internal sealed class NoosphericFryRule : StationEventSystem<NoosphericFryRuleCo
             _damageableSystem.TryChangeDamage(pair.wearer, damage);
         }
     }
-}
-
-// Placeholder component - you'll need to implement this based on your tinfoil hat system
-public sealed partial class TinfoilHatComponent : Component
-{
-    [DataField("destroyOnFry")]
-    public bool DestroyOnFry = true;
 }
