@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ CombatKnife, BaseMantisContraband ]
+  parent: [ BaseKnife, BaseMantisContraband ]
   id: AntiPsychicKnife
   name: "антипсихічний ніж"
   description: "Спеціальний ніж, призначений для вбивства екстрасенсів."

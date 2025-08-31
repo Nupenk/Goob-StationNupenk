@@ -16,7 +16,6 @@
   - type: DoorMetric
   - type: FoodMetric
   - type: PuddleMetric
-  - type: PsionicMetric # Pirate
 
 - type: entity
   id: CombatDynamic

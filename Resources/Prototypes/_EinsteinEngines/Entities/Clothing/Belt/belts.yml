@@ -16,8 +16,12 @@
         - ForensicBeltEquip
         - Sidearm
         - Folder
+        - Pill
+        - Syringe
+        - MagazinePistol
       components:
         - AnomalyScanner
         - NodeScanner
         - Flash
         - HandLabeler
+        - TinfoilHat
