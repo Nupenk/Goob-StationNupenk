@@ -1,0 +1,7 @@
+- type: alert
+  id: RecentlyBlocked
+  icons:
+  - sprite: /Textures/Objects/Weapons/Melee/shields.rsi
+    state: buckler-icon
+  name: "заблоковано"
+  description: "ви нещодавно блокували атаку"

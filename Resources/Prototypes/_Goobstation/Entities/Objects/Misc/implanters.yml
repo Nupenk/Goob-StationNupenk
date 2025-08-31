@@ -202,6 +202,14 @@
     implant: KravMagaImplant
 
 - type: entity
+  parent: BaseImplantOnlyImplanterSyndi
+  id: ClumsyImplanter
+  name: "Імплантер незграбності"
+  components:
+  - type: Implanter
+    implant: ClumsyImplant
+
+- type: entity
   id: BinaryImplanter
   name: "імплантатор бінарного декодера"
   parent: BaseImplantOnlyImplanterSyndi

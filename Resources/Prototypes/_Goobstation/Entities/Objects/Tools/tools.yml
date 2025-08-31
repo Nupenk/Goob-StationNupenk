@@ -236,3 +236,14 @@
   - type: AutoRecharge
     rechargeDuration: 10
 
+- type: entity
+  parent: RCD
+  id: RCDRechargingCE
+  name: "експериментальний ПШБ"
+  description: "Пристрій Швидкого Будівництва, який створює стиснуту матерію на ходу за допомогою внутрішнього фабрикатора."
+  suffix: AutoRecharge
+  components:
+  - type: LimitedCharges
+    maxCharges: 20
+  - type: AutoRecharge
+    rechargeDuration: 10

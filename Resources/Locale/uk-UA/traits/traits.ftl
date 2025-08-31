@@ -47,3 +47,5 @@ trait-painnumbness-name = Оніміння
 trait-painnumbness-desc = У вас відсутнє почуття болю, ви не усвідомлюєте, наскільки можете бути поранені.
 trait-monochromancy-name = Монохромантія
 trait-monochromancy-desc = Ви абсолютно не розрізняєте кольорів, усе, що ви сприймаєте, коливається від чорного до білого.
+trait-british-name = Британський акцент
+trait-british-desc = Ви говорите правильно, на відміну від цих клятих янкі.

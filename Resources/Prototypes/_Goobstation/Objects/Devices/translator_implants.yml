@@ -41,6 +41,7 @@
       - Monkey
       - Kobold
       - SpaceItalian
+      - Cheval
     understood:
       - Eldritch
       - Chittin
@@ -70,6 +71,20 @@
       - Monkey
       - Kobold
       - SpaceItalian
+      - Cheval
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: ChevalTranslatorImplant
+  name: "Імплант-перекладач Шеваль"
+  description: "Імплант, що дає здатність розуміти та розмовляти мовою Шеваль."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    spoken:
+     - Cheval
+    understood:
+     - Cheval
 
 - type: entity
   parent: BaseSubdermalImplant

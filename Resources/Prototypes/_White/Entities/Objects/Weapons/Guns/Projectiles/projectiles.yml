@@ -1,0 +1,12 @@
+- type: entity
+  id: BulletNeurotoxin
+  parent: BulletAcid
+  name: "плювок нейротоксином"
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaminaDamageOnCollide
+    damage: 65
+  - type: Projectile
+    damage:
+      types:
+        Caustic: 1

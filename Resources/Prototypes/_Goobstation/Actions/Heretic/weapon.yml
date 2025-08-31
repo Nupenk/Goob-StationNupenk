@@ -1,0 +1,15 @@
+- type: entity
+  parent: BaseAction
+  id: ActionRunebreak
+  name: "Руйнування Рун"
+  description: "Знищує всі руни, вирізьблені цим клинком."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    useDelay: 10
+    itemIconStyle: NoItem
+    icon:
+      sprite: _Goobstation/Heretic/abilities_heretic.rsi
+      state: rune_break
+  - type: InstantAction
+    event: !type:DeleteAllCarvingsEvent

@@ -1,0 +1,223 @@
+- type: entity
+  parent: BaseItem
+  id: BaseXenomorphOrgan
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _White/Mobs/Species/Xenomorph/organs.rsi
+  - type: Organ
+  - type: Food
+  - type: Extractable
+    grindableSolutionName: organ
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: SulfuricAcid
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+        - ReagentId: SulfuricAcid
+          Quantity: 2
+  - type: FlavorProfile
+    flavors:
+    - people
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  parent: [BaseXenomorphOrgan, OrganHumanBrain]
+  id: OrganXenomorphBrain
+  name: "мозок ксеноморфа"
+  description: "Ми ледве розуміємо мозок земних тварин. Хто знає, що ми можемо знайти в мозку такого просунутого виду?"
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: SulfuricAcid
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: GreyMatter
+          Quantity: 5
+
+- type: entity
+  parent: [BaseXenomorphOrgan, OrganHumanEyes]
+  id: OrganXenomorphEyes
+  name: "очі ксеноморфа"
+  description: "Виявилося, вони все-таки у них є!"
+
+- type: entity
+  parent: [BaseXenomorphOrgan, OrganHumanTongue]
+  id: OrganXenomorphTongue
+  name: "язик ксеноморфа"
+  description: "За словами провідних ксенобіологів, еволюційна перевага наявності другого рота у вашому роті полягає в тому, що \"\"це виглядає круто\"\"."
+
+- type: entity
+  parent: [BaseXenomorphOrgan, OrganReptilianStomach]
+  id: OrganXenomorphStomach
+  name: "шлунок ксеноморфа"
+  description: "Його стінки здатні як значно розширюватися, так і скорочуватися з величезною силою."
+
+- type: entity
+  parent: [BaseXenomorphOrgan, OrganHumanLiver]
+  id: OrganXenomorphLiver
+  name: "печінка ксеноморфа"
+  description: "Печінка, яка колись належала інопланетянину-вбивці, хто знає, чим він харчувався."
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [Xenomorph]
+    groups:
+    - id: Poison
+      rateModifier: 1
+
+- type: entity
+  parent: BaseXenomorphOrgan
+  id: OrganXenomorphAcidGland
+  name: "кислотна залоза"
+  description: "Спеціалізований резервуар з кислотою. Отримана корозійна суміш може розплавити більшість відомих матеріалів."
+  components:
+  - type: Sprite
+    state: acid_gland
+  - type: Organ
+    slotId: acid_gland
+    onAdd:
+    - type: XenomorphAcid
+      damagePerSecond:
+        types:
+          Caustic: 20
+
+- type: entity
+  parent: BaseXenomorphOrgan
+  id: OrganXenomorphNeurotoxinGland
+  name: "нейротоксинова залоза"
+  description: "Спеціалізований резервуар з нейротоксином. Складається з безлічі мікроскопічних трубок, заповнених прозорою рідиною."
+  components:
+  - type: Sprite
+    state: neurotoxin_gland
+  - type: Organ
+    slotId: neurotoxin_gland
+    onAdd:
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 0.75
+    - type: PlasmaAmmoProvider
+      fireCost: 55
+      proto: BulletNeurotoxin
+    - type: Gun
+      fireRate: 0.75
+      useKey: false
+      selectedMode: FullAuto
+      availableModes:
+      - FullAuto
+      soundGunshot: /Audio/Weapons/Xeno/alien_spitacid.ogg
+
+- type: entity
+  parent: BaseXenomorphOrgan
+  id: OrganXenomorphEggSack
+  name: "яйцевий мішок"
+  description: "Призначений для виробництва та зберігання яєць, що містять лицехватів, величезний розмір органу дозволяє королеві ксеноморфів відкладати тисячі яєць за короткий проміжок часу."
+  components:
+  - type: Sprite
+    sprite: _White/Mobs/Species/Xenomorph/organs.rsi
+    state: egg_sack
+  - type: Organ
+    slotId: egg_sack
+    # TODO: Organ should give egg spawn actions
+
+- type: entity
+  parent: BaseXenomorphOrgan
+  id: OrganXenomorphResinSpinner
+  name: "смоляний прядильний орган"
+  description: "Призначений для виробництва та виділення смолоподібного біополімеру."
+  components:
+  - type: Sprite
+    state: resin_spinner
+  - type: Organ
+    slotId: resin_spinner
+    # TODO: Organ should give construction actions
+
+- type: entity
+  parent: BaseXenomorphOrgan
+  id: OrganXenomorphHiveNode
+  name: "вузол вулика"
+  description: "Центральний орган ксеноморфів, що забезпечує зв'язок зі спільним розумом."
+  components:
+  - type: Sprite
+    state: hive_node
+  - type: Organ
+    slotId: hive_node
+    # TODO: Organ should give XenoHivemind language and Xeno faction
+
+- type: entity
+  parent: BaseXenomorphOrgan
+  id: OrganXenomorphPlasmaVessel
+  name: "плазмова судина"
+  description: "Резервуар, що містить концентровану та високоактивну плазму - основне джерело енергії та сировини для біологічної зброї ксеноморфа."
+  components:
+  - type: Sprite
+    state: plasma_vessel
+  - type: Organ
+    slotId: plasma_vessel
+    onAdd:
+    - type: PlasmaVessel
+    # TODO: Organ should give plant weeds and transfer plasma action
+
+- type: entity
+  parent: OrganXenomorphPlasmaVessel
+  id: OrganXenomorphPlasmaVesselLarge
+  name: "велика плазмова судина"
+  components:
+  - type: Sprite
+    state: plasma_vessel_large
+  - type: Organ
+    onAdd:
+    - type: PlasmaVessel
+      maxPlasma: 500
+      plasma: 200
+      plasmaPerSecondOffWeed: 0.75
+      plasmaPerSecondOnWeed: 7.5
+
+- type: entity
+  parent: OrganXenomorphPlasmaVesselLarge
+  id: OrganXenomorphPlasmaVesselLargeQueen
+  components:
+  - type: Organ
+    onAdd:
+    - type: PlasmaVessel
+      maxPlasma: 500
+      plasma: 200
+      plasmaPerSecondOffWeed: 1
+      plasmaPerSecondOnWeed: 10
+
+- type: entity
+  parent: OrganXenomorphPlasmaVessel
+  id: OrganXenomorphPlasmaVesselSmall
+  name: "мала плазмова судина"
+  components:
+  - type: Sprite
+    state: plasma_vessel_small
+  - type: Organ
+    onAdd:
+    - type: PlasmaVessel
+      maxPlasma: 150
+      plasma: 100
+      plasmaPerSecondOffWeed: 0.25
+      plasmaPerSecondOnWeed: 2.5
+
+- type: entity
+  parent: OrganXenomorphPlasmaVessel
+  id: OrganXenomorphPlasmaVesselTiny
+  name: "крихітна плазмова судина"
+  components:
+  - type: Sprite
+    state: plasma_vessel_tiny
+  - type: Organ
+    onAdd:
+    - type: PlasmaVessel
+      maxPlasma: 100

@@ -5,7 +5,7 @@
 
 - type: entity
   name: "Тревор"
-  parent: MobHorse
+  parent: [MobHorse, ShowSecurityIcons]
   id: MobTrevor
   description: "Тисяча років космічної еволюції, і це найкраще, що ми змогли вигадати."
   components:
@@ -42,8 +42,6 @@
     raffle: null
     allowSpeech: true
     allowMovement: true
-  - type: Speech
-    speechSounds: Alto
   - type: Butcherable
     spawned:
     - id: FoodMeat
@@ -76,3 +74,11 @@
     attributes:
       proper: true
       gender: male
+  - type: Access
+    enabled: true
+    tags:
+    - Maintenance
+    - Security
+    - Brig
+  - type: Puller
+    needsHands: false

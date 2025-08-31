@@ -1,3 +1,9 @@
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Marty <martynashagriefer@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 # Translator that doesn't need power to work.
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -323,3 +329,37 @@
     requires:
     - TauCetiBasic
     - Marish
+
+- type: entity                      # taken from Floofstation
+  id: NewKinPidginTranslator
+  parent: [ TranslatorPoweredBase ]
+  name: "Перекладач Ка'ракк"
+  description: "Інтерпретує мову, розмовно відому як Вокс Піджин. Здається, що всередині він... Живий. Принаймні, він працює на батарейках!"
+  components:
+  - type: HandheldTranslator
+    spoken:
+    - TauCetiBasic
+    - NewKinPidgin
+    understood:
+    - TauCetiBasic
+    - NewKinPidgin
+    requires:
+    - TauCetiBasic
+    - NewKinPidgin
+
+- type: entity                      # Language taken from Floofstation but the proto is goob
+  id: SchechiTranslator
+  parent: [ TranslatorPoweredBase ]
+  name: "Перекладач Скечі"
+  description: "Інтерпретує пташиний спів, відомий як Скечі, і перекладає його на Галактичну Спільну. Нею переважно розмовляють Ресомі."
+  components:
+  - type: HandheldTranslator
+    spoken:
+    - TauCetiBasic
+    - Schechi
+    understood:
+    - Schechi
+    - TauCetiBasic
+    requires:
+    - TauCetiBasic
+    - Schechi

@@ -156,6 +156,15 @@
   - type: ImplantGrantCollectiveMind
     collectiveMind: Binary
 
+- type: entity
+  parent: BaseSubdermalImplant
+  id: ClumsyImplant
+  name: "Імплант незграбності"
+  description: "Цей імплант робить користувача незграбним, дозволяючи йому керувати певним транспортним засобом."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ClumsyImplant
+
 # Admeme
 
 - type: entity

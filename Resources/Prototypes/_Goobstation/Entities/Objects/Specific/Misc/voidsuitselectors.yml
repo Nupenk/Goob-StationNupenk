@@ -54,7 +54,7 @@
   id: UndeterminedVoidsuitEngineer
   name: "селектор скафандра інженера"
   description: "Невеликий пульт, що використовує технологію блюспейс для виклику скафандра або важкого скафандра на ваш вибір."
-  parent: [ BaseItem, BaseSetSelector, BaseSecurityContraband ]
+  parent: [ BaseItem, BaseSetSelector, BaseEngineeringContraband ]
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Devices/unique_teleporters.rsi
