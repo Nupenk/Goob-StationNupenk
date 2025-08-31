@@ -1,8 +1,8 @@
 - type: entity
-  name: x-02 енерго-поліморф
+  name: "x-02 енерго-поліморф"
   parent: BaseWeaponBatterySmall
   id: WeaponEnergyGunMultiphasePolymorh
-  description: Чаклунська модифікація енерго-пістолету, що викликає небачені результати.
+  description: "Чаклунська модифікація енерго-пістолету, що викликає небачені результати."
   components:
   - type: Sprite
     sprite: _DV/Objects/Weapons/Guns/Battery/multiphase_energygun.rsi

@@ -8,7 +8,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeLollypop
-  name: lollypop recipe
+  name: "рецепт льодяника"
   result: FoodSnackLollypop
   time: 5
   solids:
@@ -18,7 +18,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeFreedomCheeseBlock
-  name: freedom cheese recipe
+  name: "рецепт сиру свободи"
   result: FoodFreedomCheeseBlock
   time: 5
   solids:
