@@ -107,7 +107,7 @@
     - Thief
     - Heretic
     - BlobGameMode
-    #- LoneAbductorSpawn Pirate abductor remove
+    - LoneAbductorSpawn
     - KesslerSyndromeScheduler
     - Wizard
     - RampingStationEventScheduler
@@ -134,7 +134,7 @@
     - Thief
     - Heretic
     - BlobGameMode
-    #- LoneAbductorSpawn Pirate abductor remove
+    - LoneAbductorSpawn
     - Wizard
     - BasicStationEventScheduler
     - KesslerSyndromeScheduler

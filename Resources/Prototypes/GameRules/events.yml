@@ -192,8 +192,8 @@
     - id: LoneOpsSpawn
     - id: DerelictCyborgSpawn
     - id: BlobSpawn # Goobstation - Blob
-    #- id: LoneAbductorSpawn Pirate abductor remove
-    #- id: DuoAbductorSpawn Pirate abductor remove
+    - id: LoneAbductorSpawn # Shitmed - Starlight Abductors
+    - id: DuoAbductorSpawn # Shitmed - Starlight Abductors
     - id: BingleSpawn #Goobstation - Bingle
     - id: XenomorphsInfestation # WD EDIT
 
