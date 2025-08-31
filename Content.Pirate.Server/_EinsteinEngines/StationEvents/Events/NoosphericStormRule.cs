@@ -35,8 +35,7 @@ internal sealed class NoosphericStormRule : StationEventSystem<NoosphericStormRu
 
         foreach (var human in allHumans)
         {
-            // Adjust entity ID by adding 1
-            var entity = new EntityUid(human.Owner.Id + 1);
+            var entity = new EntityUid(human.Owner.Id);
 
             if (!_mobStateSystem.IsAlive(entity) || HasComp<PsionicInsulationComponent>(entity))
                 continue;

@@ -6,10 +6,12 @@ using Content.Server.NPC.Components;
 using Content.Server.Psionics.Glimmer;
 using Content.Server.Station.Systems;
 using Content.Pirate.Server.StationEvents.Components;
+using Content.Server.StationEvents.Components;
 using Content.Shared.Psionics.Glimmer;
 using Content.Shared.Abilities.Psionics;
 using Content.Shared.NPC.Components;
 using Robust.Shared.Map;
+using Content.Server.StationEvents.Events;
 
 namespace Content.Pirate.Server.StationEvents.Events;
 
@@ -30,7 +32,7 @@ public sealed class GlimmerMobRule : StationEventSystem<GlimmerMobRuleComponent>
         List<EntityCoordinates>
             glimmerSources = GetCoords<GlimmerSourceComponent>(stations),
             normalSpawns = GetCoords<VentCritterSpawnLocationComponent>(stations),
-            hiddenSpawns = GetCoords<MidRoundAntagSpawnLocationComponent>(stations);
+            hiddenSpawns = GetCoords<RandomSpawnRuleComponent>(stations);
 
         var psionics = EntityQuery<PsionicComponent, NpcFactionMemberComponent>().Count();
         var baseCount = Math.Max(1, psionics / comp.MobsPerPsionic);
