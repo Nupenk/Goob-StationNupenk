@@ -1,0 +1,6 @@
+- type: soundCollection
+  id: VulpkaninGekkers
+  files:
+  - /Audio/_Pirate/Voice/Vulpkanin/fox_gekker1.ogg
+  - /Audio/_Pirate/Voice/Vulpkanin/fox_gekker2.ogg
+  - /Audio/_Pirate/Voice/Vulpkanin/fox_gekker3.ogg

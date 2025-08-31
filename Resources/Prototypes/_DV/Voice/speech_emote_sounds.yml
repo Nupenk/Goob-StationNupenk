@@ -196,7 +196,7 @@
     Scream:
       collection: VulpkaninScreams # EE
     Laugh:
-      collection: FemaleLaugh
+      collection: VulpkaninGekkers # Pirate
     Sneeze:
       collection: FemaleSneezes
     Cough:
