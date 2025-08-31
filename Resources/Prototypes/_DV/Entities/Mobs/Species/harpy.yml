@@ -33,7 +33,7 @@
 
 - type: entity
   save: false
-  name: "Уріст МакГарпі"
+  name: Urist McHarpy
   parent: BaseMobHuman
   id: MobHarpyBase
   abstract: true
@@ -212,11 +212,11 @@
 
 - type: entity
   save: false
-  name: "Уріст МакРуки"
+  name: Urist McHands
   parent: MobHumanDummy
   id: MobHarpyDummy
   categories: [ HideSpawnMenu ]
-  description: "Манекен гарпії, призначений для використання при створенні персонажа."
+  description: A dummy Harpy meant to be used in character setup.
   components:
   - type: HumanoidAppearance
     species: Harpy
@@ -283,8 +283,8 @@
 - type: entity
   parent: BaseAction
   id: ActionHarpyPlayMidi
-  name: "Відтворення MIDI"
-  description: "Співайте від душі! Клацніть правою кнопкою миші на себе, щоб вибрати інструмент."
+  name: Play MIDI
+  description: Sing your heart out! Right click yourself to set an instrument.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -297,8 +297,8 @@
 - type: entity
   parent: BaseAction
   id: ActionSyrinxChangeVoiceMask
-  name: "Назва набору"
-  description: "Змініть ім'я, яке чують інші, на інше."
+  name: Set name
+  description: Change the name others hear to something else.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -310,8 +310,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleFlight
-  name: "Літати"
-  description: "Використовуйте свої крила, щоб літати. Спростуйте звинувачення в нездатності літати."
+  name: Fly
+  description: Make use of your wings to fly. Beat the flightless bird allegations.
   components:
   - type: Action
     checkCanInteract: false
