@@ -195,6 +195,7 @@
     #- id: LoneAbductorSpawn Pirate abductor remove
     #- id: DuoAbductorSpawn Pirate abductor remove
     - id: BingleSpawn #Goobstation - Bingle
+    - id: XenomorphsInfestation # WD EDIT
 
 - type: entity
   id: BaseStationEvent
