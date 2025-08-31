@@ -55,6 +55,9 @@
   id: AdministrativeAssistantChameleonOutfit
   job: AdministrativeAssistant
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCommandGeneric
+    jumpsuit: СlothingUniformJumpsuitAdminAssistant
     shoes: ClothingShoesColorBlack
     ears: ClothingHeadsetAltCommand
+  storage:
+    back:
+    - RubberStampAdminAssistant

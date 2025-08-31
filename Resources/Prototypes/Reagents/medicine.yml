@@ -111,6 +111,16 @@
       - !type:GenericStatusEffect
         key: Stutter
         component: ScrambledAccent
+      - !type:GenericStatusEffect
+        key: PsionicallyInsulated
+        component: PsionicInsulation
+        type: Add
+        time: 900
+      - !type:GenericStatusEffect
+        key: PsionicsDisabled
+        component: PsionicsDisabled
+        type: Add
+        time: 900
       - !type:Drunk
         slurSpeech: false
         boozePower: 20
