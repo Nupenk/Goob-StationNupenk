@@ -139,7 +139,6 @@
       minimumGlimmer: 400
       glimmerBurnLower: 50
       glimmerBurnUpper: 150
-      eventType: Neutral
     - type: AnomalySpawnRule
     - type: StationEvent
       startAnnouncementColor: "#18abf5"
