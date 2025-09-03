@@ -3,7 +3,7 @@
 - type: entity
   parent: ClothingMaskBase
   id: FaceHuggerToys
-  name: xenomorph facehugger
+  name: "лицехват ксеноморфа"
   description: A toy often used to play pranks on other crew members by putting it in their beds. It takes a bit to recharge after latching onto something.
   suffix: Toys
   components:

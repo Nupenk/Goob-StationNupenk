@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMobXenomorphAdult
   id: BaseMobXenomorphSentinel
-  name: xenomorph sentinel
+  name: "ксеноморф-страж"
   description: A specialized specimen designed to hit targets at a distance. Particularly dangerous in narrow corridors and confined spaces.
   abstract: true
   components:
