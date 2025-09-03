@@ -28,3 +28,4 @@ chat-emote-msg-gulp = ковтає.
 
 chat-emote-name-surprised = виглядати здивованим
 chat-emote-msg-surprised = виглядає здивованим.
+chat-emote-name-bagawk = Кудкудак

@@ -48,6 +48,7 @@ job-description-monolith-preacher = Несамовитий голос Волі �
 
 # Command
 job-alternative-name-furry-femboy = Фурі-фембой
+job-alternative-name-furry-tomboy = Фурі-томбой
 job-alternative-name-command-officer = Офіцер командування
 job-alternative-name-station-director = Директор станції
 job-alternative-name-notarius = Нотаріус
