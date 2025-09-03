@@ -127,7 +127,14 @@
   jobDescription: job-description-captain
   jobIconProtoId: JobIconFurryFemboy
   parentJobId: Captain
-
+  
+- type: alternativeJob
+  id: AlternativeJobFurryTomboy
+  jobName: job-alternative-name-furry-tomboy
+  jobDescription: job-description-captain
+  jobIconProtoId: JobIconFurryFemboy
+  parentJobId: Captain
+  
 - type: alternativeJob
   id: AlternativeJobCommandOfficer
   jobName: job-alternative-name-command-officer
