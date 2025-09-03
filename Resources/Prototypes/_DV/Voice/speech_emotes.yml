@@ -177,24 +177,24 @@
     - whined
     - whining
 
-- type: emote
-  id: Howl
-  name: Howl
-  category: Vocal
-  icon: _Goobstation/Interface/Emotes/howl.png
-  whitelist:
-    tags:
-    - VulpEmotes
-    - HarpyEmotes
-  blacklist:
-    components:
-    - BorgChassis
-  chatMessages: [howls.]
-  chatTriggers:
-    - howl
-    - howls
-    - howling
-    - howled
+# - type: emote
+#   id: Howl
+#   name: Howl
+#   category: Vocal
+#   icon: _Goobstation/Interface/Emotes/howl.png
+#   whitelist:
+#     tags:
+#     - VulpEmotes
+#     - HarpyEmotes
+#   blacklist:
+#     components:
+#     - BorgChassis
+#   chatMessages: [howls.]
+#   chatTriggers:
+#     - howl
+#     - howls
+#     - howling
+#     - howled
 
 - type: emote
   id: Awoo

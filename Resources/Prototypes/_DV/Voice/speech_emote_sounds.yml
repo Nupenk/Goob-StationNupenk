@@ -198,9 +198,9 @@
     Laugh:
       collection: VulpkaninGekkers # Pirate
     Sneeze:
-      collection: FemaleSneezes
+      collection: VulpkaninSneeze # Pirate
     Cough:
-      collection: FemaleCoughs
+      collection: VulpkaninSneeze # Pirate
     Yawn:
       collection: FemaleYawn
     Snore:
@@ -210,7 +210,7 @@
     Sigh:
       collection: FemaleSigh
     Crying:
-      collection: FemaleCry
+      collection: VulpkaninCry # Pirate
     Whistle:
       collection: Whistles
     Weh:
@@ -246,11 +246,11 @@
     Scream:
       collection: VulpkaninScreams # EE
     Laugh:
-      collection: MaleLaugh
+      collection: VulpkaninGekkers # Pirate
     Sneeze:
-      collection: MaleSneezes
+      collection: VulpkaninSneeze # Pirate
     Cough:
-      collection: MaleCoughs
+      collection: VulpkaninSneeze # Pirate
     Yawn:
       collection: MaleYawn
     Snore:
@@ -260,7 +260,7 @@
     Sigh:
       collection: MaleSigh
     Crying:
-      collection: MaleCry
+      collection: VulpkaninCry # Pirate
     Whistle:
       collection: Whistles
     Weh:

@@ -12,6 +12,7 @@
 - type: emote
   id: Sneeze
   name: chat-emote-name-sneeze
+  icon: Interface/Emotes/yawn.png
   category: Vocal
   chatMessages: ["chat-emote-msg-sneeze"]
 
