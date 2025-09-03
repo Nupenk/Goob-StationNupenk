@@ -27,7 +27,6 @@
         rolloffFactor: 1.2
     availableModes:
       - Burst
-    fireOnDropChance: 1
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -93,7 +92,6 @@
     - SemiAuto
     - Burst
     - FullAuto
-    fireOnDropChance: 0.3
   - type: ChamberMagazineAmmoProvider
     autoEject: true
   - type: MagazineVisuals

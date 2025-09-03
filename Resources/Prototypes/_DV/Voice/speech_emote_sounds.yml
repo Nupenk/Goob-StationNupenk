@@ -73,8 +73,8 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-    Howl:
-      collection: VulpkaninHowls
+#    Howl:
+#      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
     Honk:
@@ -157,8 +157,8 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-    Howl:
-      collection: VulpkaninHowls
+#    Howl:
+#      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
     Honk:
@@ -223,8 +223,8 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-    Howl:
-      collection: VulpkaninHowls
+#    Howl:
+#      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
     CatMeow:
@@ -273,8 +273,8 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-    Howl:
-      collection: VulpkaninHowls
+#    Howl:
+#      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
     CatMeow:
@@ -301,8 +301,8 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-    Howl:
-      collection: VulpkaninHowls
+#    Howl:
+#      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
 
