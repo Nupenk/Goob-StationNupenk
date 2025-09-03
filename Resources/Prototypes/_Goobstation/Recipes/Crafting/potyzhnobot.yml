@@ -1,6 +1,6 @@
 - type: construction
-  id: GoidaBot
-  graph: GoidaBot
+  id: Potyzhnobot
+  graph: Potyzhnobot
   startNode: start
   targetNode: bot
   category: construction-category-utilities

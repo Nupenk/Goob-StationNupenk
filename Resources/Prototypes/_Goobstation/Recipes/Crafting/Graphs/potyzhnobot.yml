@@ -1,16 +1,11 @@
 - type: constructionGraph
-  id: GoidaBot
+  id: Potyzhnobot
   start: start
   graph:
   - node: start
     edges:
     - to: bot
       steps:
-      - tag: Ushanka
-        icon:
-          sprite: Clothing/Head/Hats/ushanka.rsi
-          state: icon
-        name: construction-graph-tag-ushanka
       - tag: BaseballBat
         icon:
           sprite: Objects/Weapons/Melee/baseball_bat.rsi
@@ -36,4 +31,4 @@
         name: construction-graph-tag-borg-arm
         doAfter: 2
   - node: bot
-    entity: MobGoidaBot
+    entity: MobPotyzhnobot
