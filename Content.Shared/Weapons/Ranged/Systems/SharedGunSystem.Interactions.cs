@@ -34,17 +34,17 @@ public abstract partial class SharedGunSystem
             args.PushMarkup(Loc.GetString("gun-selected-mode-examine", ("color", ModeExamineColor),
                 ("mode", GetLocSelector(component.SelectedMode))));
             args.PushMarkup(Loc.GetString("gun-fire-rate-examine", ("color", FireRateExamineColor),
-                ("fireRate", $"{(int) (component.FireRate * 60)}")));
+                ("fireRate", $"{(int) (component.FireRate * 60)}"))); // Pirate edit start
 
             if (!component.AvailableModes.HasFlag(SelectiveFire.Burst))
-                return;
+                return; // Pirate
 
             if (component.FireRate != component.BurstFireRate)
                 args.PushMarkup(Loc.GetString("gun-burst-fire-rate-examine", ("color", FireRateExamineColor),
-                    ("fireRate", $"{(int) (component.BurstFireRate * 60)}")));
+                    ("fireRate", $"{(int) (component.BurstFireRate * 60)}"))); // Pirate
 
             args.PushMarkup(Loc.GetString("gun-burst-fire-burst-count", ("color", FireRateExamineColor),
-                ("burstcount", $"{component.ShotsPerBurst}")));
+                ("burstcount", $"{component.ShotsPerBurst}"))); // Pirate end
         }
     }
 
