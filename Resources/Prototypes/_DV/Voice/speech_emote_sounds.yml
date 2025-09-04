@@ -301,8 +301,8 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-    Howl:
-      collection: VulpkaninHowls
+#    Howl: # REMOVED BY PIRATE
+#      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
 
