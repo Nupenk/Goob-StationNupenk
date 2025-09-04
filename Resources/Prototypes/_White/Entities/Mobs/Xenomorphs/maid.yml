@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMobXenomorphAdult
   id: MobXenomorphMaid
-  name: lusty xenomorph maid
+  name: "хтива покоївка-ксеноморф"
   description: Don't ask it to lay eggs in you.
   components:
   - type: Sprite
