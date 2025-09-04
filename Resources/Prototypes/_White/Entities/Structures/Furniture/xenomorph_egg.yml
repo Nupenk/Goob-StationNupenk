@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseStructure
   id: XenomorphEgg
-  name: "яйце ксеноморфа"
+  name: xenomorph egg
   description: A large mottled egg.
   components:
   - type: Sprite

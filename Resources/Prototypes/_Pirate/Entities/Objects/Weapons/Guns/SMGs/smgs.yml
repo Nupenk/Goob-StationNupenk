@@ -57,7 +57,7 @@
     shape: null
 
 - type: entity
-  name: "БРДІ R-25"
+  name: BRDI R-25
   parent: [BaseWeaponSubMachineGun, BaseGunWieldable]
   id: WeaponSubMachineGunBRDIR25
   description: Іконічна зброя, яку використовують члени Іноземного легіону Республіки Бізель. Як гордість Республіки, вона символізує свободу від тиранії Солоріанського Альянсу. Оснащена патронами .25 безгільзовими для гвинтівки.
