@@ -177,6 +177,7 @@
     - whined
     - whining
 
+# REMOVED BY PIRATE
 # - type: emote
 #   id: Howl
 #   name: Howl
@@ -195,6 +196,7 @@
 #     - howls
 #     - howling
 #     - howled
+
 
 - type: emote
   id: Awoo
