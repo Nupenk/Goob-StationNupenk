@@ -73,7 +73,7 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-#    Howl:
+#    Howl: # REMOVED BY PIRATE
 #      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
@@ -157,7 +157,7 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-#    Howl:
+#    Howl: # REMOVED BY PIRATE
 #      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
@@ -223,7 +223,7 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-#    Howl:
+#    Howl: # REMOVED BY PIRATE
 #      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
@@ -273,7 +273,7 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-#    Howl:
+#    Howl: # REMOVED BY PIRATE
 #      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
@@ -301,8 +301,8 @@
       collection: VulpkaninBarks
     Whine:
       collection: VulpkaninWhines
-#    Howl:
-#      collection: VulpkaninHowls
+    Howl:
+      collection: VulpkaninHowls
     Awoo:
       collection: VulpkaninHowls
 
