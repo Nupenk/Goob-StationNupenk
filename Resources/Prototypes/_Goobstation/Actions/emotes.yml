@@ -15,20 +15,19 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-# PIRATE - Відключенно як наказання за спам емоцією
-#- type: emote
-#  id: Flip
-#  name: chat-emote-name-flip
-#  chatMessages: ["chat-emote-msg-flip"]
-#  chatTriggers:
-#  - flip
-#  - flips
-#  - flips.
-#  - flips!
-#  - does a flip
-#  - does a flip.
-#  - does a flip!
-#  event: !type:AnimationFlipEmoteEvent
+- type: emote
+  id: Flip
+  name: chat-emote-name-flip
+  chatMessages: ["chat-emote-msg-flip"]
+  chatTriggers:
+  - flip
+  - flips
+  - flips.
+  - flips!
+  - does a flip
+  - does a flip.
+  - does a flip!
+  event: !type:AnimationFlipEmoteEvent
 
 - type: emote
   id: Tweak
