@@ -96,14 +96,12 @@
 # Боєприпаси
 - type: loadout
   id: MagazinePistol
-  name: "Летальні набої для MK 58"
   storage:
     back:
     - MagazinePistol
 
 - type: loadout
   id: SpeedLoaderMagnum
-  name: "Швидкозарядний магазин для револьвера"
   effects:
   - !type:GroupLoadoutEffect
     proto: RevolverInspector
@@ -113,7 +111,6 @@
 
 - type: loadout
   id: MagazineMagnum
-  name: "Летальні набої для N-1984"
   effects:
   - !type:GroupLoadoutEffect
     proto: PistolN1984
@@ -123,7 +120,6 @@
 
 - type: loadout
   id: MagazineUniversalMagnum
-  name: "Летальні набої для MK 32"
   effects:
   - !type:GroupLoadoutEffect
     proto: PistolUniversalSecurity
@@ -133,7 +129,6 @@
 
 - type: loadout
   id: MagazineUniversalMagnumRubber
-  name: "Резинові набої для MK 32"
   effects:
   - !type:GroupLoadoutEffect
     proto: SecurityPistolUniversalNonLethal
