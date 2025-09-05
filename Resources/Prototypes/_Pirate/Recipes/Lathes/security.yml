@@ -55,15 +55,6 @@
     Plastic: 75
     Uranium: 150
 
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: MagazineMagnumIncendiary
-  result: MagazineMagnumIncendiary
-  completetime: 5
-  materials:
-    Steel: 30
-    Plastic: 150
-
 
 
 
