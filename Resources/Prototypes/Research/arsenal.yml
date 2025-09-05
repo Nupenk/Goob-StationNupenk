@@ -114,6 +114,8 @@
   - MagazineBoxMagnumIncendiary
   # - MagazineBoxLightRifleIncendiary # Goobstation - remove light rifle
   - MagazineBoxRifleIncendiary
+  - MagazineUniversalMagnumIncendiary # Pirate
+  - MagazineMagnumIncendiary # Pirate
   # Goobstation R&D Console rework start
   position: 2,2
   technologyPrerequisites:
@@ -184,6 +186,8 @@
   - MagazineBoxRifleUranium
   - BoxShotgunUranium
   - MagazineBoxShotgunUraniumHighCaliber # Goobstation
+  - MagazineUniversalMagnumUranium # Pirate
+  - MagazineMagnumUranium # Pirate
   # Goobstation R&D Console rework start
   position: 3,2
   technologyPrerequisites:
