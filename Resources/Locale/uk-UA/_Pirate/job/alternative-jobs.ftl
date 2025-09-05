@@ -47,13 +47,9 @@ job-description-monolith-preacher = Несамовитий голос Волі �
 # Кінець Священик
 
 # Command
-job-alternative-name-furry-femboy = Фурі-фембой
-job-alternative-name-furry-tomboy = Фурі-томбой
 job-alternative-name-command-officer = Офіцер командування
 job-alternative-name-station-director = Директор станції
-job-alternative-name-notarius = Нотаріус
 job-alternative-name-sherif = Шериф
-job-alternative-name-command-maid = Покоївка мостика
 job-alternative-name-secretary = Секретар
 
 # Engineering
@@ -75,7 +71,6 @@ job-alternative-name-aspirant = Аспірант
 job-alternative-name-laborant = Лаборант
 
 # Security
-job-alternative-name-security-maid = Покоївка бригу
 job-alternative-name-peacekeeper = Миротворець
 job-alternative-name-inspector = Інспектор
 job-alternative-name-forensist = Слідчий
