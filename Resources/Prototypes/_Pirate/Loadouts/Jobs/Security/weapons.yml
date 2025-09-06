@@ -1,54 +1,97 @@
 # Потрібний награний час для отримання зброї
 - type: loadoutEffectGroup
-  id: RevolverInspector
+  id: Inspector
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobDetective
+      time: 36000 # 10 годин
+
+- type: loadoutEffectGroup
+  id: Constable
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 36000 # 10 годин
+
+- type: loadoutEffectGroup
+  id: Senior Constable
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 72000 # 20 годин
+
+- type: loadoutEffectGroup
+  id: Corporal
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
       time: 108000 # 30 годин
 
 - type: loadoutEffectGroup
-  id: PistolN1984
+  id: Sergeant
   effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 216000 # 60 hrs
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobSecurityOfficer
-      time: 180000 # 50 годин
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobWarden
-      time: 115200 # 32 годин
-
-- type: loadoutEffectGroup
-  id: PistolUniversalSecurity
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 432000 # 120 годин
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobWarden
-      time: 180000 # 50 годин
-
-- type: loadoutEffectGroup
-  id: SecurityPistolUniversalNonLethal
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 360000 # 100 годин
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobWarden
       time: 108000 # 30 годин
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 21600 # 6 годин
+
+- type: loadoutEffectGroup
+  id: Staff Sergeant
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 216000 # 80 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 108000 # 30 годин
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 36000 # 10 годин
+
+- type: loadoutEffectGroup
+  id: Warrant Officer
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Security
+      time: 360000 # 100 hrs
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 108000 # 30 годин
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 36000 # 10 годин
+
 
 # Зброя
 - type: loadout
@@ -58,10 +101,10 @@
     - WeaponPistolMk58
 
 - type: loadout
-  id: LoadoutSecurityRevolver
+  id: LoadoutSecurityRevolverInspector
   effects:
   - !type:GroupLoadoutEffect
-    proto: RevolverInspector
+    proto: Inspector
   storage:
     back:
     - WeaponRevolverInspector
@@ -70,7 +113,7 @@
   id: LoadoutSecurityPistolN1984
   effects:
   - !type:GroupLoadoutEffect
-    proto: PistolN1984
+    proto: Senior Constable
   storage:
     back:
     - WeaponPistolN1984
@@ -79,7 +122,7 @@
   id: LoadoutSecurityPistolUniversal
   effects:
   - !type:GroupLoadoutEffect
-    proto: PistolUniversalSecurity
+    proto: Sergeant
   storage:
     back:
     - WeaponPistolUniversalSecurity
@@ -88,7 +131,7 @@
   id: LoadoutSecurityPistolUniversalNonLethal
   effects:
   - !type:GroupLoadoutEffect
-    proto: SecurityPistolUniversalNonLethal
+    proto: Sergeant
   storage:
     back:
     - WeaponPistolUniversalSecurityNonLethal
@@ -104,7 +147,7 @@
   id: SpeedLoaderMagnum
   effects:
   - !type:GroupLoadoutEffect
-    proto: RevolverInspector
+    proto: Inspector
   storage:
     back:
     - SpeedLoaderMagnum
@@ -113,7 +156,7 @@
   id: MagazineMagnum
   effects:
   - !type:GroupLoadoutEffect
-    proto: PistolN1984
+    proto: Senior Constable
   storage:
     back:
     - MagazineMagnum
@@ -122,7 +165,7 @@
   id: MagazineUniversalMagnum
   effects:
   - !type:GroupLoadoutEffect
-    proto: PistolUniversalSecurity
+    proto: Sergeant
   storage:
     back:
     - MagazineUniversalMagnum
@@ -131,7 +174,35 @@
   id: MagazineUniversalMagnumRubber
   effects:
   - !type:GroupLoadoutEffect
-    proto: SecurityPistolUniversalNonLethal
+    proto: Sergeant
   storage:
     back:
     - MagazineUniversalMagnumRubber
+
+# Другорядна зброя
+- type: loadout
+  id: LoadoutSecurityEnergyGunMini
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Constable
+  storage:
+    back:
+    - WeaponEnergyGunMini
+
+- type: loadout
+  id: LoadoutSecurityEnergyGun
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Sergeant
+  storage:
+    back:
+    - WeaponEnergyGun
+
+- type: loadout
+  id: LoadoutSecurityDisablerSMG
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: Sergeant
+  storage:
+    back:
+    - WeaponDisablerSMG

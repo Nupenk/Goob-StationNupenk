@@ -1406,7 +1406,7 @@
   name: loadout-group-security-weapon
   loadouts:
   - LoadoutSecurityWeaponMk58
-  - LoadoutSecurityRevolver
+  - LoadoutSecurityRevolverInspector
   - LoadoutSecurityPistolN1984
   - LoadoutSecurityPistolUniversal
   - LoadoutSecurityPistolUniversalNonLethal
@@ -1420,6 +1420,16 @@
   - MagazineMagnum
   - MagazineUniversalMagnum
   - MagazineUniversalMagnumRubber
+
+- type: loadoutGroup
+  id: SecuritySecondaryWeapon
+  name: loadout-group-secondary-weapon
+  maxLimit: 1
+  minLimit: 0
+  loadouts:
+  - LoadoutSecurityEnergyGunMini
+  - LoadoutSecurityEnergyGun
+  - LoadoutSecurityDisablerSMG
 # SECURITY - PIRATE END
 
 # Medical

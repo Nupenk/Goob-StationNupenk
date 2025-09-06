@@ -70,15 +70,16 @@
     glimmerBurnLower: 30
     glimmerBurnUpper: 70
 
-- type: entity
-  id: GlimmerRevenantSpawn
-  parent: BaseGlimmerSignature
-  components:
-    - type: GlimmerRevenantRule
-    - type: GlimmerEvent
-      minimumGlimmer: 900
-      glimmerBurnLower: 750
-      glimmerBurnUpper: 950
+# DISABLED BY PIRATE
+#- type: entity
+#  id: GlimmerRevenantSpawn
+#  parent: BaseGlimmerSignature
+#  components:
+#    - type: GlimmerRevenantRule
+#    - type: GlimmerEvent
+#      minimumGlimmer: 900
+#      glimmerBurnLower: 750
+#      glimmerBurnUpper: 950
 
 - type: entity
   id: PsionicCatGotYourTongue

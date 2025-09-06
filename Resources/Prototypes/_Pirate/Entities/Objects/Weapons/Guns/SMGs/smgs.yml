@@ -1,6 +1,6 @@
 - type: entity
   name: FPA-90
-  parent: BaseWeaponPistol
+  parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponSubMachineGunFPA90
   description: Це дешевий мотлох від компанії, відомої своїми дешевими гарматами, але принаймні під час використання не потрібен захист слуху. Стріляє набоями .25 безгільзовими.
   components:
@@ -58,7 +58,7 @@
 
 - type: entity
   name: BRDI R-25
-  parent: [BaseWeaponSubMachineGun, BaseGunWieldable]
+  parent: [BaseWeaponSubMachineGun, BaseSecurityContraband, BaseGunWieldable]
   id: WeaponSubMachineGunBRDIR25
   description: Іконічна зброя, яку використовують члени Іноземного легіону Республіки Бізель. Як гордість Республіки, вона символізує свободу від тиранії Солоріанського Альянсу. Оснащена патронами .25 безгільзовими для гвинтівки.
   components:
