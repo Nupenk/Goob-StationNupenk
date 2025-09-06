@@ -191,7 +191,7 @@
     - id: KingRatMigration
     - id: NinjaSpawn
     - id: ParadoxCloneSpawn
-#    - id: RevenantSpawn # REMOVED BY PIRATES
+    - id: RevenantSpawn
     - id: SleeperAgents
     - id: ZombieOutbreak
     - id: LoneOpsSpawn
@@ -505,28 +505,27 @@
       mindRoles:
       - MindRoleParadoxClone
 
-# REMOVED BY PIRATES
-#- type: entity
-#  parent: BaseGameRule
-#  id: RevenantSpawn
-#  components:
-#  - type: StationEvent
-#    weight: 3.5
-#    duration: 1
-#    earliestStart: 30
-#    minimumPlayers: 20
-#    chaos: # Goobstation
-#      Hostile: 20
-#      Friend: 20
-#      Combat: 40
-#      Death: 100
-#      Medical: 100
-#    eventType: HostilesSpawn # Goobstation
-#  # Goobstation
-#  - type: GameRule
-#    chaosScore: 450
-#  - type: RandomSpawnRule
-#    prototype: MobRevenant
+- type: entity
+  parent: BaseGameRule
+  id: RevenantSpawn
+  components:
+  - type: StationEvent
+    weight: 3.5
+    duration: 1
+    earliestStart: 30
+    minimumPlayers: 20
+    chaos: # Goobstation
+      Hostile: 20
+      Friend: 20
+      Combat: 40
+      Death: 100
+      Medical: 100
+    eventType: HostilesSpawn # Goobstation
+  # Goobstation
+  - type: GameRule
+    chaosScore: 450
+  - type: RandomSpawnRule
+    prototype: MobRevenant
 
 # Goob - wiz of our own
 #- type: entity
