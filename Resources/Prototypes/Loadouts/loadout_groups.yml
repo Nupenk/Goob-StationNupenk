@@ -1394,11 +1394,33 @@
   loadouts:
   - SecStar
 
+# SECURITY - PIRATE START
 - type: loadoutGroup
-  id: SecurityCadetOuterClothing # Pirate
+  id: SecurityCadetOuterClothing
   name: loadout-group-cadet-outerclothing
   loadouts:
   - ArmorCadet
+
+- type: loadoutGroup
+  id: SecurityWeapon
+  name: loadout-group-security-weapon
+  loadouts:
+  - LoadoutSecurityWeaponMk58
+  - LoadoutSecurityRevolver
+  - LoadoutSecurityPistolN1984
+  - LoadoutSecurityPistolUniversal
+  - LoadoutSecurityPistolUniversalNonLethal
+
+- type: loadoutGroup
+  id: SecurityWeaponAmmo
+  name: loadout-group-security-weapon-ammo
+  loadouts:
+  - MagazinePistol
+  - SpeedLoaderMagnum
+  - MagazineMagnum
+  - MagazineUniversalMagnum
+  - MagazineUniversalMagnumRubber
+# SECURITY - PIRATE END
 
 # Medical
 - type: loadoutGroup

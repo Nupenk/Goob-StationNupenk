@@ -1,0 +1,137 @@
+# Потрібний награний час для отримання зброї
+- type: loadoutEffectGroup
+  id: RevolverInspector
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobDetective
+      time: 108000 # 30 годин
+
+- type: loadoutEffectGroup
+  id: PistolN1984
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 180000 # 50 годин
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 115200 # 32 годин
+
+- type: loadoutEffectGroup
+  id: PistolUniversalSecurity
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 432000 # 120 годин
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 180000 # 50 годин
+
+- type: loadoutEffectGroup
+  id: SecurityPistolUniversalNonLethal
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 360000 # 100 годин
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobWarden
+      time: 108000 # 30 годин
+
+# Зброя
+- type: loadout
+  id: LoadoutSecurityWeaponMk58
+  storage:
+    back:
+    - WeaponPistolMk58
+
+- type: loadout
+  id: LoadoutSecurityRevolver
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: RevolverInspector
+  storage:
+    back:
+    - WeaponRevolverInspector
+
+- type: loadout
+  id: LoadoutSecurityPistolN1984
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: PistolN1984
+  storage:
+    back:
+    - WeaponPistolN1984
+
+- type: loadout
+  id: LoadoutSecurityPistolUniversal
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: PistolUniversalSecurity
+  storage:
+    back:
+    - WeaponPistolUniversalSecurity
+
+- type: loadout
+  id: LoadoutSecurityPistolUniversalNonLethal
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SecurityPistolUniversalNonLethal
+  storage:
+    back:
+    - WeaponPistolUniversalSecurityNonLethal
+
+# Боєприпаси
+- type: loadout
+  id: MagazinePistol
+  storage:
+    back:
+    - MagazinePistol
+
+- type: loadout
+  id: SpeedLoaderMagnum
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: RevolverInspector
+  storage:
+    back:
+    - SpeedLoaderMagnum
+
+- type: loadout
+  id: MagazineMagnum
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: PistolN1984
+  storage:
+    back:
+    - MagazineMagnum
+
+- type: loadout
+  id: MagazineUniversalMagnum
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: PistolUniversalSecurity
+  storage:
+    back:
+    - MagazineUniversalMagnum
+
+- type: loadout
+  id: MagazineUniversalMagnumRubber
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SecurityPistolUniversalNonLethal
+  storage:
+    back:
+    - MagazineUniversalMagnumRubber

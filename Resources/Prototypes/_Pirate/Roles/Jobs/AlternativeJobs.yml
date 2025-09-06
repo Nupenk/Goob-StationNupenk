@@ -120,20 +120,6 @@
 #endregion
 
 #region Command
-
-- type: alternativeJob
-  id: AlternativeJobFurryFemboy
-  jobName: job-alternative-name-furry-femboy
-  jobDescription: job-description-captain
-  jobIconProtoId: JobIconFurryFemboy
-  parentJobId: Captain
-  
-- type: alternativeJob
-  id: AlternativeJobFurryTomboy
-  jobName: job-alternative-name-furry-tomboy
-  jobDescription: job-description-captain
-  jobIconProtoId: JobIconFurryFemboy
-  parentJobId: Captain
   
 - type: alternativeJob
   id: AlternativeJobCommandOfficer
@@ -148,22 +134,10 @@
   parentJobId: Captain
 
 - type: alternativeJob
-  id: AlternativeJobNotarius
-  jobName: job-alternative-name-notarius
-  jobDescription: job-description-hop
-  parentJobId: HeadOfPersonnel
-
-- type: alternativeJob
   id: AlternativeJobSherif
   jobName: job-alternative-name-sherif
   jobDescription: job-description-hos
   parentJobId: HeadOfSecurity
-
-- type: alternativeJob # this is very MRP please leave it
-  id: AlternativeJobCommandMaid
-  jobName: job-alternative-name-command-maid
-  jobDescription: job-description-admin-assistant
-  parentJobId: AdministrativeAssistant
 
 - type: alternativeJob
   id: AlternativeJobSecretary
@@ -262,12 +236,6 @@
 #endregion
 
 #region Security
-
-- type: alternativeJob # GOD(Void) allows this, pls dont kill me
-  id: AlternativeJobSecMaid
-  jobName: job-alternative-name-security-maid
-  jobDescription: job-description-warden
-  parentJobId: Warden
 
 - type: alternativeJob
   id: AlternativeJobPeacekeeper
