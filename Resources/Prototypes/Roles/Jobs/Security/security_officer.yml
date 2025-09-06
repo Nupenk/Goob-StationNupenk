@@ -91,7 +91,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 9000 #2.5 hrs
+      time: 36000 #10 hrs
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos
@@ -116,11 +116,11 @@
   equipment:
     eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetAltSecurityRegular # Goobstation
-    pocket1: WeaponPistolMk58
+#    pocket1: WeaponPistolMk58 # PIRATE, moved to loadouts
   storage:
     back:
     - Flash
-    - MagazinePistol
+#    - MagazinePistol # PIRATE, moved to loadouts
 
 - type: chameleonOutfit
   id: SecurityOfficerChameleonOutfit
