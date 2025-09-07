@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMobXenomorphAdult
   id: BaseMobXenomorphDrone
-  name: xenomorph drone
+  name: "ксеноморф-трутень"
   description: A specialized individual designed to build and maintain a hive. Less aggressive than other xenomorph forms, but still deadly when approached.
   abstract: true
   components:
