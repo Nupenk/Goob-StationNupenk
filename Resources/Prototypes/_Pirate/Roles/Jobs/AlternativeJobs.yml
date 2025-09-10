@@ -57,7 +57,7 @@
   jobDescription: job-description-lawyer
   parentJobId: Lawyer
 
-  - type: alternativeJob
+- type: alternativeJob
   id: AlternativeJobClerk
   jobName: job-alternative-name-clerk
   jobDescription: job-description-lawyer
@@ -133,11 +133,11 @@
   jobDescription: job-description-monolith-preacher
   jobIconProtoId: JobIconMonolithPreacher
   parentJobId: Chaplain
-  
+
 #endregion
 
 #region Command
-  
+
 - type: alternativeJob
   id: AlternativeJobCommandOfficer
   jobName: job-alternative-name-command-officer
