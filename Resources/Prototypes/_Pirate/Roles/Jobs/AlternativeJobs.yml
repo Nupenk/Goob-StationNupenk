@@ -45,8 +45,6 @@
   jobDescription: job-description-janitor
   parentJobId: Janitor
 
-# region lawyer
-
 - type: alternativeJob
   id: AlternativeJobProsecutor
   jobName: job-alternative-name-prosecutor
@@ -64,8 +62,6 @@
   jobName: job-alternative-name-clerk
   jobDescription: job-description-lawyer
   parentJobId: Lawyer
-
-# endregion
 
 # region Chaplain
 - type: alternativeJob
