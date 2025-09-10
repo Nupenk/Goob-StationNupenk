@@ -45,6 +45,28 @@
   jobDescription: job-description-janitor
   parentJobId: Janitor
 
+# region lawyer
+
+- type: alternativeJob
+  id: AlternativeJobProsecutor
+  jobName: job-alternative-name-prosecutor
+  jobDescription: job-description-lawyer
+  parentJobId: Lawyer
+
+- type: alternativeJob
+  id: AlternativeJobAttorney
+  jobName: job-alternative-name-attorney
+  jobDescription: job-description-lawyer
+  parentJobId: Lawyer
+
+  - type: alternativeJob
+  id: AlternativeJobClerk
+  jobName: job-alternative-name-clerk
+  jobDescription: job-description-lawyer
+  parentJobId: Lawyer
+
+# endregion
+
 # region Chaplain
 - type: alternativeJob
   id: AlternativeJobAtheist
@@ -115,24 +137,6 @@
   jobDescription: job-description-monolith-preacher
   jobIconProtoId: JobIconMonolithPreacher
   parentJobId: Chaplain
-
-- type: alternativeJob
-  id: AlternativeJobProsecutor
-  jobName: job-alternative-name-Prosecutor
-  jobDescription: job-description-lawyer
-  parentJobId: Lawyer
-
-- type: alternativeJob
-  id: AlternativeJobAttorney
-  jobName: job-alternative-name-Attorney
-  jobDescription: job-description-lawyer
-  parentJobId: Lawyer
-
-  - type: alternativeJob
-  id: AlternativeJobClerk
-  jobName: job-alternative-name-Clerk
-  jobDescription: job-description-lawyer
-  parentJobId: Lawyer
   
 #endregion
 
