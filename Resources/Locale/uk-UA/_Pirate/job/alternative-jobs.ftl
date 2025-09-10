@@ -7,6 +7,9 @@ job-alternative-name-flora-engineer = Флора-інженер
 job-alternative-name-prankster = Пранкер
 job-alternative-name-waiter = Офіціант
 job-alternative-name-maid = Покоївка
+job-alternative-name-prosecutor = Прокурор
+job-alternative-name-attorney = Адвокат
+job-alternative-name-clerk = Клерк
 
 # Священик
 job-alternative-name-holy-father = Святий Отець
