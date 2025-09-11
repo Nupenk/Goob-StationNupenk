@@ -7,9 +7,22 @@ job-alternative-name-flora-engineer = Флора-інженер
 job-alternative-name-prankster = Пранкер
 job-alternative-name-waiter = Офіціант
 job-alternative-name-maid = Покоївка
+
+# Юрист
+
+# Прокурор
 job-alternative-name-prosecutor = Прокурор
+job-description-prosecutor = Ведіть судову справу, висуваючи обвинувачення. Зрозумійте що ваша робота це допомагати службі безпеці правильно висувати звинувачення, бо ніхто не буде влаштовувати суд.
+
+# Адвокат
 job-alternative-name-attorney = Адвокат
+job-description-attorney = Ведіть судову справу, захищаючи обвинуваченого. Посидівши кілька годин у своєму офісі, зрозумійте що нікому адвокат не треба, і йдіть висувайте обвинувачення як прокурор.
+
+# Клерк
 job-alternative-name-clerk = Клерк
+job-description-clerk = НЕ ведіть судову справу, а лиш допомагайте з її організацією - підписуйте папери, принесіть судді кави.
+
+# Кінець Юрист
 
 # Священик
 job-alternative-name-holy-father = Святий Отець
