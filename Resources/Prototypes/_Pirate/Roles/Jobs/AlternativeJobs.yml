@@ -51,21 +51,21 @@
   id: AlternativeJobProsecutor
   jobName: job-alternative-name-prosecutor
   jobDescription: job-description-prosecutor
-  jobIconProtoId: JobIconFloraProsecutor
+  jobIconProtoId: JobIconProsecutor
   parentJobId: Lawyer
 
 - type: alternativeJob
   id: AlternativeJobAttorney
   jobName: job-alternative-name-attorney
   jobDescription: job-description-attorney
-  jobIconProtoId: JobIconFloraAttorney
+  jobIconProtoId: JobIconAttorney
   parentJobId: Lawyer
 
 - type: alternativeJob
   id: AlternativeJobClerk
   jobName: job-alternative-name-clerk
   jobDescription: job-description-clerk
-  jobIconProtoId: JobIconFloraClerk
+  jobIconProtoId: JobIconClerk
   parentJobId: Lawyer
 
 # region Chaplain
@@ -377,7 +377,7 @@
     state: attorney
   jobName: job-alternative-name-attorney
 
-  - type: jobIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconProsecutor
   icon:
@@ -385,7 +385,7 @@
     state: prosecutor
   jobName: job-alternative-name-prosecutor
 
-  - type: jobIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconClerk
   icon:
