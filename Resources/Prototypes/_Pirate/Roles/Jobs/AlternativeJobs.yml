@@ -51,18 +51,21 @@
   id: AlternativeJobProsecutor
   jobName: job-alternative-name-prosecutor
   jobDescription: job-description-prosecutor
+  jobIconProtoId: JobIconFloraProsecutor
   parentJobId: Lawyer
 
 - type: alternativeJob
   id: AlternativeJobAttorney
   jobName: job-alternative-name-attorney
   jobDescription: job-description-attorney
+  jobIconProtoId: JobIconFloraAttorney
   parentJobId: Lawyer
 
 - type: alternativeJob
   id: AlternativeJobClerk
   jobName: job-alternative-name-clerk
   jobDescription: job-description-clerk
+  jobIconProtoId: JobIconFloraClerk
   parentJobId: Lawyer
 
 # region Chaplain
@@ -363,6 +366,33 @@
   jobName: job-alternative-name-Dungeon-Master
 
 #endregion
+
+# region Law icons definitions
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconAttorney
+  icon:
+    sprite: /Textures/_Pirate/Interface/Misc/job_icons.rsi
+    state: attorney
+  jobName: job-alternative-name-attorney
+
+  - type: jobIcon
+  parent: JobIcon
+  id: JobIconProsecutor
+  icon:
+    sprite: /Textures/_Pirate/Interface/Misc/job_icons.rsi
+    state: prosecutor
+  jobName: job-alternative-name-prosecutor
+
+  - type: jobIcon
+  parent: JobIcon
+  id: JobIconClerk
+  icon:
+    sprite: /Textures/_Pirate/Interface/Misc/job_icons.rsi
+    state: clerk
+  jobName: job-alternative-name-clerk
+
 
 # region Chaplain icons definitions
 - type: jobIcon
