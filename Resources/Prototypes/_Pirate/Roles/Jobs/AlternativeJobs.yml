@@ -45,22 +45,24 @@
   jobDescription: job-description-janitor
   parentJobId: Janitor
 
+#region Lawyer
+
 - type: alternativeJob
   id: AlternativeJobProsecutor
   jobName: job-alternative-name-prosecutor
-  jobDescription: job-description-lawyer
+  jobDescription: job-description-prosecutor
   parentJobId: Lawyer
 
 - type: alternativeJob
   id: AlternativeJobAttorney
   jobName: job-alternative-name-attorney
-  jobDescription: job-description-lawyer
+  jobDescription: job-description-attorney
   parentJobId: Lawyer
 
 - type: alternativeJob
   id: AlternativeJobClerk
   jobName: job-alternative-name-clerk
-  jobDescription: job-description-lawyer
+  jobDescription: job-description-clerk
   parentJobId: Lawyer
 
 # region Chaplain
