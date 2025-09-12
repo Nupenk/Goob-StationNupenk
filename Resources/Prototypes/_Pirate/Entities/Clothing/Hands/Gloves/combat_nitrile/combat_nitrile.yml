@@ -5,9 +5,9 @@
   description: High-quality nitrile combat gloves. Provides good protection against cuts and shocks, while still being flexible enough for dexterous tasks.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/combat_nitrile.rsi
+    sprite: _Pirate/Clothing/Hands/Gloves/combat_nitrile.rsi
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/combat_nitrile.rsi
+    sprite: _Pirate/Clothing/Hands/Gloves/combat_nitrile.rsi
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-insulative
