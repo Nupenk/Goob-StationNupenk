@@ -46,7 +46,6 @@
   parentJobId: Janitor
 
 #region Lawyer
-
 - type: alternativeJob
   id: AlternativeJobProsecutor
   jobName: job-alternative-name-prosecutor
@@ -68,7 +67,9 @@
   jobIconProtoId: JobIconClerk
   parentJobId: Lawyer
 
-# region Chaplain
+#endregion
+
+#region Chaplain
 - type: alternativeJob
   id: AlternativeJobAtheist
   jobName: job-alternative-name-atheist
