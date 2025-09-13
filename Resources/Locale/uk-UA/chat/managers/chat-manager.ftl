@@ -171,3 +171,9 @@ chat-speech-verb-name-goat = Коза
 chat-speech-verb-goat-1 = мекає
 chat-speech-verb-goat-2 = хрюкає
 chat-speech-verb-goat-3 = кричить
+
+chat-speech-verb-name-wawa = Вава
+chat-speech-verb-wawa-1 = інтонує
+chat-speech-verb-wawa-2 = стверджує
+chat-speech-verb-wawa-3 = заявляє
+chat-speech-verb-wawa-4 = розмірковує
