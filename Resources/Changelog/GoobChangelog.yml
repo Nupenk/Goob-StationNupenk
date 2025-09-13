@@ -13815,385 +13815,393 @@ Entries:
   time: '2025-09-07T13:19:12.0000000+00:00'
 - author: loltart
   changes:
-    - type: Tweak
-      message: Updated xenomorph weeds / walls / windows to rmc sprites
+  - type: Tweak
+    message: Оновлено бур'яни / стіни / вікна ксеноморфів до спрайтів RMC.
   id: 1606
   time: '2025-09-07T18:54:28.0000000+00:00'
 - author: Richard Blonski
   changes:
-    - type: Tweak
-      message: Plasmamen are now immune from being zombies.
+  - type: Tweak
+    message: Плазмени тепер мають імунітет до перетворення на зомбі.
   id: 1607
   time: '2025-09-07T19:20:51.0000000+00:00'
 - author: 10kee
   changes:
-    - type: Tweak
-      message: Made Vox magboot sprites in-line with their human counterparts
+  - type: Tweak
+    message: Спрайти магнітних черевиків Воксів приведено у відповідність до їхніх
+      людських аналогів.
   id: 1608
   time: '2025-09-07T19:23:46.0000000+00:00'
 - author: RatherUncreativeName
   changes:
-    - type: Fix
-      message: Fixed certain augments being uncraftable
+  - type: Fix
+    message: Виправлено неможливість створення певних аугментацій.
   id: 1609
   time: '2025-09-08T01:52:58.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Add
-      message: Added barricades similar to RMC's but with no upgrading.
-    - type: Remove
-      message: Xenos forgot how to use computers.
+  - type: Add
+    message: Додано барикади, схожі на барикади з RMC, але без можливості покращення.
+  - type: Remove
+    message: Ксеноси розучилися користуватися комп'ютерами.
   id: 1610
   time: '2025-09-08T19:23:47.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Tweak
-      message: LV cable can now be used as consumable, ghetto stitches for surgery.
-    - type: Tweak
-      message: >-
-        Medicated sutures can now be used as consumable, superior stitches for
-        surgery.
+  - type: Tweak
+    message: Низьковольтний кабель тепер можна використовувати як витратний матеріал,
+      кустарні шви для хірургії.
+  - type: Tweak
+    message: >-
+      Медичні шви тепер можна використовувати як витратний матеріал, кращі шви
+      для хірургії.
   id: 1611
   time: '2025-09-08T19:26:06.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Tweak
-      message: >-
-        Wonderprod sleep mode wears off faster, hit them again to refresh the
-        sleepy time.
+  - type: Tweak
+    message: >-
+      Режим сну від Вандерпрода тепер проходить швидше, вдарте їх ще раз, щоб
+      оновити час сну.
   id: 1612
   time: '2025-09-08T19:26:35.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Add
-      message: >-
-        Added a autodoc bluespace upgrade to the bluespace surgical gloves
-        research, it works like the gloves but for autodocs.
+  - type: Add
+    message: >-
+      Додано блюспейс-покращення для автодока до дослідження блюспейс-хірургічних
+      рукавичок, воно працює як рукавички, але для автодоків.
   id: 1613
   time: '2025-09-08T19:26:54.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Add
-      message: >-
-        Mice surgically implanted into people can now burst out like the alien
-        from Alien (1979)
+  - type: Add
+    message: >-
+      Миші, хірургічно імплантовані в людей, тепер можуть вириватися назовні,
+      як чужий з фільму 'Чужий' (1979).
   id: 1614
   time: '2025-09-08T19:31:14.0000000+00:00'
 - author: Richard Blonski
   changes:
-    - type: Fix
-      message: Zombie Immune species shouldn't get initial infected anymore.
+  - type: Fix
+    message: Види з імунітетом до зомбі більше не повинні отримувати початкове зараження.
   id: 1615
   time: '2025-09-09T02:28:43.0000000+00:00'
 - author: EVIL BURGER HATER
   changes:
-    - type: Tweak
-      message: 'Cotton burgers are now max 15, instead of previous 50. '
+  - type: Tweak
+    message: 'Максимальна кількість бавовняних бургерів тепер 15, замість попередніх 50.'
   id: 1616
   time: '2025-09-09T02:29:02.0000000+00:00'
 - author: clinux
   changes:
-    - type: Fix
-      message: >-
-        IPCs can now select hair options in the character creation menu without
-        the use of black magic!
+  - type: Fix
+    message: >-
+      IPC тепер можуть обирати зачіски в меню створення персонажа без використання
+      чорної магії!
   id: 1617
   time: '2025-09-09T13:47:33.0000000+00:00'
 - author: Richard Blonski
   changes:
-    - type: Remove
-      message: Disabled Revenant from being able to spawn as a mid-round antagonist.
+  - type: Remove
+    message: Вимкнено можливість появи Ревенанта як антагоніста в середині раунду.
   id: 1618
   time: '2025-09-09T13:49:27.0000000+00:00'
 - author: Lumminal
   changes:
-    - type: Add
-      message: Xenomorph guidebook has been added
+  - type: Add
+    message: Додано гайдбук по Ксеноморфам.
   id: 1619
   time: '2025-09-09T14:29:01.0000000+00:00'
 - author: Hagvan
   changes:
-    - type: Fix
-      message: >-
-        Your feet no longer keep a tiny amount of reagent after they stop
-        leaving footprints.
-    - type: Add
-      message: >-
-        Forensic scanner now shows how fresh each DNA is in puddles as well as
-        on melee weapons. A detective should be able to piece together crime
-        scenes better.
-    - type: Tweak
-      message: >-
-        Bloodtrak tracking duration depends on blood freshness. A very fresh
-        blood tracked by a detective will track a body for a significant amount
-        of time.
+  - type: Fix
+    message: >-
+      Ваші ноги більше не утримують невелику кількість реагенту після того,
+      як перестають залишати сліди.
+  - type: Add
+    message: >-
+      Судмедекспертний сканер тепер показує, наскільки свіжа кожна ДНК у калюжах,
+      а також на зброї ближнього бою. Детектив повинен мати змогу краще розкривати
+      місця злочинів.
+  - type: Tweak
+    message: >-
+      Тривалість відстеження Bloodtrak залежить від свіжості крові. Дуже свіжа
+      кров, відстежена детективом, буде відстежувати тіло протягом значного
+      часу.
   id: 1620
   time: '2025-09-09T14:55:59.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Tweak
-      message: >-
-        Intercoms and radios no longer spam everything vending machines or bots
-        say.
+  - type: Tweak
+    message: >-
+      Інтеркоми та радіо більше не спамлять усім, що говорять торгові автомати
+      чи боти.
   id: 1621
   time: '2025-09-09T19:59:53.0000000+00:00'
 - author: ReiderJack
   changes:
-    - type: Add
-      message: Asgore brainrot song added to jukebox
-    - type: Tweak
-      message: Clowncar driving with style action changed to jukebox
+  - type: Add
+    message: Додано пісню 'Asgore brainrot' до музичного автомата.
+  - type: Tweak
+    message: Дія 'Клоунський автомобіль, що їде зі стилем' змінена на музичний
+      автомат.
   id: 1622
   time: '2025-09-09T20:02:50.0000000+00:00'
 - author: Richard Blonski
   changes:
-    - type: Add
-      message: Nitrous Oxide tanks are now in the medical vendor.
-    - type: Add
-      message: The CMO's locker now comes equipped with an extra surgery duffle bag.
-    - type: Add
-      message: Surgery Crates now have a Nitrous Oxide tank and a breath mask included.
+  - type: Add
+    message: Балони із закисом азоту тепер є в медичному торговому автоматі.
+  - type: Add
+    message: Шафка Головного лікаря тепер оснащена додатковою хірургічною сумкою.
+  - type: Add
+    message: Хірургічні ящики тепер містять балон із закисом азоту та дихальну маску.
   id: 1623
   time: '2025-09-09T20:12:53.0000000+00:00'
 - author: OnsenCapy
   changes:
-    - type: Add
-      message: >-
-        Drinking a few cups of coffee will now cause intense jittering and also
-        slightly increase your movement speed.
-    - type: Add
-      message: >-
-        Drinking too much coffee will have adverse consequences. Everything in
-        moderation!
-    - type: Tweak
-      message: Changed the metabolism rate of coffee so it lasts longer in your system.
+  - type: Add
+    message: >-
+      Вживання кількох чашок кави тепер викликатиме сильне тремтіння, а також
+      трохи збільшить вашу швидкість руху.
+  - type: Add
+    message: >-
+      Вживання занадто великої кількості кави матиме несприятливі наслідки.
+      Все добре в міру!
+  - type: Tweak
+    message: Змінено швидкість метаболізму кави, щоб вона довше залишалася у вашому
+      організмі.
   id: 1624
   time: '2025-09-09T20:17:25.0000000+00:00'
 - author: Richard Blonski
   changes:
-    - type: Fix
-      message: >-
-        Corrected chair rendering so entities appear behind chairs only when
-        facing north.
+  - type: Fix
+    message: >-
+      Виправлено рендеринг стільців, щоб сутності з'являлися за ними лише при
+      повороті на північ.
   id: 1625
   time: '2025-09-09T20:24:39.0000000+00:00'
 - author: Creatorbot01
   changes:
-    - type: Fix
-      message: train map updated!
+  - type: Fix
+    message: Карту поїзда оновлено!
   id: 1626
   time: '2025-09-09T20:30:01.0000000+00:00'
 - author: loltart
   changes:
-    - type: Tweak
-      message: Xeno announcements are now more ominous.
-    - type: Add
-      message: Added black swarm by Bobik-music to the jukebox.
+  - type: Tweak
+    message: Оголошення ксеноморфів тепер більш зловісні.
+  - type: Add
+    message: Додано 'black swarm' від Bobik-music до музичного автомата.
   id: 1627
   time: '2025-09-10T04:17:22.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Add
-      message: Abductor duos can now be picked by Secret+ roundstart. 👽👽
+  - type: Add
+    message: Дуети викрадачів тепер можуть бути обрані на старті раунду в режимі
+      Secret+. 👽👽
   id: 1628
   time: '2025-09-10T15:00:50.0000000+00:00'
 - author: Aineias1
   changes:
-    - type: Tweak
-      message: >-
-        Lavaland gateway is now immovable, but can be deconstructed by welding
-        to get the flatpack back.
+  - type: Tweak
+    message: >-
+      Ворота Лаваленду тепер нерухомі, але їх можна розібрати за допомогою зварювання,
+      щоб повернути плаский пакунок.
   id: 1629
   time: '2025-09-10T20:17:03.0000000+00:00'
 - author: loltart
   changes:
-    - type: Add
-      message: >-
-        Added xenomorph doors. They are really extremely weak to heat so I
-        recommend only using them for privacy
-    - type: Remove
-      message: >-
-        Removed xenomorph windows (There was no reason to use them and it just
-        griefed your hive)
-    - type: Tweak
-      message: Nerfed Xenomorph healing
-    - type: Tweak
-      message: Nerfed Xenomorph stun
-    - type: Tweak
-      message: Nerfed Xenomorph structure health
-    - type: Tweak
-      message: >-
-        Massively lowered the rest state for Facehuggers. They should latch to
-        people much more often now
-    - type: Tweak
-      message: >-
-        Acid spit is now stronger and should be able to destroy resin walls much
-        quicker.
-    - type: Tweak
-      message: Xenomorphs are now slightly more common
-    - type: Tweak
-      message: Tail whip now injects sleepy chemicals and deals less brute
-    - type: Tweak
-      message: >-
-        Hivemind now uses collective mind (+Z) instead of being a separate
-        language
+  - type: Add
+    message: >-
+      Додано двері ксеноморфів. Вони надзвичайно слабкі до нагрівання, тому рекомендую
+      використовувати їх лише для приватності.
+  - type: Remove
+    message: >-
+      Видалено вікна ксеноморфів (Не було причин їх використовувати, і це лише
+      шкодило вашому вулику).
+  - type: Tweak
+    message: Послаблено лікування Ксеноморфів.
+  - type: Tweak
+    message: Послаблено оглушення від Ксеноморфів.
+  - type: Tweak
+    message: Послаблено здоров'я структур Ксеноморфів.
+  - type: Tweak
+    message: >-
+      Значно скорочено стан спокою для Лицехватів. Тепер вони повинні чіплятися
+      до людей набагато частіше.
+  - type: Tweak
+    message: >-
+      Кислотний плювок тепер сильніший і повинен руйнувати стіни зі смоли набагато
+      швидше.
+  - type: Tweak
+    message: Ксеноморфи тепер зустрічаються трохи частіше.
+  - type: Tweak
+    message: Удар хвостом тепер вводить снодійні хімікати та завдає менше грубої
+      шкоди.
+  - type: Tweak
+    message: >-
+      Колективний розум (Hivemind) тепер використовує 'колективний розум' (+Z)
+      замість того, щоб бути окремою мовою.
   id: 1630
   time: '2025-09-10T22:04:07.0000000+00:00'
 - author: CerberusWolfie
   changes:
-    - type: Remove
-      message: >-
-        Bugspray has been applied to all monitors. You no longer have to fear
-        spiders on your screen.
+  - type: Remove
+    message: >-
+      Спрей від комах було застосовано до всіх моніторів. Вам більше не потрібно
+      боятися павуків на екрані.
   id: 1631
   time: '2025-09-10T22:05:51.0000000+00:00'
 - author: Thesia000
   changes:
-    - type: Tweak
-      message: mapping on delta
+  - type: Tweak
+    message: Мапінг на Дельті.
   id: 1632
   time: '2025-09-10T22:31:46.0000000+00:00'
 - author: Thesia000
   changes:
-    - type: Tweak
-      message: CC mapping
+  - type: Tweak
+    message: Мапінг на ЦК.
   id: 1633
   time: '2025-09-10T22:42:39.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Fix
-      message: Fixed mothroaches missing groin legs and feet.
+  - type: Fix
+    message: Виправлено відсутність у моль-тарганів ніг та ступнів у паховій області.
   id: 1634
   time: '2025-09-11T11:20:16.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Fix
-      message: Fixed being able to attach peoples heads to literally any animal.
+  - type: Fix
+    message: Виправлено можливість прикріплювати голови людей до буквально будь-якої
+      тварини.
   id: 1635
   time: '2025-09-11T11:22:21.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Fix
-      message: Fixed traitors with sleeping carp being outed by the reflect examine.
+  - type: Fix
+    message: Виправлено викриття зрадників зі сплячим карпом через огляд відображення.
   id: 1636
   time: '2025-09-11T12:51:43.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Fix
-      message: Fixed borgs and station AI crashing the game.
+  - type: Fix
+    message: Виправлено краш гри через боргів та ШІ станції.
   id: 1637
   time: '2025-09-11T13:04:20.0000000+00:00'
 - author: Androidonator
   changes:
-    - type: Add
-      message: Added a Seclite to BSO's Locker.
-    - type: Add
-      message: >-
-        Added a knife into BSO's backpack on spawn and removed it from the
-        boots 
+  - type: Add
+    message: Додано ліхтар 'Seclite' до шафки BSO.
+  - type: Add
+    message: >-
+      Додано ніж у рюкзак BSO при спавні та прибрано його з черевиків.
   id: 1638
   time: '2025-09-11T18:51:33.0000000+00:00'
 - author: deltanedas
   changes:
-    - type: Fix
-      message: Removed 9/11 dimension pots.
+  - type: Fix
+    message: Видалено горщики виміру 9/11.
   id: 1639
   time: '2025-09-12T07:05:23.0000000+00:00'
 - author: Luminal
   changes:
-    - type: Add
-      message: Demon's blood prevents you from getting devoured by a Slaughter Demon.
-    - type: Add
-      message: >-
-        Devil's kiss prevents you from getting devoured by a Slaughter Demon and
-        deals 50 damage to them.
-    - type: Add
-      message: Slaughter Demon added to ninja communication console threats.
-    - type: Add
-      message: >-
-        Slaughter Demon got an audio overhaul. You can laugh and scream. New
-        speech sounds added. Blood Crawl may randomly cause voices to be heard.
-    - type: Fix
-      message: Wizard can no longer cast spells inside Blood Crawl.
-    - type: Fix
-      message: Slaughter Demons no longer die in space
-    - type: Fix
-      message: Slaughter Demons can no longer pickup items through the pickup verb.
-    - type: Tweak
-      message: Blood Crawl has a jaunt sprite so you can see where you're at.
-    - type: Tweak
-      message: Demonic Heart is magical contraband
-    - type: Tweak
-      message: New blood types are supported by Blood Crawl.
-    - type: Tweak
-      message: Slaughter Demon will feel smoother and more responsive to play now.
+  - type: Add
+    message: Кров демона запобігає вашому пожиранню Демоном-різником.
+  - type: Add
+    message: >-
+      Поцілунок диявола запобігає вашому пожиранню Демоном-різником і завдає
+      йому 50 шкоди.
+  - type: Add
+    message: Демона-різника додано до списку загроз на комунікаційній консолі ніндзя.
+  - type: Add
+    message: >-
+      Демон-різник отримав аудіо-оновлення. Ви можете сміятися та кричати. Додано
+      нові звуки мови. Кривава повідь може випадково викликати чутні голоси.
+  - type: Fix
+    message: Чарівник більше не може творити заклинання всередині Кривавої повіді.
+  - type: Fix
+    message: Демони-різники більше не вмирають у космосі.
+  - type: Fix
+    message: Демони-різники більше не можуть підбирати предмети за допомогою дії
+      'підібрати'.
+  - type: Tweak
+    message: Кривава повідь має спрайт 'прогулянки', щоб ви могли бачити, де знаходитесь.
+  - type: Tweak
+    message: Демонічне серце є магічною контрабандою.
+  - type: Tweak
+    message: Кривава повідь тепер підтримує нові типи крові.
+  - type: Tweak
+    message: Гра за Демона-різника тепер буде відчуватися більш плавною та чутливою.
   id: 1640
   time: '2025-09-12T07:27:55.0000000+00:00'
 - author: EvaisaDev
   changes:
-    - type: Add
-      message: Added Floor Goblin ghost role, Beware of the shoe thief!
+  - type: Add
+    message: Додано роль привида Підлоговий Гоблін. Остерігайтеся викрадача взуття!
   id: 1641
   time: '2025-09-12T09:31:13.0000000+00:00'
 - author: Baptr0b0t
   changes:
-    - type: Fix
-      message: >-
-        Fixed xenos procreation (you can no longer die when you have an
-        facehugger embryo).
-    - type: Tweak
-      message: >-
-        Adult xenos have been given the ability to see health status (alive,
-        critical, dead).
-    - type: Tweak
-      message: Xeno Nest provides life support functions.
+  - type: Fix
+    message: >-
+      Виправлено розмноження ксеносів (ви більше не можете померти, маючи ембріон
+      лицехвата).
+  - type: Tweak
+    message: >-
+      Дорослі ксеноси отримали можливість бачити стан здоров'я (живий, критичний
+      стан, мертвий).
+  - type: Tweak
+    message: Гніздо ксеносів забезпечує функції життєзабезпечення.
   id: 1642
   time: '2025-09-12T17:25:38.0000000+00:00'
 - author: Armok
   changes:
-    - type: Add
-      message: Explosive Payload Blueprint to syndicate uplink
-    - type: Tweak
-      message: >-
-        Explosive payload weaker than before, cannot space rooms and only does
-        75 damage to an unarmored target.
-    - type: Tweak
-      message: >-
-        Remove nerf on signal payloads to give them a delayed explosion, making
-        them mostly useless
+  - type: Add
+    message: Креслення вибухового заряду до аплінку синдикату.
+  - type: Tweak
+    message: >-
+      Вибуховий заряд слабший, ніж раніше, не може розгерметизувати кімнати
+      і завдає лише 75 шкоди неброньованій цілі.
+  - type: Tweak
+    message: >-
+      Знято послаблення з сигнальних зарядів, яке додавало затримку вибуху,
+      що робило їх майже марними.
   id: 1643
   time: '2025-09-12T18:49:11.0000000+00:00'
 - author: Clinux
   changes:
-    - type: Fix
-      message: Fixed Jumpsuits not rendering properly on Humanoid species.
+  - type: Fix
+    message: Виправлено неправильне відображення комбінезонів на гуманоїдних видах.
   id: 1644
   time: '2025-09-13T05:00:51.0000000+00:00'
 - author: EvaisaDev
   changes:
-    - type: Tweak
-      message: Floor goblin health was decreased from 100 to 60.
-    - type: Tweak
-      message: >-
-        Floor goblins are now under the floor when they spawn, to avoid them
-        getting killed immediately.
-    - type: Tweak
-      message: Added role raffle to floor goblin ghost role.
-    - type: Fix
-      message: >-
-        Hud UIs can no longer see floor goblins through floors. (Thermal vision
-        can still be used.)
-    - type: Fix
-      message: >-
-        Floor goblin steal action is now cancelled by placing a tile above it,
-        if it is under the floor.
-    - type: Fix
-      message: >-
-        When a floor goblin crawls into the floor on a sub floor tile, it no
-        longer shows the wrong popup.
-    - type: Fix
-      message: Floor goblins can no longer be seen when inside of vents.
-    - type: Fix
-      message: Floor goblins can no longer use their abilities inside of vents.
+  - type: Tweak
+    message: Здоров'я Підлогового Гобліна зменшено зі 100 до 60.
+  - type: Tweak
+    message: >-
+      Підлогові Гобліни тепер з'являються під підлогою, щоб уникнути їх негайного
+      вбивства.
+  - type: Tweak
+    message: Додано розіграш ролі для привида Підлогового Гобліна.
+  - type: Fix
+    message: >-
+      Інтерфейси HUD більше не бачать Підлогових Гоблінів крізь підлогу. (Тепловізор
+      все ще можна використовувати.)
+  - type: Fix
+    message: >-
+      Дія крадіжки Підлогового Гобліна тепер скасовується, якщо над ним покласти
+      плитку, коли він знаходиться під підлогою.
+  - type: Fix
+    message: >-
+      Коли Підлоговий Гоблін заповзає під підлогу на плитку нижнього рівня,
+      більше не з'являється неправильне спливаюче вікно.
+  - type: Fix
+    message: Підлогових Гоблінів більше не видно, коли вони знаходяться у вентиляції.
+  - type: Fix
+    message: Підлогові Гобліни більше не можуть використовувати свої здібності,
+      перебуваючи у вентиляції.
   id: 1645
   time: '2025-09-13T08:05:02.0000000+00:00'
