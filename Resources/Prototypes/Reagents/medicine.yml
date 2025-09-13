@@ -198,9 +198,8 @@
         key: Jitter
         time: 3.0
         type: Remove
-      - !type:GenericStatusEffect
-        key: Drowsiness
-        component: Drowsiness
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
         time: 1.5
         type: Add
         refresh: false
@@ -1036,8 +1035,8 @@
         key: KnockedDown
         time: 3.0
         type: Remove
-      - !type:GenericStatusEffect
-        key: SeeingRainbows
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
         time: 15.0
         type: Remove
 
@@ -1213,8 +1212,8 @@
       - !type:GenericStatusEffect
         key: Stutter
         component: StutteringAccent
-      - !type:GenericStatusEffect
-        key: Drowsiness
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
         time: 10
         type: Remove
       - !type:ResetNarcolepsy
@@ -1238,8 +1237,8 @@
   metabolisms:
     Medicine:
       effects:
-      - !type:GenericStatusEffect
-        key: Drowsiness
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
         time: 10
         type: Remove
       - !type:ResetNarcolepsy
@@ -1666,12 +1665,11 @@
         damage:
           types:
             Poison: 2
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
         conditions:
         - !type:ReagentThreshold
           min: 30
-        key: SeeingRainbows
-        component: SeeingRainbows
         type: Add
         time: 8
         refresh: false
@@ -1735,9 +1733,8 @@
         emote: Yawn
         showInChat: true
         probability: 0.1
-      - !type:GenericStatusEffect
-        key: Drowsiness
-        component: Drowsiness
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
         time: 4
         type: Add
         refresh: false
@@ -1745,8 +1742,8 @@
         key: Jitter
         time: 4.0
         type: Remove
-      - !type:GenericStatusEffect
-        key: SeeingRainbows
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
         time: 10.0
         type: Remove
       - !type:AdjustReagent

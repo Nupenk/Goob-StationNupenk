@@ -98,11 +98,8 @@
       - id: MedicalStitches
       - id: BoxLatexGloves
       - id: BoxSterileMask
-      # Pirate Change
-      - id: NitrousOxideTankFilled
-        amount: 2
-      - id: ClothingMaskBreathMedical
-        amount: 2
+      - id: NitrousOxideTankFilled # Goobstation
+      - id: ClothingMaskBreath # Goobstation
 
 - type: entity
   id: CrateMedicalScrubs
