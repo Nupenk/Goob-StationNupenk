@@ -414,6 +414,7 @@
     - id: MedicalBiofabricatorFlatpack
     # Goobstation End
     - id: PrinterDocFlatpack  # Pirate document printer
+    - id: ClothingHandsGlovesCombatNitrile #Pirate
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
