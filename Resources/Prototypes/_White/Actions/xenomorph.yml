@@ -20,7 +20,7 @@
 - type: entity
   id: ActionEvolution
   parent: BaseAction
-  name: "Еволюціонувати"
+  name: Evolve
   description: Evolve into a higher xenomorph caste.
   components:
   - type: Action
@@ -34,7 +34,7 @@
 - type: entity
   id: ActionEvolutionPraetorian
   parent: ActionEvolution
-  name: "Еволюціонувати до преторіанця (500)"
+  name: Evolve to praetorian (500)
   description: Evolve into the main defender of the hive.
   components:
   - type: Action
@@ -45,7 +45,7 @@
 - type: entity
   id: ActionEvolutionQueen
   parent: ActionEvolutionPraetorian
-  name: "Еволюціонувати до королеви (500)"
+  name: Evolve to queen (500)
   description: Produce an internal egg sac capable of spawning children. Only one queen can exist at a time.
   components:
   - type: Action
@@ -55,7 +55,7 @@
 - type: entity
   id: ActionSpawnResinWeedNode
   parent: BaseAction
-  name: "Посадити бур'яни (50)"
+  name: Plant weeds (50)
   description: Plants some xenomorph weeds.
   components:
   - type: Action
@@ -75,7 +75,7 @@
 
 - type: entity
   id: ActionSpawnXenomorphEgg
-  name: "Відкласти яйце (75)"
+  name: Lay egg (75)
   description: Lay an egg to produce facehuggers to impregnate prey with.
   components:
   - type: Action
@@ -98,8 +98,8 @@
 - type: entity
   id: ActionSpawnWallResin
   parent: BaseAction
-  name: "Побудувати смоляну стіну (50)"
-  description: "Виділити міцну пластичну смолу."
+  name: Build a resin wall (50)
+  description: Secrete tough malleable resin.
   components:
   - type: Action
     useDelay: 1
@@ -143,8 +143,8 @@
 - type: entity # Goobstation - new action
   id: ActionSpawnResinDoor
   parent: BaseAction
-  name: "Побудувати смоляні двері (75)"
-  description: "Виділити міцну пластичну смолу."
+  name: Build a resin door (75)
+  description: Secrete tough malleable resin.
   components:
   - type: Action
     useDelay: 1
@@ -168,8 +168,8 @@
 - type: entity
   id: ActionSpawnResinNest
   parent: BaseAction
-  name: "Побудувати смоляне гніздо (50)"
-  description: "Виділити міцну пластичну смолу."
+  name: Build a resin nest (50)
+  description: Secrete tough malleable resin.
   components:
   - type: Action
     useDelay: 1
@@ -192,7 +192,7 @@
 - type: entity
   id: ActionTailLash
   parent: BaseAction
-  name: "Удар хвостом"
+  name: Tail lash
   description: Hit your opponent with your tail.
   components:
   - type: Action
@@ -208,7 +208,7 @@
 - type: entity
   id: ActionAcid
   parent: BaseAction
-  name: "Їдка кислота (200)"
+  name: Corrosive acid (200)
   description: Drench an object in acid, destroying it over time.
   components:
   - type: Action
@@ -226,7 +226,7 @@
 - type: entity
   id: ActionJumpXenomorph
   parent: BaseAction
-  name: "Стрибок"
+  name: Jump
   description: Stun your enemies with a quick jump.
   components:
   - type: Action
@@ -243,7 +243,7 @@
 - type: entity
   id: ActionTransferPlasma
   parent: BaseAction
-  name: "Передати плазму (50)"
+  name: Transfer plasma (50)
   description: Passes plasma to your friend.
   components:
   - type: Action
@@ -260,7 +260,7 @@
 - type: entity
   id: ActionXenomorphPromotion
   parent: BaseAction
-  name: "Створити королівського паразита (500)"
+  name: Create royal parasite (500)
   description: Produce a royal parasite to grant one of your children the honor of being your Praetorian.
   components:
   - type: Action
