@@ -987,8 +987,8 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
             UpdateAlternativeJobs(); // Pirate - Alternative Jobs
-            UpdateHeightWidthSliders(); // Pirate
-            UpdateWeight(); // Pirate
+            UpdateHeightWidthSliders(); // Goobstation: port EE height/width sliders
+            UpdateWeight(); // Goobstation: port EE height/width sliders
 
             RefreshAntags();
             RefreshJobs();
