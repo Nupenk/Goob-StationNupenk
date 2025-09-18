@@ -386,6 +386,25 @@ public sealed partial class WizardMirrorWindow : DefaultWindow
     /// </summary>
     public void SetProfile(HumanoidCharacterProfile? profile)
     {
+        // Pirate changes start: Filter out markings the player no longer has access to.
+        if (profile != null)
+        {
+            // This file doesn't have IPlayerManager injected, so we get the ckey this way, as it's done elsewhere in the file.
+            var ckey = Robust.Shared.IoC.IoCManager.Resolve<Robust.Client.Player.IPlayerManager>().LocalSession?.Name;
+            if (ckey != null)
+            {
+                var originalMarkings = profile.Appearance.Markings;
+                var validMarkings = _markingManager.FilterValidMarkings(originalMarkings, profile.Species, profile.Sex, ckey);
+
+                // If any markings were removed, update the profile.
+                if (originalMarkings.Count != validMarkings.Count)
+                {
+                    profile = profile.WithCharacterAppearance(profile.Appearance.WithMarkings(validMarkings));
+                }
+            }
+        }
+        // Pirate changes end
+
         Profile = profile?.Clone();
         IsDirty = false;
 

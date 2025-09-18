@@ -950,6 +950,24 @@ namespace Content.Client.Lobby.UI
         /// </summary>
         public void SetProfile(HumanoidCharacterProfile? profile, int? slot)
         {
+            // Pirate changes start: Filter out markings the player no longer has access to.
+            if (profile != null)
+            {
+                var ckey = _playerManager.LocalSession?.Name;
+                if (ckey != null)
+                {
+                    var originalMarkings = profile.Appearance.Markings;
+                    var validMarkings = _markingManager.FilterValidMarkings(originalMarkings, profile.Species, profile.Sex, ckey);
+
+                    // If any markings were removed, update the profile.
+                    if (originalMarkings.Count != validMarkings.Count)
+                    {
+                        profile = profile.WithCharacterAppearance(profile.Appearance.WithMarkings(validMarkings));
+                    }
+                }
+            }
+            // Pirate changes end
+
             Profile = profile?.Clone();
             CharacterSlot = slot;
             IsDirty = false;
@@ -969,8 +987,8 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
             UpdateAlternativeJobs(); // Pirate - Alternative Jobs
-            UpdateHeightWidthSliders(); // Goobstation: port EE height/width sliders
-            UpdateWeight(); // Goobstation: port EE height/width sliders
+            UpdateHeightWidthSliders(); // Pirate
+            UpdateWeight(); // Pirate
 
             RefreshAntags();
             RefreshJobs();
