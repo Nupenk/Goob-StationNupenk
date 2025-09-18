@@ -255,6 +255,25 @@
   - type: ProjectileBatteryAmmoProvider
     proto: BulletEnergyGunLaser
     fireCost: 100
+  - type: AmmoSelector
+    prototypes:
+      - BulletDisabler
+      - BulletEnergyGunLaser
+      - BulletEnergyGunIon
+  - type: UserInterface
+    interfaces:
+      enum.AmmoSelectorUiKey.Key:
+        type: AmmoSelectorMenuBoundUserInterface
+  - type: ActivatableUI
+    altVerb: true
+    verbOnly: true
+    verbText: mode-select-verb-text
+    key: enum.AmmoSelectorUiKey.Key
+  - type: ItemToggle
+    activated: true
+    onActivate: false
+    onUse: false
+    wieldToggle: false
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -296,6 +315,7 @@
     prototypes:
       - BulletDisabler
       - BulletEnergyGunLaser
+      - BulletEnergyGunIon
   - type: UserInterface
     interfaces:
       enum.AmmoSelectorUiKey.Key:
