@@ -1,7 +1,7 @@
 - type: entity
   id: MobXenomorphFaceHuggerLamarr
   parent: MobXenomorphFaceHugger
-  name: Lamarr
+  name: "Ламарр"
   description: A former nightmare candidate, now an exemplary pet.
   components:
   - type: FaceHugger

@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseStructure
   id: ResinWeed
-  name: resin floor
+  name: "смоляна підлога"
   description: A thick resin surface covers the floor.
   components:
   - type: Sprite
@@ -76,7 +76,7 @@
 - type: entity
   parent: ResinWeed
   id: ResinWeedNode
-  name: glowing resin
+  name: "сяюча смола"
   description: Blue bioluminescence shines from beneath the surface.
   components:
   - type: Sprite

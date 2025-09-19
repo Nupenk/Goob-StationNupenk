@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseStructure
   id: ResinNest
-  name: resin nest
+  name: "смоляне гніздо"
   description: Slimy and sticky mass representing a bed?....
   components:
   - type: Sprite

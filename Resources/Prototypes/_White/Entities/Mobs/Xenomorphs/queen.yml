@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMobXenomorphAdult
   id: BaseMobXenomorphQueen
-  name: xenomorph queen
+  name: "королева ксеноморфів"
   description: The highest individual, the central element and mother of the Hive. The destruction of the Queen in most cases means the collapse of the Hive.
   abstract: true
   components:
