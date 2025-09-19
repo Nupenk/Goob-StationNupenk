@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMobXenomorphAdult
   id: BaseMobXenomorphHunter
-  name: "ксеноморф-мисливець"
+  name: xenomorph hunter
   description: A specialized individual, an excellent predator, created to track down and destroy targets. Extremely dangerous in close combat.
   abstract: true
   components:

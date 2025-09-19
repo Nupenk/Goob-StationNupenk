@@ -1,6 +1,6 @@
 - type: entity
   id: XenomorphAcid
-  name: "їдка кислота"
+  name: corrosive acid
   description: Burbling corrosive stuff. I wouldn't want to touch it.
   components:
   - type: Sprite
