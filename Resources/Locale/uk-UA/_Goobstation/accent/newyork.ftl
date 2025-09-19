@@ -190,8 +190,8 @@ accent-newyork-words-replace-63 = цей
 accent-newyork-words-64 = до
 accent-newyork-words-replace-64 = к
 
-accent-newyork-words-65 = of
-accent-newyork-words-replace-65 = 
+accent-newyork-words-65 = а
+accent-newyork-words-replace-65 = а
 
 accent-newyork-words-66 = про
 accent-newyork-words-replace-66 = за
